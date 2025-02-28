@@ -178,28 +178,29 @@
             <h2 class="title is-3">The Challenge: Hitting the Wall</h2>
             <div class="content has-text-justified">
               <p>
-                <strong>Data Depletion:</strong> Public data sources that have fueled AI development are becoming exhausted. High-quality data is increasingly scarce, with estimates suggesting human-generated public text data cannot sustain scaling beyond this decade. While synthetic data generation has been proposed as an alternative, AI-generated content may fail to yield performance improvements and risks polluting existing data sources.
+                <strong>Data Depletion:</strong> The rapid advancement of large language models has created an insatiable appetite for training data. Neural scaling laws establish that model performance improves predictably with data quantity—a relationship that demands exponentially growing datasets. Current projections suggest dataset sizes grow at approximately 0.38 orders of magnitude (2.4×) annually, implying models will require <em>three orders of magnitude more data</em> within a decade.
               </p>
               
-              <!-- Data Growth Visualization -->
-              <div class="visualization-container">
-                <iframe src="htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 1: Global data volume is growing exponentially, with IoT devices contributing significantly to this growth.</em>
-                </p>
-              </div>
               
               <p>
-                <strong>Computational Monopoly:</strong> The computational demands of training state-of-the-art models have become astronomical. Training GPT-4 reportedly required over 25,000 NVIDIA A100 GPUs, costing over $100M per training run. This level of computing power has become concentrated among a few tech giants, creating a monopolistic landscape that effectively excludes smaller companies and academic institutions from participating in foundational AI research.
+                Despite the internet's vast textual resources, the total stock of high-quality human-generated text remains bounded. Recent estimates place this limit at approximately 4×10<sup>14</sup> tokens. Researchers argue that current consumption patterns suggest exhaustion of public text data by 2028, potentially accelerated to 2026 through excessive data reuse during training. While synthetic data generation presents a potential solution, it faces fundamental challenges including model collapse, quality verification challenges, and difficulty replicating linguistic diversity.
+              </p>
+              
+              <p>
+                <strong>Computational Monopoly:</strong> The AI computing landscape is dominated by a few major tech giants like OpenAI, Google, Microsoft, and Meta, which control powerful hardware such as GPUs and TPUs. This monopolization creates a significant barrier for smaller AI startups and research institutions. Since the deep learning revolution in 2010, AI training demands have grown at a super-exponential rate of 3.9× per year—an acceleration that intensified with the adoption of the transformer architecture. With the advent of large language models in 2022, this demand has surged further to 13.4× per year.
               </p>
               
               <!-- Computing Trend Visualization -->
               <div class="visualization-container">
                 <iframe src="htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
-                  <em>Figure 2: The computational demands of AI models have grown exponentially, approaching physical and economic limits.</em>
+                  <em>Figure 2: The computational demands of AI models have grown exponentially, with an unprecedented growth rate of 13.4× per year since 2022, pushing against physical and economic limits.</em>
                 </p>
               </div>
+              
+              <p>
+                The computing challenge is compounded by Moore's Law slowing down as we approach the physical limits of silicon-based chip technology. The difficulty in shrinking transistors has led to diminishing returns in computational performance. Additionally, infrastructure capacity faces dual constraints: bottlenecks in advanced semiconductor manufacturing severely limit the expansion rate of AI data centers, while the exponential increase in chip deployment pushes against limited semiconductor production capacity.
+              </p>
             </div>
           </div>
         </div>
@@ -210,28 +211,52 @@
             <h2 class="title is-3">The Opportunity: Edge Resources</h2>
             <div class="content has-text-justified">
               <p>
-                <strong>Untapped Edge Data:</strong> Edge data generated from smartphones for the past 5 years are projected to reach 33.1 EB, offering fresh, diverse, and contextually rich training samples. This vastly exceeds the data used to train current state-of-the-art models.
+                <strong>Untapped Edge Data:</strong> Edge data represents a crucial alternative to address data exhaustion challenges. By 2025, the global data volume is projected to reach 182 ZB, with IoT devices contributing substantially to this growth—increasing from 13.6 ZB in 2019 to 79.4 ZB in 2025. Smartphone data volume specifically is projected to grow from 5 EB in 2018 to 8 EB by 2028, with the smartphone data volume of the past 5 years (before 2025) estimated to reach approximately 33.1 EB.
               </p>
               
+              <!-- Data Growth Visualization -->
+              <div class="visualization-container">
+                <iframe src="htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+                <p class="has-text-centered">
+                  <em>Figure 1: Global data volume is growing exponentially, with IoT devices contributing significantly to this growth (from 33.2% to 43.6% over 2015-2025).</em>
+                </p>
+              </div>
+
               <!-- Edge Computing and Smartphone Visualization -->
               <div class="visualization-container">
                 <iframe src="htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
-                  <em>Figure 3: Smartphone data volume and edge computing market are expanding rapidly, offering vast untapped resources.</em>
+                  <em>Figure 3: Smartphone data volume is projected to grow from 5 EB in 2018 to 8 EB by 2028, while the edge computing market is forecasted to surge from $5.5 billion to $87.9 billion in the same period.</em>
                 </p>
               </div>
               
               <p>
-                <strong>Collective Computing Power:</strong> The combined computing power of edge devices - with smartphones delivering 9,278 EFLOPS over the past 5 years - demonstrates the feasibility of distributed model training. Training state-of-the-art models like DeepSeek-v3 would require only about 60,723 users with edge devices working in parallel to match its current training setup.
+                Edge data possesses several qualitative advantages that make it particularly valuable for model training. It exhibits superior diversity across multiple dimensions, encompassing various data types from different domains, languages, and user behaviors. It demonstrates strong real-time capability, offering continuously fresh data with low latency compared to infrequently updated public datasets. Edge data also offers enhanced personalization characteristics, enabling context-aware adaptations, and improved contextual awareness due to the proximal positioning of devices to data sources.
               </p>
+              
+              <p>
+                <strong>Collective Computing Power:</strong> Edge computing has experienced explosive growth in computing power, with flagship smartphones now achieving computing power exceeding 2 TFLOPS. From 2020 to 2024, smartphone chip performance has seen significant improvements, with peak computing power increasing from 1.53 TFLOPS to 4.95 TFLOPS, and average computing power rising from 0.48 TFLOPS to 1.38 TFLOPS. The overall computing power of mobile devices has grown from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024, totaling 9,278 EFLOPS for the past 5 years.
+              </p>
+
+              <!-- Yearly Mean Compute Trend -->
+              <div class="visualization-container">
+                <iframe src="htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+                <p class="has-text-centered">
+                  <em>Figure 6: The yearly growth in compute requirements shows the unsustainable trajectory of centralized AI training, highlighting the need for more efficient and distributed approaches to advance AI capabilities.</em>
+                </p>
+              </div>
               
               <!-- Smartphone Compute Trend -->
               <div class="visualization-container">
                 <iframe src="htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
-                  <em>Figure 4: The collective computing capabilities of smartphones have grown dramatically, providing a potential distributed training resource.</em>
+                  <em>Figure 4: The collective computing capabilities of smartphones have grown dramatically from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024, providing a formidable distributed training resource.</em>
                 </p>
               </div>
+              
+              <p>
+                This immense computational resource means the combined parallel computing power of approximately 30 iPhone devices (with A18 chips) can match the computational capacity of a professional AI training GPU (H100 with 59.30 TFLOPS). For context, training state-of-the-art models like DeepSeek-v3 would require only about 60,723 users with edge devices working in parallel for a week to match its current training setup.
+              </p>
             </div>
           </div>
         </div>
@@ -242,22 +267,28 @@
             <h2 class="title is-3">Technical Approaches</h2>
             <div class="content has-text-justified">
               <p>
-                <strong>Small Language Models at Edges:</strong> Deploying efficient, compact language models directly on edge devices reduces the computational and memory requirements while maintaining acceptable performance for many tasks.
+                <strong>Small Language Models at Edges:</strong> Deploying efficient, compact language models directly on edge devices reduces the computational and memory requirements while maintaining acceptable performance for many tasks. Recent advancements in model compression, knowledge distillation, and quantization techniques have enabled the deployment of increasingly powerful yet efficient models on resource-constrained devices.
               </p>
+              
               <p>
-                <strong>Collaborative Inference:</strong> Distributing the inference process across multiple devices allows for more complex models to be run without requiring any single device to handle the entire computational load.
+                <strong>Collaborative Inference:</strong> Distributing the inference process across multiple devices allows for more complex models to be run without requiring any single device to handle the entire computational load. This approach enables running larger models than would be possible on individual devices alone, while maintaining low latency and reducing bandwidth requirements.
               </p>
+              
               <p>
-                <strong>Collaborative Training:</strong> Federated learning enables model training across distributed devices without requiring data to leave the device, preserving privacy while leveraging the collective computational power of edge networks.
+                <strong>Collaborative Training:</strong> Federated learning enables model training across distributed devices without requiring data to leave the device, preserving privacy while leveraging the collective computational power of edge networks. Recent initiatives like Prime Intellect have launched decentralized training projects for models with billions of parameters, while frameworks like FlowerLLM have successfully trained 1.3 billion parameter models using novel federated learning methods.
               </p>
               
               <!-- Federated LLM Visualization -->
               <div class="visualization-container">
                 <iframe src="htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz" loading="lazy"></iframe>
                 <p class="has-text-centered">
-                  <em>Figure 5: Federated learning enables distributed training across edge devices while preserving privacy.</em>
+                  <em>Figure 5: Federated learning enables distributed training across edge devices while preserving privacy, allowing for collaborative model development without compromising sensitive data.</em>
                 </p>
               </div>
+              
+              <p>
+                A fundamental limitation of traditional federated learning is its requirement for each participant to maintain and train a complete model locally, which becomes problematic for large language models. Novel approaches are being developed to address this limitation, enabling distributed training across devices with varying computational capabilities. These approaches show promise for enabling large-scale collaborative model training in privacy-sensitive domains where computational resources are unevenly distributed.
+              </p>
             </div>
           </div>
         </div>
@@ -268,22 +299,17 @@
             <h2 class="title is-3">Societal Impact</h2>
             <div class="content has-text-justified">
               <p>
-                <strong>AI Democratization:</strong> By breaking the monopoly on AI development, distributed edge computing can democratize access to AI technologies and empower a more diverse range of participants in the AI ecosystem.
-              </p>
-              <p>
-                <strong>Privacy Preservation:</strong> Federated learning approaches keep sensitive data on user devices, addressing growing privacy concerns and complying with increasingly stringent data regulations.
-              </p>
-              <p>
-                <strong>Environmental Benefits:</strong> Distributed training can significantly reduce the carbon footprint of AI development by utilizing existing devices rather than requiring dedicated energy-intensive data centers.
+                <strong>AI Democratization:</strong> By breaking the monopoly on AI development, distributed edge computing can democratize access to AI technologies and empower a more diverse range of participants in the AI ecosystem. This approach allows smaller organizations, research institutions, and even individuals to contribute meaningfully to AI advancement, fostering innovation from a broader base of participants.
               </p>
               
-              <!-- Yearly Mean Compute Trend -->
-              <div class="visualization-container">
-                <iframe src="htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 6: The yearly growth in compute requirements shows the unsustainable trajectory of centralized AI training, highlighting the need for distributed approaches.</em>
-                </p>
-              </div>
+              <p>
+                <strong>Privacy Preservation:</strong> Federated learning approaches keep sensitive data on user devices, addressing growing privacy concerns and complying with increasingly stringent data regulations like GDPR. This privacy-preserving approach is particularly valuable in domains like healthcare, finance, and personal communications, where data sensitivity is paramount but collaborative model improvement is beneficial.
+              </p>
+              
+              <p>
+                <strong>Environmental Benefits:</strong> Distributed training can significantly reduce the carbon footprint of AI development by utilizing existing devices rather than requiring dedicated energy-intensive data centers. This approach leverages computational resources that would otherwise remain idle, improving overall efficiency and reducing the environmental impact associated with large-scale AI training.
+              </p>
+            
             </div>
           </div>
         </div>
