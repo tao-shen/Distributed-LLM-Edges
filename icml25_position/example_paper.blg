@@ -1,0 +1,156 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: example_paper.aux
+The style file: icml2025.bst
+Reallocated field_info (elt_size=4) to 10152 items from 5000.
+Database file #1: example_paper.bib
+Database file #2: st.bib
+I was expecting a `,' or a `}'---line 1690 of file st.bib
+ : 
+ :   }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #3: zdd.bib
+Repeated entry---line 1 of file zdd.bib
+ : @article{lecun1998mnist
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 12 of file zdd.bib
+ : @inproceedings{deng2009imagenet
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 30 of file zdd.bib
+ : @article{brown2020language
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 39 of file zdd.bib
+ : @article{hoffmann2022training
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 46 of file zdd.bib
+ : @article{touvron2023llama
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 53 of file zdd.bib
+ : @article{hoffmann2022training
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 60 of file zdd.bib
+ : @article{brown2020language
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 153 of file zdd.bib
+ : @article{villalobos2022trends
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 178 of file zdd.bib
+ : @article{touvron2023llama
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "statista_iot_2023" isn't style-file defined
+--line 193 of file zdd.bib
+Warning--entry type for "statista_global_2023" isn't style-file defined
+--line 202 of file zdd.bib
+Warning--entry type for "grandview_edge_2023" isn't style-file defined
+--line 211 of file zdd.bib
+Warning--entry type for "bankmycell_smartphone_2023" isn't style-file defined
+--line 220 of file zdd.bib
+Warning--entry type for "counterpoint_smartphone_2021" isn't style-file defined
+--line 230 of file zdd.bib
+Warning--entry type for "seagate_rethinkdata_2020" isn't style-file defined
+--line 246 of file zdd.bib
+Warning--entry type for "idc_seagate_dataage_2019" isn't style-file defined
+--line 253 of file zdd.bib
+I was expecting a `,' or a `}'---line 285 of file zdd.bib
+ :     note = {Accessed:2025-01-22} 
+ :                                  % Replace with the date you accessed the content.
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 301 of file zdd.bib
+ : note = {Accessed:2025-01-22} 
+ :                              % Replace with the date you accessed the content.
+I'm skipping whatever remains of this entry
+Database file #4: zzy.bib
+Repeated entry---line 8 of file zzy.bib
+ : @misc{sevilla2022compute
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 39 of file zzy.bib
+ : @inproceedings{krizhevsky2012imagenet
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 64 of file zzy.bib
+ : @inproceedings{vaswani2017attention
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 72 of file zzy.bib
+ : @article{devlin2018bert
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 79 of file zzy.bib
+ : @article{brown2020language
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 95 of file zzy.bib
+ : @article{openai2023gpt4
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 102 of file zzy.bib
+ : @article{patterson2021carbon
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 117 of file zzy.bib
+ : @article{kaplan2020scaling
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 124 of file zzy.bib
+ : @article{hoffmann2022training
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "nvidia2023" isn't style-file defined
+--line 182 of file zzy.bib
+Warning--empty journal in team2024gemma2
+Warning--empty journal in gdpr
+Warning--empty year in villalobosposition
+Warning--empty year in villalobosposition
+You've used 184 entries,
+            2773 wiz_defined-function locations,
+            1418 strings with 40009 characters,
+and the built_in function-call counts, 93665 in all, are:
+= -- 7635
+> -- 7798
+< -- 68
++ -- 2664
+- -- 2457
+* -- 7993
+:= -- 15133
+add.period$ -- 575
+call.type$ -- 184
+change.case$ -- 1322
+chr.to.int$ -- 161
+cite$ -- 372
+duplicate$ -- 3695
+empty$ -- 6253
+format.name$ -- 2663
+if$ -- 19008
+int.to.chr$ -- 24
+int.to.str$ -- 1
+missing$ -- 152
+newline$ -- 948
+num.names$ -- 736
+pop$ -- 2750
+preamble$ -- 1
+purify$ -- 1138
+quote$ -- 0
+skip$ -- 3169
+stack$ -- 0
+substring$ -- 1422
+swap$ -- 357
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2024
+warning$ -- 4
+while$ -- 643
+width$ -- 0
+write$ -- 2300
+(There were 21 error messages)

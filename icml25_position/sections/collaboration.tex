@@ -1,0 +1,52 @@
+\section{Technical Advancements}\label{sec:technical_advancements}
+% 端侧小模型
+% 小规模计算集群
+% 联邦学习
+
+
+
+\subsection{Small Language Models at Edges}\label{subsec:small_language_models}
+% 端侧小模型
+% 为什么会出现端侧小模型？
+
+The first move of AI to Edge is to deploy small language models (SLMs) to edge devices \cite{lu2024small,wang2024comprehensive,van2024survey}. This trend is driven by the growing demand for AI applications that can run directly on edge devices, motivated by needs for privacy, offline usage, and real-time processing without cloud dependence. However, edge devices have limited memory, computation, and energy resources, requiring more efficient and compact models.
+
+
+% 端侧小模型发展到什么水平？（有多小？用了什么技术？）
+\paragraph{SLMs leverage innovative architectures for efficient edge deployment.}
+The classic Transformer architecture \cite{vaswani2017attention} uses self-attention mechanisms for effective sequence modeling but faces quadratic complexity challenges, with models like TinyBERT \cite{jiao2020tinybert} (14.5M parameters) and ALBERT \cite{lan2020albert} (12M parameters) demonstrating its effectiveness at small scales. Mamba \cite{gu2023mamba}, based on state space models, achieves linear complexity and faster inference by utilizing only the previous hidden state, as demonstrated by Zamba2-2.7B \cite{glorioso2024zambacompact7bssm} which achieves twice the speed and 27\% reduced memory overhead compared to traditional models. Hymba \cite{dong2024hymba} combines both approaches by integrating attention and SSM heads within the same layer for parallel processing, with its 1.5B variant trained on DCLM-Baseline-1.0 and SmolLM-Corpus achieving 11.67 times cache size reduction while outperforming Llama-3.2-3B. The xLSTM architecture \cite{beck2024xlstm} modernizes LSTM with exponential gates and matrix memory cells, with models ranging from 125M to 1.3B parameters trained on 300 billion tokens from SlimPajama \cite{cerebras2023slimpajama}, consistently outperforming comparable RWKV-4 \cite{peng-etal-2023-rwkv}, Llama \cite{inan2023llama}, and Mamba models across various tasks in the PALOMA benchmark \cite{magnusson2023paloma}. These architectural innovations demonstrate the potential for efficient and powerful language models that can run effectively on edge devices.
+
+
+\paragraph{SLMs can be constructed through diverse methodological approaches.}
+The construction of efficient SLMs relies on a comprehensive suite of techniques, each with specific performance trade-offs. 
+For training SLMs from scratch, optimized MLM approaches \cite{devlin2019bert} with increased masking ratio (25\% vs traditional 15\%) demonstrate 2-3\% performance improvements for models under 3B parameters.
+When deriving SLMs from existing LLMs, knowledge distillation has proven particularly effective, with response-based distillation \cite{sanh2019distilbert} reducing model size by 40\% while maintaining 95\% of the original performance. Similarly, model compression techniques like 4-bit quantization \cite{zhang2022quantized} can reduce model size by 75\% with only 2-3\% performance drop.
+In architecture optimization, the Mixture of Experts approach \cite{fedus2022switch} enables 65\% parameter reduction while potentially improving performance in specific tasks. Domain specialization has shown remarkable results, particularly in the medical field where 3B parameter models achieve 92\% accuracy, outperforming 175B models (89\%) \cite{fu2023specializing}.
+The combination of these techniques yields impressive results - a notable example is a 770M parameter model from \cite{distilling2023} that combines distillation, quantization, and domain specialization to achieve 95\% of the performance of a 540B model on specific tasks while requiring less than 0.15\% of the computational resources. Most successful SLMs achieve their efficiency by combining multiple techniques, typically starting with knowledge distillation, applying compression methods, and finishing with domain-specific fine-tuning. 
+\citet{wang2024comprehensive} has provided a comprehensive survey of SLMs, and we summarize the architecture innovations and training methods in Appendix \ref{app:slm_architectures_training}. 
+
+% Small Language Models (SLMs) can be trained through various methods to optimize their performance and efficiency \cite{wang2024comprehensive}. One approach is training SLMs from scratch, which involves designing efficient architectures such as the Transformer \cite{vaswani2017attention} and its variants like Mamba \cite{gu2023mamba} and Hymba \cite{dong2024hymba}. These architectures are optimized for resource-constrained environments by employing techniques such as parameter sharing \cite{thawakar2024mobillama} and multi-round training \cite{tang2024rethinking}. For instance, Mamba achieves a 2-8x speedup while maintaining competitive performance with Transformer models \cite{gu2023mamba}. Additionally, SLMs can be derived from Large Language Models (LLMs) through methods like pruning \cite{shen2024lorashear}, knowledge distillation \cite{gu2024minillm}, and quantization \cite{wang2023bitnet}. These techniques reduce the size and computational demands of LLMs while retaining their capabilities. For example, pruning can reduce model size by up to 60\% with minimal performance loss \cite{shen2024lorashear}. Knowledge distillation can achieve a 32.2\% accuracy on the MMLU dataset for a 1.5B parameter model \cite{gu2024minillm}. Quantization methods like BitNet can scale models down to 1-bit precision while maintaining high performance \cite{wang2023bitnet}. Innovative training methods, such as data filtering and optimization \cite{wang2024openchat}, further enhance the performance of SLMs. Domain-specific SLMs are trained using domain data pretraining \cite{acikgoz2024hippocrates} and instruction tuning \cite{phogat2024fine} to cater to specific applications. For instance, BioMedLM, a 2.7B parameter model trained on PubMed content, achieves 57.3\% on MedMCQA (dev) and 69.0\% on MMLU medical genetics exams, outperforming some LLMs in specific domains \cite{bolton2024biomedlm}. Finally, practical deployment of SLMs on edge devices requires memory and computational optimizations \cite{shen2024cost} to ensure efficient inference. For example, COST-EFF reduces memory usage by 2.5x and achieves a 3.5x increase in processing speed \cite{shen2024cost}.
+
+
+
+% 端侧小模型面临什么挑战和未来发展方向？
+Despite remarkable progress in deploying compressed models to edge devices, the current landscape remains largely confined to individual devices operating in isolation, failing to leverage the massive distributed computing power that could be achieved through collaborative training across edge devices. This represents a significant missed opportunity, as the collective computing resources of billions of edge devices worldwide remain untapped, while individual devices struggle with the computational demands of modern AI applications.
+
+\subsection{Collaborative Inference at Edges}\label{subsec:collaborative_inference}
+% 边缘协同推理
+% 出现原因？
+The emergence of collaborative inference at the edge represents a significant shift in AI infrastructure, driven by the increasing need for accessible and cost-effective AI inference solutions. 
+Traditional large-scale data centers, while powerful, often present barriers in terms of cost, energy consumption, and accessibility, providing a middle ground between edge devices and massive data centers.
+
+% 哪些技术？
+
+Exo \cite{exo} is a recently popular collaborative inference framework that enables users to create AI clusters using everyday devices such as iPhones, iPads, Android devices, Macs, and Linux systems. By leveraging a peer-to-peer architecture, Exo allows these devices to work together seamlessly, effectively unifying their computational resources into a powerful AI cluster.
+Neurosurgeon \cite{kang2017neurosurgeon} introduces a lightweight scheduler that partitions deep neural network (DNN) computations between devices and datacenters, achieving significant reductions in latency and energy consumption. 
+MoE$^2$ \cite{jin2025moe2} proposes a Mixture-of-Edge-Experts framework to optimize inference for large language models under energy and latency constraints. 
+Edgent \cite{li2018edgent} enables low-latency edge intelligence through adaptive DNN partitioning and early-exit mechanisms. 
+Galaxy \cite{ye2024galaxy} leverages a hybrid model parallelism approach and heterogeneity-aware planning to efficiently execute Transformer models across edge devices, reducing inference latency. These approaches collectively emphasize the synergy of device-edge collaboration for efficient deep learning inference in edge AI systems.
+
+
+While collaborative inference at edge devices has made some strides, the current landscape has yet to fully capitalize on the immense potential of distributed data resources at the edge. The next frontier of research lies in transforming these devices from mere inference endpoints into active participants in the training process. This paradigm shift promises to usher in a new era of distributed AI that effectively harnesses the collective computing power and diverse data resources of billions of edge devices worldwide, fundamentally reshaping how we approach AI system development and deployment.
+
+

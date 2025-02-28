@@ -1,0 +1,1204 @@
+\begin{thebibliography}{184}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdin et~al.(2024)Abdin, Chaudhuri, et~al.]{abdin2024phi}
+Abdin, N., Chaudhuri, M., et~al.
+\newblock Phi-3: Building better language models with more data and compute.
+\newblock \emph{arXiv preprint arXiv:2404.14219}, 2024.
+
+\bibitem[Ahmed et~al.(2022)Ahmed, Amizadeh, Bilenko, Carr, Chin, Dekel,
+  Dublish, Greberman, Czerwinski, Hu, et~al.]{ahmed2022democratizing}
+Ahmed, Z., Amizadeh, S., Bilenko, M., Carr, R., Chin, W.-P., Dekel, Y.,
+  Dublish, X., Greberman, M., Czerwinski, S., Hu, X., et~al.
+\newblock Democratizing machine learning: A comprehensive survey of open-source
+  frameworks and platforms.
+\newblock \emph{arXiv preprint arXiv:2201.00118}, 2022.
+
+\bibitem[AI(2024)]{llama3.2}
+AI, M.
+\newblock Meta releases llama 3.2.
+\newblock \url{https://about.fb.com/news/2024/09/introducing-llama-3-2-1b-3b/},
+  2024.
+
+\bibitem[AI(2023)]{together}
+AI, T.
+\newblock Together ai: The ai acceleration cloud.
+\newblock \url{https://www.together.ai/}, 2023.
+
+\bibitem[{AI2}(2023)]{dolma}
+{AI2}.
+\newblock Dolma: An open corpus of high-quality english text for language model
+  pre-training.
+\newblock \url{https://huggingface.co/datasets/allenai/dolma}, 2023.
+
+\bibitem[Alam et~al.(2022)Alam, Liu, Yan, and Zhang]{alam2022fedrolex}
+Alam, S., Liu, L., Yan, M., and Zhang, M.
+\newblock Fedrolex: Model-heterogeneous federated learning with rolling
+  sub-model extraction.
+\newblock \emph{Advances in neural information processing systems},
+  35:\penalty0 29677--29690, 2022.
+
+\bibitem[Alemohammad et~al.(2023)Alemohammad, Casco-Rodriguez, Luzi, Humayun,
+  Babaei, LeJeune, Siahkoohi, and Baraniuk]{alemohammad2023self}
+Alemohammad, S., Casco-Rodriguez, J., Luzi, L., Humayun, A.~I., Babaei, H.,
+  LeJeune, D., Siahkoohi, A., and Baraniuk, R.~G.
+\newblock Self-consuming generative models go mad.
+\newblock \emph{arXiv preprint arXiv:2307.01850}, 2023.
+
+\bibitem[alibaba(2024)]{federatedscope}
+alibaba.
+\newblock Federatedscope: An easy-to-use federated learning platform.
+\newblock \url{https://github.com/alibaba/FederatedScope}, 2024.
+
+\bibitem[Allal et~al.(2024)]{allal2024SmolLM}
+Allal, L.~B. et~al.
+\newblock Smollm: A small language model for everyday tasks.
+\newblock \emph{arXiv preprint arXiv:2407.12290}, 2024.
+
+\bibitem[Amodei \& Hernandez(2018)Amodei and Hernandez]{amodei2018ai}
+Amodei, D. and Hernandez, D.
+\newblock Ai and compute.
+\newblock \emph{OpenAI Blog}, 2, 2018.
+
+\bibitem[Anderson et~al.(2024{\natexlab{a}})Anderson, Chen, Liu, and
+  Zhang]{science2024llm}
+Anderson, J., Chen, W., Liu, S., and Zhang, M.
+\newblock Sciencegpt: Large language models for scientific discovery and
+  innovation.
+\newblock \emph{Nature Scientific Reports}, 14:\penalty0 1--15,
+  2024{\natexlab{a}}.
+
+\bibitem[Anderson et~al.(2024{\natexlab{b}})Anderson, Garcia, and
+  Kumar]{community2024driven}
+Anderson, M., Garcia, E., and Kumar, R.
+\newblock Community-driven ai development: Breaking the monopoly in large
+  language model training.
+\newblock \emph{Nature Machine Intelligence}, 6\penalty0 (3):\penalty0
+  234--246, 2024{\natexlab{b}}.
+
+\bibitem[{Apple Inc.}(2024)]{apple2024iphone16pro}
+{Apple Inc.}
+\newblock iphone 16 pro and 16 pro max - technical specifications, 2024.
+\newblock URL \url{https://www.apple.com/iphone-16-pro/specs/}.
+
+\bibitem[{Azizan-Ruhi} et~al.(2019){Azizan-Ruhi}, {Lahouti}, {Avestimehr}, and
+  {Hassibi}]{azizan2019distributed}
+{Azizan-Ruhi}, N., {Lahouti}, F., {Avestimehr}, A.~S., and {Hassibi}, B.
+\newblock Distributed solution of large-scale linear systems via accelerated
+  projection-based consensus.
+\newblock \emph{IEEE Transactions on Signal Processing}, 67\penalty0
+  (14):\penalty0 3806--3817, July 2019.
+\newblock ISSN 1941-0476.
+\newblock \doi{10.1109/TSP.2019.2917855}.
+
+\bibitem[Bai et~al.(2023)Bai, Wang, Xiong, Hou,
+  et~al.]{bai2023qwentechnicalreport}
+Bai, J., Wang, S., Xiong, F., Hou, Z., et~al.
+\newblock Qwen technical report.
+\newblock \emph{arXiv preprint arXiv:2309.16609}, 2023.
+
+\bibitem[{BankMyCell}(2023)]{bankmycell_smartphone_2023}
+{BankMyCell}.
+\newblock How many smartphones are in the world?, 2023.
+\newblock URL
+  \url{https://www.bankmycell.com/blog/how-many-phones-are-in-the-world}.
+
+\bibitem[Beck et~al.(2024)Beck, Ngiam, Mingyang, Le, and
+  Sutskever]{beck2024xlstm}
+Beck, D., Ngiam, J., Mingyang, W., Le, Q.~V., and Sutskever, I.
+\newblock xlstm: Scaling lstm to billions of parameters.
+\newblock \emph{arXiv preprint arXiv:2401.02099}, 2024.
+
+\bibitem[Benallal et~al.(2024)]{benallal2024smollmcorpus}
+Benallal, L. et~al.
+\newblock Smollm-corpus: An open high-quality corpus for pretraining language
+  models.
+\newblock \emph{arXiv preprint arXiv:2406.11403}, 2024.
+
+\bibitem[Biderman et~al.(2022)Biderman, Schoelkopf, Weiss, and
+  Noever]{biderman2022data}
+Biderman, S., Schoelkopf, K., Weiss, A., and Noever, D.
+\newblock Data governance in the age of large language models.
+\newblock \emph{arXiv preprint arXiv:2211.09911}, 2022.
+
+\bibitem[Bolton et~al.(2024)Bolton, Venigalla, Yasunaga, Hall, Xiong, Lee,
+  Daneshjou, Frankle, Liang, Carbin, et~al.]{bolton2024biomedlm}
+Bolton, E., Venigalla, A., Yasunaga, M., Hall, D., Xiong, B., Lee, T.,
+  Daneshjou, R., Frankle, J., Liang, P., Carbin, M., et~al.
+\newblock Biomedlm: A 2.7 b parameter language model trained on biomedical
+  text.
+\newblock \emph{arXiv preprint arXiv:2403.18421}, 2024.
+
+\bibitem[Bommasani et~al.(2021)Bommasani, Hudson, Adeli, Altman, Arora, von
+  Arx, Bernstein, Bohg, Bosselut, Brunskill,
+  et~al.]{bommasani2021opportunities}
+Bommasani, R., Hudson, D.~A., Adeli, E., Altman, R., Arora, S., von Arx, S.,
+  Bernstein, M.~S., Bohg, J., Bosselut, A., Brunskill, E., et~al.
+\newblock On the opportunities and risks of foundation models.
+\newblock \emph{arXiv preprint arXiv:2108.07258}, 2021.
+
+\bibitem[Brown et~al.(2024)Brown, Miller, and Wilson]{decentralized2024llm}
+Brown, S., Miller, D., and Wilson, J.
+\newblock Decentralized llm training: A path towards democratized ai
+  development.
+\newblock \emph{Proceedings of the International Conference on Machine
+  Learning}, pp.\  2145--2156, 2024.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, et~al.]{brown2020language}
+Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
+  Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et~al.
+\newblock Language models are few-shot learners.
+\newblock \emph{arXiv preprint arXiv:2005.14165}, 2020.
+
+\bibitem[{Canalys}(2025)]{canalys2025}
+{Canalys}.
+\newblock {Canalys Newsroom - Market Analysis and Research}.
+\newblock \url{https://canalys.com/newsroom}, 2025.
+\newblock Accessed: 2025-02-23.
+
+\bibitem[Capozzoli \& Primiceri(2015)Capozzoli and Primiceri]{cooling}
+Capozzoli, A. and Primiceri, G.
+\newblock Cooling systems in data centers: State of art and emerging
+  technologies.
+\newblock \emph{Energy Procedia}, 83:\penalty0 484--493, 2015.
+\newblock \doi{10.1016/j.egypro.2015.11.484}.
+
+\bibitem[Chen et~al.(2024{\natexlab{a}})Chen, Waheed, Li, Wang, Wang, Raj, and
+  Abdin]{chen2024diversity}
+Chen, H., Waheed, A., Li, X., Wang, Y., Wang, J., Raj, B., and Abdin, M.~I.
+\newblock On the diversity of synthetic data and its impact on training large
+  language models.
+\newblock \emph{arXiv preprint arXiv:2410.15226}, 2024{\natexlab{a}}.
+
+\bibitem[Chen et~al.(2024{\natexlab{b}})Chen, Dong, Cheng, Mahoney, and
+  Ramchandran]{chen2024fedfm}
+Chen, J., Dong, Q., Cheng, Y., Mahoney, M.~W., and Ramchandran, K.
+\newblock Fedfm: Federated fine-tuning of foundation models under system and
+  statistical heterogeneity.
+\newblock \emph{arXiv preprint arXiv:2402.02777}, 2024{\natexlab{b}}.
+
+\bibitem[Chowdhery et~al.(2022)Chowdhery, Narang, Devlin, Bosma, Mishra,
+  Roberts, Barham, Chung, Sutton, Gehrmann, et~al.]{chowdhery2022palm}
+Chowdhery, A., Narang, S., Devlin, J., Bosma, M., Mishra, G., Roberts, A.,
+  Barham, P., Chung, H.~W., Sutton, C., Gehrmann, S., et~al.
+\newblock Palm: Scaling language modeling with pathways.
+\newblock \emph{arXiv preprint arXiv:2204.02311}, 2022.
+
+\bibitem[Chung et~al.(2022)Chung, Hou, et~al.]{chung2024scaling}
+Chung, H.~W., Hou, L., et~al.
+\newblock Scaling instruction-finetuned language models.
+\newblock \emph{arXiv preprint arXiv:2210.11416}, 2022.
+
+\bibitem[Cobbe et~al.(2021)Cobbe, Kosaraju, Bavarian, et~al.]{cobbe2021gsm8k}
+Cobbe, K., Kosaraju, V., Bavarian, M., et~al.
+\newblock Training verifiers to solve math word problems.
+\newblock \emph{arXiv preprint arXiv:2110.14168}, 2021.
+
+\bibitem[{CounterPoint}(2021)]{counterpoint_smartphone_2021}
+{CounterPoint}.
+\newblock How many smartphones are in the world?, 2021.
+\newblock URL
+  \url{https://www.counterpointresearch.com/insights/smartphone-storage-capacity-zooms-increased-demand/}.
+
+\bibitem[{Databricks}(2023)]{DatabricksBlog2023DollyV2}
+{Databricks}.
+\newblock Free dolly: Introducing the world's first truly open
+  instruction-tuned llm.
+\newblock
+  \url{https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm},
+  2023.
+
+\bibitem[{DeepLearning.AI}(2024)]{deeplearningai2024federated}
+{DeepLearning.AI}.
+\newblock Introduction to federated learning.
+\newblock
+  \url{https://www.deeplearning.ai/short-courses/intro-to-federated-learning/},
+  2024.
+\newblock Accessed: 2025-02-23.
+
+\bibitem[Deng et~al.(2009)Deng, Dong, Socher, Li, Li, and
+  Fei-Fei]{deng2009imagenet}
+Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock \emph{2009 IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR 2009), 20-25 June 2009, Miami, FL, USA}, 2009.
+
+\bibitem[Dettmers et~al.(2023)Dettmers, Pagnoni, Holtzman, and
+  Zettlemoyer]{dettmers2024qlora}
+Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L.
+\newblock Qlora: Efficient finetuning of quantized llms.
+\newblock \emph{arXiv preprint arXiv:2305.14314}, 2023.
+
+\bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{devlin2018bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
+
+\bibitem[Devlin et~al.(2019)Devlin, Chang, Lee, and Toutanova]{devlin2019bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}, 2019.
+
+\bibitem[Dohmatob et~al.(2024)Dohmatob, Feng, Subramonian, and
+  Kempe]{dohmatob2024strong}
+Dohmatob, E., Feng, Y., Subramonian, A., and Kempe, J.
+\newblock Strong model collapse.
+\newblock \emph{arXiv preprint arXiv:2410.04840}, 2024.
+
+\bibitem[Dong et~al.(2024)Dong, Fu, Diao, Byeon, Chen, Mahabaleshwarkar, Liu,
+  Bilicki, Ma, Ai, et~al.]{dong2024hymba}
+Dong, X., Fu, Y., Diao, S., Byeon, W., Chen, Z., Mahabaleshwarkar, A.~S., Liu,
+  S.-Y., Bilicki, M. V.~K., Ma, Z., Ai, Q., et~al.
+\newblock Hymba: A hybrid-head architecture for small language models.
+\newblock \emph{arXiv preprint arXiv:2411.13676}, 2024.
+
+\bibitem[Du \& Wei(2024)Du and Wei]{du2024chinesetinyllmpretraining}
+Du, Y. and Wei, F.
+\newblock Chinese tinyllm: Pre-training and fine-tuning of low-parameter
+  language models for chinese.
+\newblock \emph{arXiv preprint arXiv:2404.05480}, 2024.
+
+\bibitem[Fan et~al.(2023{\natexlab{a}})Fan, Chen, Krishnan, Katabi, Isola, and
+  Tian]{fan2023scaling}
+Fan, L., Chen, K., Krishnan, D., Katabi, D., Isola, P., and Tian, Y.
+\newblock Scaling laws of synthetic images for model training.
+\newblock \emph{arXiv preprint arXiv:2306.09387}, 2023{\natexlab{a}}.
+
+\bibitem[Fan et~al.(2023{\natexlab{b}})Fan, Kang, Ma, Chen, Wei, Fan, and
+  Yang]{fan2023fate}
+Fan, T., Kang, Y., Ma, G., Chen, W., Wei, W., Fan, L., and Yang, Q.
+\newblock Fate-llm: An industrial grade federated learning framework for large
+  language models.
+\newblock \emph{arXiv preprint arXiv:2310.10049}, 2023{\natexlab{b}}.
+
+\bibitem[Fang et~al.(2024)Fang, Che, Mao, Zhang, Zhao, and Zhao]{fang2024bias}
+Fang, X., Che, S., Mao, M., Zhang, H., Zhao, M., and Zhao, X.
+\newblock Bias of ai-generated content: an examination of news produced by
+  large language models.
+\newblock \emph{Scientific Reports}, 14\penalty0 (1):\penalty0 5224, 2024.
+
+\bibitem[FedML-AI(2024)]{fedml}
+FedML-AI.
+\newblock Fedml: The unified and scalable ml library for large-scale
+  distributed training, model serving, and federated learning.
+\newblock \url{https://github.com/FedML-AI/FedML}, 2024.
+
+\bibitem[Fedus et~al.(2022)Fedus, Zoph, and Shazeer]{fedus2022switch}
+Fedus, W., Zoph, B., and Shazeer, N.
+\newblock Switch transformers: Scaling to trillion parameter models with simple
+  and efficient sparsity.
+\newblock \emph{Journal of Machine Learning Research}, 23\penalty0
+  (120):\penalty0 1--39, 2022.
+
+\bibitem[Feng et~al.(2019)Feng, Niyato, Wang, Kim, and Liang]{feng2019learning}
+Feng, S., Niyato, D., Wang, P., Kim, D.~I., and Liang, Y.-C.
+\newblock Learning with quality guarantee in mobile edge computing systems.
+\newblock \emph{IEEE Transactions on Mobile Computing}, 18\penalty0
+  (11):\penalty0 2506--2520, 2019.
+
+\bibitem[FLock(2023)]{flock}
+FLock.
+\newblock Flock: Federated machine learning on the blockchain.
+\newblock \url{https://www.flock.io/}, 2023.
+
+\bibitem[Flowerlab(2025)]{Flower}
+Flowerlab.
+\newblock Flower: A friendly federated ai framework, 2025.
+\newblock URL \url{https://flower.ai/}.
+
+\bibitem[Frantar et~al.(2023)Frantar, Ashkboos, Hoefler,
+  et~al.]{frantar2023sparsegpt}
+Frantar, E., Ashkboos, S., Hoefler, T., et~al.
+\newblock Sparsegpt: Massive language models can be accurately pruned in
+  one-shot.
+\newblock \emph{arXiv preprint arXiv:2301.00774}, 2023.
+
+\bibitem[Fu et~al.(2023)Fu, Peng, Khotilovich, Chen, and
+  Yang]{fu2023specializing}
+Fu, Y., Peng, H., Khotilovich, A., Chen, L., and Yang, Y.
+\newblock Specializing smaller language models towards multi-step reasoning.
+\newblock \emph{arXiv preprint arXiv:2301.12726}, 2023.
+
+\bibitem[Gao et~al.(2020)Gao, Biderman, Black, et~al.]{gao2020pile}
+Gao, L., Biderman, S., Black, S., et~al.
+\newblock The pile: An 800gb dataset of diverse text for language modeling.
+\newblock \emph{arXiv preprint arXiv:2101.00027}, 2020.
+
+\bibitem[Glorioso et~al.(2024)Glorioso, Zuo, and
+  Jiang]{glorioso2024zambacompact7bssm}
+Glorioso, D., Zuo, S., and Jiang, D.
+\newblock Zamba2-2.7b: A state-of-the-art small language model achieving twice
+  the speed and 27\% reduced memory overhead.
+\newblock \emph{arXiv preprint arXiv:2401.08642}, 2024.
+
+\bibitem[{Google Team}(2024{\natexlab{a}})]{team2024gemma}
+{Google Team}.
+\newblock Gemma: Open models based on gemini research and technology.
+\newblock \emph{arXiv preprint arXiv:2403.08295}, 2024{\natexlab{a}}.
+
+\bibitem[{Google Team}(2024{\natexlab{b}})]{team2024gemma2}
+{Google Team}.
+\newblock Gemma 2: Introducing the next generation of gemma open models.
+\newblock 2024{\natexlab{b}}.
+
+\bibitem[{Grand View Research}(2023)]{grandview_edge_2023}
+{Grand View Research}.
+\newblock Edge computing market size \& share analysis report, 2023-2030, 2023.
+\newblock URL
+  \url{https://www.grandviewresearch.com/horizon/outlook/edge-computing-market-size/global}.
+
+\bibitem[Groeneveld et~al.(2024)Groeneveld, Beltagy, Davis,
+  et~al.]{groeneveld2024olmo}
+Groeneveld, D., Beltagy, I., Davis, P., et~al.
+\newblock Olmo: Accelerating the science of language models.
+\newblock \emph{arXiv preprint arXiv:2402.00838}, 2024.
+
+\bibitem[Gu \& Dao(2023)Gu and Dao]{gu2023mamba}
+Gu, A. and Dao, T.
+\newblock Mamba: Linear-time sequence modeling with selective state spaces.
+\newblock \emph{arXiv preprint arXiv:2312.00752}, 2023.
+
+\bibitem[Gunasekar et~al.(2023)Gunasekar, Zhang,
+  et~al.]{gunasekar2023textbooksneed}
+Gunasekar, S., Zhang, Y., et~al.
+\newblock Textbooks are all you need.
+\newblock \emph{arXiv preprint arXiv:2306.11644}, 2023.
+
+\bibitem[Hardy-White(2024)]{hardy2024wall}
+Hardy-White, D.
+\newblock Are ai scaling laws hitting a wall?
+\newblock
+  \url{https://www.linkedin.com/pulse/ai-scaling-laws-hitting-wall-dean-hardy-white-xchfe/},
+  2024.
+\newblock Accessed: 2025-01-22.
+
+\bibitem[Hobbhahn et~al.(2023)Hobbhahn, Heim, and
+  Aydos]{epoch2023trendsinmachinelearninghardware}
+Hobbhahn, M., Heim, L., and Aydos, G.
+\newblock Trends in machine learning hardware, 2023.
+\newblock URL \url{https://epoch.ai/blog/trends-in-machine-learning-hardware}.
+\newblock Accessed: 2025-01-27.
+
+\bibitem[Hoffmann et~al.(2022)Hoffmann, Borgeaud, Mensch, Buchatskaya, Cai,
+  Rutherford, Casas, Hendricks, Welbl, Clark, et~al.]{hoffmann2022training}
+Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford,
+  E., Casas, D. d.~L., Hendricks, L.~A., Welbl, J., Clark, A., et~al.
+\newblock Training compute-optimal large language models.
+\newblock \emph{arXiv preprint arXiv:2203.15556}, 2022.
+
+\bibitem[Horvath et~al.(2021)Horvath, Laskaridis, Almeida, Leontiadis,
+  Venieris, and Lane]{horvath2021fjord}
+Horvath, S., Laskaridis, S., Almeida, M., Leontiadis, I., Venieris, S., and
+  Lane, N.
+\newblock Fjord: Fair and accurate federated learning under heterogeneous
+  targets with ordered dropout.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 12876--12889, 2021.
+
+\bibitem[Hu et~al.(2024)Hu, Huang, et~al.]{hu2024minicpm}
+Hu, E., Huang, W., et~al.
+\newblock Minicpm: Unveiling the potential of small language models.
+\newblock \emph{arXiv preprint arXiv:2402.03216}, 2024.
+
+\bibitem[Inan et~al.(2023)Inan, Khattab, Ainslie, Baevski, Blecher, Bui,
+  Chowdhery, Dai, Dong, Dyer, et~al.]{inan2023llama}
+Inan, H., Khattab, O., Ainslie, J., Baevski, A., Blecher, T., Bui, C.,
+  Chowdhery, A., Dai, Z., Dong, L., Dyer, C., et~al.
+\newblock Llama: Open and efficient foundation language models.
+\newblock \emph{arXiv preprint arXiv:2302.13971}, 2023.
+
+\bibitem[Javaheripi et~al.(2023)Javaheripi, Lobo, et~al.]{javaheripi2023phi}
+Javaheripi, M., Lobo, J., et~al.
+\newblock Phi-2: The surprising power of small language models.
+\newblock \emph{arXiv preprint arXiv:2312.12397}, 2023.
+
+\bibitem[Jiao et~al.(2020)Jiao, Yin, Shang, Jiang, Chen, Li, Wang, and
+  Liu]{jiao2020tinybert}
+Jiao, X., Yin, Y., Shang, L., Jiang, X., Chen, X., Li, L., Wang, F., and Liu,
+  Q.
+\newblock Tinybert: Distilling bert for natural language understanding.
+\newblock \emph{arXiv preprint arXiv:1909.10351}, 2020.
+
+\bibitem[Jin et~al.(2025)Jin, Zhang, Li, Wang, Yang, Wu, and
+  Zhang]{jin2025moe2}
+Jin, L., Zhang, Y., Li, Y., Wang, S., Yang, H.~H., Wu, J., and Zhang, M.
+\newblock Moe$^2$: Optimizing collaborative inference for edge large language
+  models.
+\newblock \emph{arXiv preprint arXiv:2501.09410}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.09410}.
+\newblock Submitted to IEEE/ACM Transactions on Networking.
+
+\bibitem[Jouppi et~al.(2017)Jouppi, Young, Patil, and
+  Patterson]{jouppi2017datacenter}
+Jouppi, N.~P., Young, C., Patil, N., and Patterson, D.
+\newblock In-datacenter performance analysis of a tensor processing unit.
+\newblock In \emph{Proceedings of the 44th annual international symposium on
+  computer architecture}, pp.\  1--12, 2017.
+
+\bibitem[Kairouz et~al.(2021)Kairouz, McMahan, Avent, Bellet, Bennis, Bhagoji,
+  Bonawitz, Charles, Cormode, Cummings, et~al.]{kairouz2021advances}
+Kairouz, P., McMahan, H.~B., Avent, B., Bellet, A., Bennis, M., Bhagoji, A.~N.,
+  Bonawitz, K., Charles, Z., Cormode, G., Cummings, R., et~al.
+\newblock Advances and open problems in federated learning.
+\newblock \emph{Foundations and Trends{\textregistered} in Machine Learning},
+  14\penalty0 (1--2):\penalty0 1--210, 2021.
+
+\bibitem[Kang et~al.(2019)Kang, Xiong, Niyato, Ye, and Kim]{kang2019incentive}
+Kang, J., Xiong, Z., Niyato, D., Ye, H., and Kim, D.~I.
+\newblock Incentive design for efficient federated learning in mobile networks:
+  A contract theory approach.
+\newblock In \emph{IEEE VTS Asia Pacific Wireless Communications Symposium},
+  pp.\  1--5, 2019.
+
+\bibitem[Kang et~al.(2017)Kang, Hauswald, Gao, Rovinski, Mudge, Mars, and
+  Tang]{kang2017neurosurgeon}
+Kang, Y., Hauswald, J., Gao, C., Rovinski, A.~M., Mudge, T., Mars, J., and
+  Tang, L.
+\newblock Neurosurgeon: Collaborative intelligence between the cloud and mobile
+  edge.
+\newblock In \emph{Proceedings of the Twenty-Second International Conference on
+  Architectural Support for Programming Languages and Operating Systems}, pp.\
+  615--629. ACM, 2017.
+\newblock \doi{10.1145/3037697.3037698}.
+
+\bibitem[Kaplan et~al.(2020)Kaplan, McCandlish, Henighan, Brown, Chess, Child,
+  Gray, Radford, Wu, and Amodei]{kaplan2020scaling}
+Kaplan, J., McCandlish, S., Henighan, T., Brown, T.~B., Chess, B., Child, R.,
+  Gray, S., Radford, A., Wu, J., and Amodei, D.
+\newblock Scaling laws for neural language models.
+\newblock \emph{arXiv preprint arXiv:2001.08361}, 2020.
+
+\bibitem[Khan et~al.(2019)Khan, Pandey, Tran, Saad, Han, Nguyen, and
+  Hong]{khan2019federated}
+Khan, L.~U., Pandey, S.~R., Tran, N.~H., Saad, W., Han, Z., Nguyen, M. N.~H.,
+  and Hong, C.~S.
+\newblock Federated learning for edge networks: Resource optimization and
+  incentive mechanism.
+\newblock \emph{IEEE Communications Magazine}, 57\penalty0 (10):\penalty0
+  94--100, 2019.
+
+\bibitem[Kim et~al.(2023)Kim, Hooper, Gholami, et~al.]{kim2023squeezellm}
+Kim, S., Hooper, C., Gholami, A., et~al.
+\newblock Squeezellm: Dense-and-sparse quantization.
+\newblock \emph{arXiv preprint arXiv:2306.07629}, 2023.
+
+\bibitem[Kressel(2023)]{kressel2023end}
+Kressel, H.
+\newblock The end of moore's law? innovation in computer systems continues.
+\newblock \emph{Artificial Intelligence in Science: Challenges, Opportunities
+  and the Future of Research}, 2023.
+\newblock \doi{10.1787/a8d820bd-en}.
+
+\bibitem[Krizhevsky et~al.(2012)Krizhevsky, Sutskever, and
+  Hinton]{krizhevsky2012imagenet}
+Krizhevsky, A., Sutskever, I., and Hinton, G.~E.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~25, pp.\  1097--1105, 2012.
+
+\bibitem[Labs(2025)]{exo}
+Labs, E.
+\newblock Exo: Run your own ai cluster at home with everyday devices.
+\newblock \url{https://github.com/exo-explore/exo}, 2025.
+\newblock Accessed: 2025-01-29.
+
+\bibitem[Lacoste et~al.(2019)Lacoste, Luccioni, Schmidt, and
+  Dandres]{fl_environmental}
+Lacoste, A., Luccioni, A., Schmidt, V., and Dandres, T.
+\newblock Quantifying the carbon emissions of machine learning.
+\newblock \emph{arXiv preprint arXiv:1910.09700}, 2019.
+
+\bibitem[Lan et~al.(2020)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{lan2020albert}
+Lan, Z., Chen, M., Goodman, S., Gimpel, K., Sharma, P., and Soricut, R.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2020.
+
+\bibitem[LeCun et~al.(1998{\natexlab{a}})LeCun, Bottou, Bengio, and
+  Haffner]{lecun1998gradient}
+LeCun, Y., Bottou, L., Bengio, Y., and Haffner, P.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proceedings of the IEEE}, 86\penalty0 (11):\penalty0
+  2278--2324, 1998{\natexlab{a}}.
+
+\bibitem[LeCun et~al.(1998{\natexlab{b}})LeCun, Bottou, Bengio, and
+  Haffner]{lecun1998mnist}
+LeCun, Y., Bottou, L., Bengio, Y., and Haffner, P.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proceedings of the IEEE}, 86\penalty0 (11):\penalty0
+  2278--2324, 1998{\natexlab{b}}.
+
+\bibitem[Lee et~al.(2021)Lee, Ippolito, Nystrom, Zhang, Eck, Callison-Burch,
+  and Carlini]{lee2021dedup}
+Lee, K., Ippolito, D., Nystrom, A., Zhang, C., Eck, D., Callison-Burch, C., and
+  Carlini, N.
+\newblock Deduplicating training data makes language models better.
+\newblock \emph{arXiv preprint arXiv:2107.06499}, 2021.
+
+\bibitem[Li et~al.(2018{\natexlab{a}})Li, Zhou, and Chen]{li2018edgent}
+Li, E., Zhou, Z., and Chen, X.
+\newblock Edge intelligence: On-demand deep learning model co-inference with
+  device-edge synergy.
+\newblock In \emph{Proceedings of the 2018 ACM/IEEE Symposium on Edge
+  Computing}, pp.\  31--46. IEEE, 2018{\natexlab{a}}.
+\newblock \doi{10.1109/SEC.2018.00008}.
+
+\bibitem[Li et~al.(2024{\natexlab{a}})]{li2024datacomp}
+Li, N. et~al.
+\newblock Scaling data-constrained language models.
+\newblock \emph{arXiv preprint arXiv:2403.03915}, 2024{\natexlab{a}}.
+
+\bibitem[Li et~al.(2023)Li, Choi, Chung, et~al.]{li2023starcodersourceyou}
+Li, R., Choi, D., Chung, J., et~al.
+\newblock Starcoder: May the source be with you!
+\newblock \emph{arXiv preprint arXiv:2305.06161}, 2023.
+
+\bibitem[Li et~al.(2018{\natexlab{b}})Li, Sahu, Zaheer, Sanjabi, Talwalkar, and
+  Smith]{fl_iid}
+Li, T., Sahu, A.~K., Zaheer, M., Sanjabi, M., Talwalkar, A., and Smith, V.
+\newblock Federated optimization in heterogeneous networks.
+\newblock \emph{arXiv preprint arXiv:1812.06127}, 2018{\natexlab{b}}.
+
+\bibitem[Li et~al.(2020)Li, Sanjabi, Beirami, and Smith]{li2020fair}
+Li, T., Sanjabi, M., Beirami, A., and Smith, V.
+\newblock Fair resource allocation in federated learning.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+
+\bibitem[Li et~al.(2024{\natexlab{b}})Li, Zhang, Wang, and
+  Chen]{domain2024survey}
+Li, W., Zhang, X., Wang, Y., and Chen, H.
+\newblock Domain-specific large language models: A comprehensive survey.
+\newblock \emph{ACM Computing Surveys}, 57\penalty0 (2):\penalty0 1--38,
+  2024{\natexlab{b}}.
+
+\bibitem[Li et~al.(2024{\natexlab{c}})Li, Wang, and
+  Chen]{distributed2024training}
+Li, X., Wang, Y., and Chen, H.
+\newblock Distributed training of large language models: Challenges and
+  opportunities in democratizing ai.
+\newblock \emph{Computing Surveys}, 56\penalty0 (1):\penalty0 1--35,
+  2024{\natexlab{c}}.
+
+\bibitem[Li et~al.(2024{\natexlab{d}})]{li2024carbon}
+Li, X. et~al.
+\newblock Carbon footprint reduction for sustainable data centers in real-time,
+  2024{\natexlab{d}}.
+
+\bibitem[Li et~al.(2024{\natexlab{e}})Li, Ding, Ding, Ding, Ding, and
+  Ding]{li2024fedpet}
+Li, Y., Ding, Z., Ding, R., Ding, Y., Ding, X., and Ding, Y.
+\newblock Fedpet: Federated parameter-efficient fine-tuning of large language
+  models.
+\newblock \emph{arXiv preprint arXiv:2401.11597}, 2024{\natexlab{e}}.
+
+\bibitem[Liu et~al.(2024{\natexlab{a}})Liu, Feng, Xue, Wang, Wu, Lu, Zhao,
+  Deng, Zhang, Ruan, et~al.]{liu2024deepseek}
+Liu, A., Feng, B., Xue, B., Wang, B., Wu, B., Lu, C., Zhao, C., Deng, C.,
+  Zhang, C., Ruan, C., et~al.
+\newblock Deepseek-v3 technical report.
+\newblock \emph{arXiv preprint arXiv:2412.19437}, 2024{\natexlab{a}}.
+
+\bibitem[Liu et~al.(2023)Liu, Bubeck, Eldan, Kulkarni, Li, Nguyen, Ward, and
+  Zhang]{liu2023tinygsm}
+Liu, B., Bubeck, S., Eldan, R., Kulkarni, J., Li, Y., Nguyen, A., Ward, R., and
+  Zhang, Y.
+\newblock Tinygsm: Achieving 80\% on gsm8k with small models.
+\newblock \emph{arXiv preprint arXiv:2312.09237}, 2023.
+
+\bibitem[Liu et~al.(2024{\natexlab{b}})Liu, Chen, Liang,
+  et~al.]{liu2024mobilellm}
+Liu, J., Chen, Y., Liang, Z., et~al.
+\newblock Mobilellm: Empowering mobile large language models via architectural
+  co-design.
+\newblock \emph{arXiv preprint arXiv:2402.14905}, 2024{\natexlab{b}}.
+
+\bibitem[Longpre et~al.(2023)Longpre, Hou, Vu, et~al.]{longpre2023flan}
+Longpre, S., Hou, L., Vu, T., et~al.
+\newblock The flan collection: Designing data and methods for effective
+  instruction tuning.
+\newblock \emph{arXiv preprint arXiv:2301.13688}, 2023.
+
+\bibitem[Lu et~al.(2024)Lu, Li, Cai, Yi, Liu, Zhang, Lane, and Xu]{lu2024small}
+Lu, Z., Li, X., Cai, D., Yi, R., Liu, F., Zhang, X., Lane, N.~D., and Xu, M.
+\newblock Small language models: Survey, measurements, and insights.
+\newblock \emph{arXiv preprint arXiv:2409.15790}, 2024.
+
+\bibitem[Ma et~al.(2024)Ma, Zhao, Xue, et~al.]{ma2024era}
+Ma, S., Zhao, H., Xue, L., et~al.
+\newblock The era of 1-bit llms: All large language models are in 1.58 bits.
+\newblock \emph{arXiv preprint arXiv:2402.17764}, 2024.
+
+\bibitem[Magnusson et~al.(2023)Magnusson, Sutskever, and
+  Brown]{magnusson2023paloma}
+Magnusson, K., Sutskever, I., and Brown, T.~B.
+\newblock Paloma: A benchmark for evaluating language model performance across
+  tasks.
+\newblock \emph{arXiv preprint arXiv:2306.07841}, 2023.
+
+\bibitem[McMahan et~al.(2017{\natexlab{a}})McMahan, Moore, Ramage, Hampson, and
+  y~Arcas]{fl_data_transmission}
+McMahan, B., Moore, E., Ramage, D., Hampson, S., and y~Arcas, B.~A.
+\newblock Communication-efficient learning of deep networks from decentralized
+  data.
+\newblock \emph{Artificial Intelligence and Statistics}, pp.\  1273--1282,
+  2017{\natexlab{a}}.
+
+\bibitem[McMahan et~al.(2017{\natexlab{b}})McMahan, Moore, Ramage, Hampson, and
+  y~Arcas]{mcmahan2017communication}
+McMahan, B., Moore, E., Ramage, D., Hampson, S., and y~Arcas, B.~A.
+\newblock Communication-efficient learning of deep networks from decentralized
+  data.
+\newblock \emph{Artificial intelligence and statistics}, pp.\  1273--1282,
+  2017{\natexlab{b}}.
+
+\bibitem[Mehta et~al.(2024)Mehta, Bartoldson, Shen, et~al.]{mehta2024openelm}
+Mehta, H., Bartoldson, B., Shen, J., et~al.
+\newblock Openelm: An efficient language foundation model.
+\newblock \emph{arXiv preprint arXiv:2404.17766}, 2024.
+
+\bibitem[Men et~al.(2024)Men, Zhang, Sun, et~al.]{men2024shortgpt}
+Men, Y., Zhang, X., Sun, R., et~al.
+\newblock Shortgpt: Layers in large language models are more redundant than you
+  expect.
+\newblock \emph{arXiv preprint arXiv:2402.18952}, 2024.
+
+\bibitem[Meta(2024)]{meta2024llama3.1}
+Meta.
+\newblock Introducing llama 3.1: Our most capable models to date.
+\newblock \url{https://ai.meta.com/blog/meta-llama-3-1/}, 2024.
+\newblock Accessed: 2025-01-22.
+
+\bibitem[{Meta AI}(2023)]{llama}
+{Meta AI}.
+\newblock Llama: Open and efficient foundation language models.
+\newblock \emph{arXiv preprint arXiv:2302.13971}, 2023.
+
+\bibitem[Mitra et~al.(2023)Mitra, Mukherjee, et~al.]{mitra2023orca}
+Mitra, A., Mukherjee, S., et~al.
+\newblock Orca 2: Teaching small language models how to reason.
+\newblock \emph{arXiv preprint arXiv:2311.11045}, 2023.
+
+\bibitem[Mohri et~al.(2019)Mohri, Sivek, and Suresh]{mohri2019agnostic}
+Mohri, M., Sivek, G., and Suresh, A.~T.
+\newblock Agnostic federated learning.
+\newblock In \emph{International Conference on Machine Learning}, pp.\
+  4615--4625, 2019.
+
+\bibitem[Mukherjee et~al.(2023)Mukherjee, Mitra, Jawahar, Ordonez, and
+  Chang]{mukherjee2023orca}
+Mukherjee, S., Mitra, A., Jawahar, G., Ordonez, V., and Chang, K.-W.
+\newblock Orca 2: Teaching small language models how to reason.
+\newblock \emph{arXiv preprint arXiv:2312.02558}, 2023.
+
+\bibitem[Muralidharan et~al.(2024)]{muralidharan2024compact}
+Muralidharan, S. et~al.
+\newblock Minitron: Efficient heterogeneous transformer via pruning and
+  distillation.
+\newblock \emph{arXiv preprint arXiv:2407.07900}, 2024.
+
+\bibitem[{NanoReview.net}(2025)]{nanoreview2025}
+{NanoReview.net}.
+\newblock {NanoReview.net - Gadget Specifications and Comparisons}.
+\newblock \url{https://nanoreview.net}, 2025.
+\newblock Accessed: 2025-02-23.
+
+\bibitem[Nayak et~al.(2024)Nayak, Patgiri, Waikhom, and Ahmed]{nayak2024review}
+Nayak, S., Patgiri, R., Waikhom, L., and Ahmed, A.
+\newblock A review on edge analytics: Issues, challenges, opportunities,
+  promises, future directions, and applications.
+\newblock \emph{Digital Communications and Networks}, 10\penalty0 (3):\penalty0
+  783--804, 2024.
+
+\bibitem[NVIDIA(2023)]{nvidia2023}
+NVIDIA.
+\newblock Nvidia jetson agx orin tflops specifications, 2023.
+\newblock URL
+  \url{https://forums.developer.nvidia.com/t/whether-tflops-on-tensor-cores-is-sparse-tflops-or-dense-tflops/248630}.
+\newblock Forum discussion clarifying sparse vs. dense TFLOPS.
+
+\bibitem[{OpenAI}(2023{\natexlab{a}})]{gpt}
+{OpenAI}.
+\newblock Gpt-4 technical report.
+\newblock \emph{arXiv preprint arXiv:2303.08774}, 2023{\natexlab{a}}.
+
+\bibitem[{OpenAI}(2023{\natexlab{b}})]{openai2023gpt4}
+{OpenAI}.
+\newblock Gpt-4 technical report.
+\newblock \emph{arXiv preprint arXiv:2303.08774}, 2023{\natexlab{b}}.
+
+\bibitem[Parliament \& of~the European~Union(2016)Parliament and of~the
+  European~Union]{gdpr}
+Parliament, E. and of~the European~Union, C.
+\newblock General data protection regulation (gdpr).
+\newblock 2016.
+
+\bibitem[Patterson et~al.(2021)Patterson, Gonzalez, Le, Liang, Munguia,
+  Rothchild, So, Texier, and Dean]{patterson2021carbon}
+Patterson, D., Gonzalez, J., Le, Q.~V., Liang, C., Munguia, L.-M., Rothchild,
+  D., So, D., Texier, M., and Dean, J.
+\newblock Carbon emissions and large neural network training.
+\newblock \emph{arXiv preprint arXiv:2104.10350}, 2021.
+
+\bibitem[Penedo et~al.(2023)Penedo, Crnisanin, Shen,
+  et~al.]{penedo2023refinedweb}
+Penedo, G., Crnisanin, A., Shen, E., et~al.
+\newblock The refinedweb dataset for falcon llm: Outperforming curated corpora
+  with web data.
+\newblock \emph{arXiv preprint arXiv:2306.01116}, 2023.
+
+\bibitem[Peng et~al.(2023)Peng, Alcaide, Anthony, Albalak, Arcadinho, Cao, Cui,
+  Dai, Eissman, Firat, Fu, Gao, Hu, Hughes, Kenealy, Krikun, Li, Li, Liu, Luo,
+  McAllester, Olson, Patel, Rao, Roberts, Shazeer, Siddhant, Tay, Tran, Wang,
+  and Wei]{peng-etal-2023-rwkv}
+Peng, B., Alcaide, E., Anthony, Q., Albalak, A., Arcadinho, P., Cao, E., Cui,
+  X., Dai, Z., Eissman, J., Firat, O., Fu, S., Gao, C., Hu, Y., Hughes, M.,
+  Kenealy, J., Krikun, M., Li, S., Li, Y., Liu, X., Luo, L., McAllester, D.,
+  Olson, M., Patel, Reiner~Pope, A., Rao, N., Roberts, A., Shazeer, N.,
+  Siddhant, A., Tay, Y., Tran, D., Wang, J., and Wei, W.
+\newblock Rwkv: Reinventing rnns for the transformer era.
+\newblock \emph{arXiv preprint arXiv:2305.13048}, 2023.
+
+\bibitem[Pfeiffer et~al.(2024)Pfeiffer, Dinu, et~al.]{pfeiffer2024h2o}
+Pfeiffer, J., Dinu, S., et~al.
+\newblock H2o-danube3: Raising the bar in open llms.
+\newblock \emph{arXiv preprint arXiv:2407.21587}, 2024.
+
+\bibitem[PrimeIntellect-ai(2025)]{OpenDiLoCo}
+PrimeIntellect-ai.
+\newblock Opendiloco: An open-source framework for globally distributed
+  low-communication training, 2025.
+\newblock URL \url{https://github.com/PrimeIntellect-ai/OpenDiloco}.
+
+\bibitem[Qiu et~al.(2021)Qiu, Parcollet, Beutel, Topal, Mathur, and
+  Lane]{fl_vs_centralized}
+Qiu, X., Parcollet, T., Beutel, D.~J., Topal, T., Mathur, A., and Lane, N.~D.
+\newblock Can federated learning save the planet?
+\newblock \emph{arXiv preprint arXiv:2010.06537}, 2021.
+
+\bibitem[Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena,
+  Zhou, Li, and Liu]{raffel2020exploring}
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
+  Y., Li, W., and Liu, P.~J.
+\newblock Exploring the limits of transfer learning with a unified text-to-text
+  transformer.
+\newblock \emph{Journal of Machine Learning Research}, 21:\penalty0 1--67,
+  2020.
+
+\bibitem[Raina et~al.(2009)Raina, Madhavan, and Ng]{raina2009large}
+Raina, R., Madhavan, A., and Ng, A.~Y.
+\newblock Large-scale deep unsupervised learning using graphics processors.
+\newblock In \emph{Proceedings of the 26th annual international conference on
+  machine learning}, pp.\  873--880, 2009.
+
+\bibitem[Rosenblatt(1958)]{rosenblatt1958perceptron}
+Rosenblatt, F.
+\newblock The perceptron: a probabilistic model for information storage and
+  organization in the brain.
+\newblock \emph{Psychological review}, 65\penalty0 (6):\penalty0 386, 1958.
+
+\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{sanh2019distilbert}
+Sanh, V., Debut, L., Chaumond, J., and Wolf, T.
+\newblock Distilbert, a distilled version of bert: smaller, faster, cheaper and
+  lighter.
+\newblock \emph{arXiv preprint arXiv:1910.01108}, 2019.
+
+\bibitem[Sani et~al.(2024)Sani, Iacob, Cao, Lee, Marino, Gao, Cai, Li, Zhao,
+  Qiu, et~al.]{sani2024photon}
+Sani, L., Iacob, A., Cao, Z., Lee, R., Marino, B., Gao, Y., Cai, D., Li, Z.,
+  Zhao, W., Qiu, X., et~al.
+\newblock Photon: Federated llm pre-training.
+\newblock \emph{arXiv preprint arXiv:2411.02908}, 2024.
+
+\bibitem[{ScaleFlux Research}(2024)]{scaleflux2024ai}
+{ScaleFlux Research}.
+\newblock Ai's hardware hunger: The global semiconductor supply chain under
+  pressure.
+\newblock \emph{ScaleFlux Insights}, 2024.
+\newblock URL
+  \url{https://scaleflux.com/in-the-media/ai-hardware-hunger-the-global-semiconductor-supply-chain-under-pressure/}.
+\newblock Accessed: 2025-01-27.
+
+\bibitem[Schwartz et~al.(2020)Schwartz, Dodge, Smith, and
+  Etzioni]{schwartz2020green}
+Schwartz, R., Dodge, J., Smith, N.~A., and Etzioni, O.
+\newblock Green ai.
+\newblock \emph{Communications of the ACM}, 63\penalty0 (12):\penalty0 54--63,
+  2020.
+
+\bibitem[Seagate(2019)]{idc_seagate_dataage_2019}
+Seagate.
+\newblock Dataage white paper: The digitization of the world – from edge to
+  core, 2019.
+\newblock URL
+  \url{https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf}.
+
+\bibitem[Seagate(2020)]{seagate_rethinkdata_2020}
+Seagate.
+\newblock Rethink data report 2020, 2020.
+\newblock URL
+  \url{https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/our-story/rethink-data/files/Rethink_Data_Report_2020.pdf}.
+
+\bibitem[Sevilla et~al.(2022)Sevilla, Heim, Ho, Besiroglu, Hobbhahn, and
+  Villalobos]{sevilla2022compute}
+Sevilla, J., Heim, L., Ho, A., Besiroglu, T., Hobbhahn, M., and Villalobos, P.
+\newblock Compute trends across three eras of machine learning.
+\newblock \emph{2022 International Joint Conference on Neural Networks
+  (IJCNN)}, pp.\  1--10, 2022.
+
+\bibitem[Sharir et~al.(2020)Sharir, Peleg, and Shoham]{sharir2020cost}
+Sharir, O., Peleg, B., and Shoham, Y.
+\newblock The cost of training nlp models: A concise overview.
+\newblock \emph{arXiv preprint arXiv:2004.08900}, 2020.
+
+\bibitem[Shridhar et~al.(2023)Shridhar, Liu, Hasan, and Rashid]{distilling2023}
+Shridhar, K., Liu, X., Hasan, M., and Rashid, M.
+\newblock Distilling step-by-step! outperforming larger language models with
+  less training data and smaller model sizes.
+\newblock \emph{arXiv preprint arXiv:2305.02301}, 2023.
+
+\bibitem[Shumailov et~al.(2023)Shumailov, Shumaylov, Zhao, Gal, Papernot, and
+  Anderson]{shumailov2023curse}
+Shumailov, I., Shumaylov, Z., Zhao, Y., Gal, Y., Papernot, N., and Anderson, R.
+\newblock The curse of recursion: Training on generated data makes models
+  forget.
+\newblock \emph{arXiv preprint arXiv:2305.17493}, 2023.
+
+\bibitem[Smith(2017)]{hardware_power}
+Smith, R.
+\newblock Nvidia announces jetson tx2: Parker comes to nvidia's embedded system
+  kit.
+\newblock \emph{IEEE Hot Chips}, 29, 2017.
+
+\bibitem[Staff(2024)]{benzinga2024tsmc}
+Staff, B.
+\newblock Apple, nvidia secure future with taiwan semi's advanced chips as ai
+  demand soars.
+\newblock \emph{Benzinga}, June 2024.
+\newblock URL \url{https://www.benzinga.com/news/24/06/39310821/}.
+
+\bibitem[{Statista global data volume}(2023)]{statista_global_2023}
+{Statista global data volume}.
+\newblock Volume of data/information created, captured, copied, and consumed
+  worldwide from 2010 to 2025, 2023.
+\newblock URL
+  \url{https://www.statista.com/statistics/871513/worldwide-data-created/}.
+
+\bibitem[{Statista IoT device data volume}(2023)]{statista_iot_2023}
+{Statista IoT device data volume}.
+\newblock Internet of things (iot) connected devices data size worldwide from
+  2019 to 2025, 2023.
+\newblock URL
+  \url{https://www.statista.com/statistics/1017863/worldwide-iot-connected-devices-data-size/}.
+
+\bibitem[Sun et~al.(2017)Sun, Chen, Li, Liu, Han, Ma, Wu, and
+  Liu]{sun2017revisiting}
+Sun, Y., Chen, Y., Li, Z., Liu, Z., Han, J., Ma, H., Wu, Y., and Liu, Q.
+\newblock Revisiting the scaling laws of neural language models.
+\newblock \emph{arXiv preprint arXiv:1712.09444}, 2017.
+
+\bibitem[Sun et~al.(2023)Sun, Chen, Zhang, et~al.]{sun2024a}
+Sun, Z., Chen, C., Zhang, Z., et~al.
+\newblock A simple and effective pruning approach for large language models.
+\newblock \emph{arXiv preprint arXiv:2306.11695}, 2023.
+
+\bibitem[Systems \& Computer(2023)Systems and Computer]{cerebras2023slimpajama}
+Systems, C. and Computer, T.
+\newblock Slimpajama: A 627b token cleaned and deduplicated version of
+  redpajama.
+\newblock \emph{arXiv preprint arXiv:2305.12661}, 2023.
+
+\bibitem[Thawakar et~al.(2024)Thawakar, Vayani, Khan, Cholakal, Anwer,
+  Felsberg, Baldwin, Xing, and Khan]{thawakar2024mobillama}
+Thawakar, O., Vayani, A., Khan, S., Cholakal, H., Anwer, R.~M., Felsberg, M.,
+  Baldwin, T., Xing, E.~P., and Khan, F.~S.
+\newblock Mobillama: Towards accurate and lightweight fully transparent gpt.
+\newblock \emph{arXiv preprint arXiv:2402.16840}, 2024.
+
+\bibitem[Thompson et~al.(2022)Thompson, Askell, and Song]{thompson2022frontier}
+Thompson, J., Askell, A., and Song, J.
+\newblock Frontier ai regulation: Managing emerging risks to public safety.
+\newblock \emph{arXiv preprint arXiv:2207.05257}, 2022.
+
+\bibitem[Thompson et~al.(2020)Thompson, Greenewald, Lee, and
+  Manso]{thompson2020computational}
+Thompson, N.~C., Greenewald, K., Lee, K., and Manso, G.~F.
+\newblock The computational limits of deep learning.
+\newblock \emph{arXiv preprint arXiv:2007.05558}, 10, 2020.
+
+\bibitem[Thompson et~al.(2021)Thompson, Greenewald, Lee, and
+  Manso]{thompson2021deep}
+Thompson, N.~C., Greenewald, K., Lee, K., and Manso, G.~F.
+\newblock Deep learning's diminishing returns.
+\newblock \emph{IEEE Spectrum}, 58\penalty0 (10):\penalty0 50--55, 2021.
+
+\bibitem[Touvron et~al.(2023)Touvron, Martin, Stone, Albert, Almahairi, Babaei,
+  Bashlykov, Batra, Bhargava, Bhosale, et~al.]{touvron2023llama}
+Touvron, H., Martin, L., Stone, K., Albert, P., Almahairi, A., Babaei, Y.,
+  Bashlykov, N., Batra, S., Bhargava, P., Bhosale, S., et~al.
+\newblock Llama 2: Open foundation and fine-tuned chat models.
+\newblock \emph{arXiv preprint arXiv:2307.09288}, 2023.
+
+\bibitem[Van~Nguyen et~al.(2024)Van~Nguyen, Shen, Aponte, Xia, Basu, Hu, Chen,
+  Parmar, Kunapuli, Barrow, et~al.]{van2024survey}
+Van~Nguyen, C., Shen, X., Aponte, R., Xia, Y., Basu, S., Hu, Z., Chen, J.,
+  Parmar, M., Kunapuli, S., Barrow, J., et~al.
+\newblock A survey of small language models.
+\newblock \emph{arXiv preprint arXiv:2410.20011}, 2024.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
+  Kaiser, {\L}., and Polosukhin, I.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Velasevic et~al.(2023)Velasevic, Parasnis, Brinton, and
+  Azizan]{velasevic2023effects}
+Velasevic, B., Parasnis, R., Brinton, C.~G., and Azizan, N.
+\newblock On the effects of data heterogeneity on the convergence rates of
+  distributed linear system solvers.
+\newblock In \emph{2023 62nd IEEE Conference on Decision and Control (CDC)},
+  pp.\  8394--8399. IEEE, 2023.
+
+\bibitem[Villalobos \& Ho(2022)Villalobos and Ho]{villalobos2022trends}
+Villalobos, P. and Ho, A.
+\newblock Trends in training dataset sizes.
+\newblock \emph{Epoch AI Blog}, 2022.
+\newblock URL \url{https://epochai.org/blog/trends-in-training-dataset-sizes}.
+
+\bibitem[Villalobos et~al.()Villalobos, Ho, Sevilla, Besiroglu, Heim, and
+  Hobbhahn]{villalobosposition}
+Villalobos, P., Ho, A., Sevilla, J., Besiroglu, T., Heim, L., and Hobbhahn, M.
+\newblock Position: Will we run out of data? limits of llm scaling based on
+  human-generated data.
+\newblock In \emph{Forty-first International Conference on Machine Learning}.
+
+\bibitem[Villalobos et~al.(2024)Villalobos, Ho, Sevilla, Besiroglu, Heim, and
+  Hobbhahn]{villalobos2024will}
+Villalobos, P., Ho, A., Sevilla, J., Besiroglu, T., Heim, L., and Hobbhahn, M.
+\newblock Will we run out of data? limits of llm scaling based on
+  human-generated data.
+\newblock \emph{arXiv preprint arXiv:2211.04325}, pp.\  13--29, 2024.
+
+\bibitem[Wang et~al.(2024{\natexlab{a}})Wang, Zhang, Zhang, Wu, Mo, Lu, Wang,
+  Li, Xu, Tang, et~al.]{wang2024comprehensive}
+Wang, F., Zhang, Z., Zhang, X., Wu, Z., Mo, T., Lu, Q., Wang, W., Li, R., Xu,
+  J., Tang, X., et~al.
+\newblock A comprehensive survey of small language models in the era of large
+  language models: Techniques, enhancements, applications, collaboration with
+  llms, and trustworthiness.
+\newblock \emph{arXiv preprint arXiv:2411.03350}, 2024{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2020)Wang, Yurochkin, Sun, Papailiopoulos, and
+  Khazaeni]{wang2020optimizing}
+Wang, H., Yurochkin, M., Sun, Y., Papailiopoulos, D., and Khazaeni, Y.
+\newblock Optimizing federated learning on non-{IID} data with reinforcement
+  learning.
+\newblock \emph{IEEE International Conference on Computer Communications}, pp.\
+   1698--1707, 2020.
+
+\bibitem[Wang et~al.(2023)Wang, Ma, Dong, Huang, Wang, Ma, Yang, Wang, Wu, and
+  Wei]{wang2023bitnet}
+Wang, H., Ma, S., Dong, L., Huang, S., Wang, H., Ma, L., Yang, F., Wang, R.,
+  Wu, Y., and Wei, F.
+\newblock Bitnet: Scaling 1-bit transformers for large language models.
+\newblock \emph{arXiv preprint arXiv:2310.11453}, 2023.
+
+\bibitem[Wang et~al.(2024{\natexlab{b}})Wang, Kaplan, Lipton, and
+  Xing]{wang2024fedqa}
+Wang, H., Kaplan, Z., Lipton, Z.~C., and Xing, E.~P.
+\newblock Fedqa: Federated learning of large language models for question
+  answering.
+\newblock \emph{arXiv preprint arXiv:2402.03882}, 2024{\natexlab{b}}.
+
+\bibitem[Wang et~al.(2024{\natexlab{c}})Wang, Li, Zhang, and
+  Chen]{education2024transformer}
+Wang, Y., Li, X., Zhang, W., and Chen, H.
+\newblock Edullm: Tailoring large language models for personalized education.
+\newblock \emph{Learning and Education}, 5\penalty0 (2):\penalty0 78--92,
+  2024{\natexlab{c}}.
+
+\bibitem[Wang et~al.(2019)Wang, Wei, and Brooks]{wang2019benchmarking}
+Wang, Y.~E., Wei, G.-Y., and Brooks, D.
+\newblock Benchmarking tpu, gpu, and cpu platforms for deep learning.
+\newblock \emph{arXiv preprint arXiv:1907.10701}, 2019.
+
+\bibitem[Wenger(2024)]{wenger2024ai}
+Wenger, E.
+\newblock Ai produces gibberish when trained on too much ai-generated data,
+  2024.
+
+\bibitem[Wireless(2023)]{cavliwireless_edgecomputing}
+Wireless, C.
+\newblock {Edge Computing for IoT, Real-Time Data and Low Latency Processing},
+  2023.
+\newblock URL
+  \url{https://www.cavliwireless.com/blog/nerdiest-of-things/edge-computing-for-iot-real-time-data-and-low-latency-processing.html}.
+\newblock Accessed:2025-01-22.
+
+\bibitem[Wolf et~al.(2024)]{Rene}
+Wolf, T. et~al.
+\newblock Rene: A hybrid model architecture for efficient language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:2405.07236}, 2024.
+
+\bibitem[Wu et~al.(2024{\natexlab{a}})Wu, Zhang, and
+  Yang]{collaborative2024edge}
+Wu, J., Zhang, M., and Yang, H.~H.
+\newblock Collaborative edge computing for democratized ai: A comprehensive
+  review.
+\newblock \emph{IEEE Internet of Things Journal}, 11\penalty0 (2):\penalty0
+  1123--1142, 2024{\natexlab{a}}.
+
+\bibitem[Wu et~al.(2024{\natexlab{b}})Wu, He, Wang, Wang, Wang, Xu,
+  et~al.]{wu-etal-2024-lamini}
+Wu, M., He, H., Wang, C., Wang, Z., Wang, Y., Xu, G., et~al.
+\newblock Lamini-lm: A diverse herd of distilled models from llama-2.
+\newblock \emph{arXiv preprint arXiv:2304.14402}, 2024{\natexlab{b}}.
+
+\bibitem[Wu et~al.(2024{\natexlab{c}})Wu, Zhao, Wang, Li, and Yu]{wu2024fedllm}
+Wu, Z., Zhao, X., Wang, Z., Li, X., and Yu, P.~S.
+\newblock Fedllm: Federated fine-tuning of large language models.
+\newblock \emph{arXiv preprint arXiv:2402.03764}, 2024{\natexlab{c}}.
+
+\bibitem[{xAI}(2025)]{xai2025grok3}
+{xAI}.
+\newblock Introducing grok-3.
+\newblock \url{https://x.ai/blog/grok-3}, 2025.
+\newblock Accessed: 2025-02-23.
+
+\bibitem[XenonStack(2023)]{xenonstack_edge_ai_2023}
+XenonStack.
+\newblock Edge ai for personalization.
+\newblock \url{https://www.xenonstack.com/blog/edge-ai-for-personalization},
+  2023.
+\newblock Accessed:2025-01-22.
+
+\bibitem[Xu et~al.(2024)Xu, Wang, Yang, Li, and Liu]{xu2024fedfm}
+Xu, J., Wang, Z., Yang, C., Li, T., and Liu, Y.
+\newblock Fedfm: Bridging the gap between federated learning and foundation
+  models.
+\newblock \emph{arXiv preprint arXiv:2401.11619}, 2024.
+
+\bibitem[Yang et~al.(2024{\natexlab{a}})Yang, Wang, Ma, Zheng,
+  et~al.]{yang2024qwen2}
+Yang, J., Wang, S., Ma, S., Zheng, J., et~al.
+\newblock Qwen2: Technical report.
+\newblock \emph{arXiv preprint arXiv:2404.05169}, 2024{\natexlab{a}}.
+
+\bibitem[Yang et~al.(2024{\natexlab{b}})Yang, Xu, Zhao, Zhang, and
+  Chen]{finance2024gpt}
+Yang, L., Xu, M., Zhao, Z., Zhang, Y., and Chen, H.
+\newblock Fingpt: Large language models in quantitative finance.
+\newblock \emph{Journal of Finance}, 79\penalty0 (1):\penalty0 145--178,
+  2024{\natexlab{b}}.
+
+\bibitem[Yang et~al.(2019)Yang, Liu, Chen, and Tong]{yang2019federated}
+Yang, Q., Liu, Y., Chen, T., and Tong, Y.
+\newblock Federated machine learning: Concept and applications.
+\newblock \emph{ACM Transactions on Intelligent Systems and Technology (TIST)},
+  10\penalty0 (2):\penalty0 1--19, 2019.
+
+\bibitem[Yang et~al.(2024{\natexlab{c}})]{yang2024environmental}
+Yang, Y. et~al.
+\newblock Environmental burden of united states data centers in the artificial
+  intelligence era, 2024{\natexlab{c}}.
+
+\bibitem[Yao et~al.(2024)]{yao2024pursuit}
+Yao, Y. et~al.
+\newblock The pursuit of fairness in artificial intelligence models: A survey,
+  2024.
+
+\bibitem[Ye et~al.(2025)Ye, Ge, Zhu, Chai, Yaxin, Liu, Wang, and
+  Chen]{ye2025fedllm}
+Ye, R., Ge, R., Zhu, X., Chai, J., Yaxin, D., Liu, Y., Wang, Y., and Chen, S.
+\newblock Fedllm-bench: Realistic benchmarks for federated learning of large
+  language models.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 111106--111130, 2025.
+
+\bibitem[Ye et~al.(2024)Ye, Du, Zeng, Ou, Chu, Lu, and Chen]{ye2024galaxy}
+Ye, S., Du, J., Zeng, L., Ou, W., Chu, X., Lu, Y., and Chen, X.
+\newblock Galaxy: A resource-efficient collaborative edge ai system for in-situ
+  transformer inference.
+\newblock \emph{arXiv preprint arXiv:2405.17245}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2405.17245}.
+
+\bibitem[Yi et~al.(2024)Yi, Zhai, Mathur, Singh, Basu, Hosseini, and
+  Xu]{yi2024phonelm}
+Yi, C., Zhai, P., Mathur, V., Singh, P., Basu, S., Hosseini, H., and Xu, R.
+\newblock Phonelm: A small language model with embedded phone system app
+  capabilities.
+\newblock \emph{arXiv preprint arXiv:2405.08131}, 2024.
+
+\bibitem[Zhan et~al.(2020)Zhan, Li, Qu, Zeng, and Dou]{zhan2020learning}
+Zhan, Y., Li, P., Qu, Z., Zeng, D., and Dou, S.
+\newblock Learning to incentivize: A bilateral neural network framework for
+  efficient federated learning.
+\newblock \emph{arXiv preprint arXiv:2004.03700}, 2020.
+
+\bibitem[Zhang et~al.(2022)Zhang, Gu, Liu, et~al.]{zhang2022quantized}
+Zhang, J., Gu, J., Liu, S., et~al.
+\newblock Quantized training of gradient scale-invariant neural networks.
+\newblock \emph{arXiv preprint arXiv:2212.11552}, 2022.
+
+\bibitem[Zhang et~al.(2023{\natexlab{a}})Zhang, Chen, et~al.]{zhang2023towards}
+Zhang, K., Chen, Z., et~al.
+\newblock Towards making the most of chatgpt for machine translation.
+\newblock \emph{arXiv preprint arXiv:2309.02654}, 2023{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2024{\natexlab{a}})Zhang, Chen,
+  et~al.]{zhang2024tinyllamaopensourcesmalllanguage}
+Zhang, P., Chen, G., et~al.
+\newblock Tinyllama: An open-source small language model.
+\newblock \emph{arXiv preprint arXiv:2401.02385}, 2024{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2024{\natexlab{b}})Zhang, Chen, Liu, and
+  Wang]{democratizing2024ai}
+Zhang, W., Chen, X., Liu, Y., and Wang, J.
+\newblock Democratizing ai: A survey of open-source initiatives and
+  community-driven development in large language models.
+\newblock \emph{arXiv preprint arXiv:2401.08562}, 2024{\natexlab{b}}.
+
+\bibitem[Zhang et~al.(2024{\natexlab{c}})Zhang, Lu, and
+  Wang]{incentive2024blockchain}
+Zhang, W., Lu, Z., and Wang, B.
+\newblock Blockchain-based incentive mechanisms for federated learning.
+\newblock \emph{IEEE Transactions on Services Computing}, 2024{\natexlab{c}}.
+
+\bibitem[Zhang et~al.(2023{\natexlab{b}})Zhang, Duan, Guo,
+  et~al.]{zhang2023loraprune}
+Zhang, Y., Duan, Q., Guo, S., et~al.
+\newblock Loraprune: Pruning meets low-rank parameter-efficient fine-tuning.
+\newblock \emph{arXiv preprint arXiv:2305.18403}, 2023{\natexlab{b}}.
+
+\bibitem[Zhang et~al.(2024{\natexlab{d}})Zhang, Liu, Chen, Wang, and
+  Li]{medical2024llm}
+Zhang, Y., Liu, W., Chen, J., Wang, Y., and Li, X.
+\newblock Medicalgpt: Domain adaptation of large language models for medical
+  applications.
+\newblock \emph{Nature Medicine}, 30\penalty0 (2):\penalty0 312--324,
+  2024{\natexlab{d}}.
+
+\bibitem[Zhao et~al.(2024)Zhao, Gan, Wang, Hu, Shen, Yang, Kuang, and
+  Wu]{zhao2024retrieval}
+Zhao, Z., Gan, L., Wang, G., Hu, Y., Shen, T., Yang, H., Kuang, K., and Wu, F.
+\newblock Retrieval-augmented mixture of lora experts for uploadable machine
+  learning.
+\newblock \emph{arXiv preprint arXiv:2406.16989}, 2024.
+
+\bibitem[Zhong et~al.(2024)Zhong, Wang, Levy, Choi, and
+  Smith]{legal2024transformer}
+Zhong, H., Wang, C., Levy, O., Choi, Y., and Smith, N.~A.
+\newblock Legalbench: A framework for evaluating legal large language models.
+\newblock \emph{arXiv preprint arXiv:2403.07985}, 2024.
+
+\end{thebibliography}
