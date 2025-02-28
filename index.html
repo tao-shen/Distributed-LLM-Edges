@@ -25,24 +25,61 @@
 
 
   <title>Will LLMs Scaling Hit the Wall?</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Preload critical visualization resources -->
+  <link rel="preload" href="htmls/iot_data_contribution_interactive.html" as="document">
+  <link rel="preload" href="htmls/compute_trend_interactive.html" as="document">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js" defer></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script src="static/js/bulma-carousel.min.js" defer></script>
+  <script src="static/js/bulma-slider.min.js" defer></script>
+  <script src="static/js/index.js" defer></script>
+  
+  <script>
+    // Optimized iframe loading strategy
+    document.addEventListener('DOMContentLoaded', function() {
+      const iframes = document.querySelectorAll('iframe[loading="lazy"]');
+      
+      // Store original src to data attribute and remove from iframe
+      iframes.forEach(iframe => {
+        iframe.setAttribute('data-src', iframe.src);
+        iframe.removeAttribute('src');
+        iframe.classList.add('lazy-iframe');
+      });
+      
+      // Function to load iframes when they come into view
+      const loadIframes = () => {
+        const lazyIframes = document.querySelectorAll('.lazy-iframe');
+        
+        lazyIframes.forEach(iframe => {
+          const rect = iframe.getBoundingClientRect();
+          // Load iframe when it's within 800px of the viewport
+          if (rect.top <= window.innerHeight + 800 && rect.bottom >= -800) {
+            iframe.src = iframe.getAttribute('data-src');
+            iframe.classList.remove('lazy-iframe');
+          }
+        });
+      };
+      
+      // Check for iframes on page load and scroll
+      loadIframes();
+      window.addEventListener('scroll', loadIframes);
+      window.addEventListener('resize', loadIframes);
+    });
+  </script>
 </head>
 <body>
 
@@ -89,7 +126,7 @@
 
                     <!-- Github link -->
                     <span class="link-block">
-                      <a href="https://github.com/Distributed-LLM-Edges" target="_blank"
+                      <a href="https://github.com/tao-shen/Distributed-LLM-Edges" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
@@ -146,7 +183,7 @@
               
               <!-- Data Growth Visualization -->
               <div class="visualization-container">
-                <iframe src="htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe"></iframe>
+                <iframe src="htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
                   <em>Figure 1: Global data volume is growing exponentially, with IoT devices contributing significantly to this growth.</em>
                 </p>
@@ -158,7 +195,7 @@
               
               <!-- Computing Trend Visualization -->
               <div class="visualization-container">
-                <iframe src="htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe"></iframe>
+                <iframe src="htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
                   <em>Figure 2: The computational demands of AI models have grown exponentially, approaching physical and economic limits.</em>
                 </p>
@@ -178,7 +215,7 @@
               
               <!-- Edge Computing and Smartphone Visualization -->
               <div class="visualization-container">
-                <iframe src="htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe"></iframe>
+                <iframe src="htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
                   <em>Figure 3: Smartphone data volume and edge computing market are expanding rapidly, offering vast untapped resources.</em>
                 </p>
@@ -190,7 +227,7 @@
               
               <!-- Smartphone Compute Trend -->
               <div class="visualization-container">
-                <iframe src="htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe"></iframe>
+                <iframe src="htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
                   <em>Figure 4: The collective computing capabilities of smartphones have grown dramatically, providing a potential distributed training resource.</em>
                 </p>
@@ -216,7 +253,7 @@
               
               <!-- Federated LLM Visualization -->
               <div class="visualization-container">
-                <iframe src="htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz"></iframe>
+                <iframe src="htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz" loading="lazy"></iframe>
                 <p class="has-text-centered">
                   <em>Figure 5: Federated learning enables distributed training across edge devices while preserving privacy.</em>
                 </p>
@@ -242,7 +279,7 @@
               
               <!-- Yearly Mean Compute Trend -->
               <div class="visualization-container">
-                <iframe src="htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe"></iframe>
+                <iframe src="htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
                 <p class="has-text-centered">
                   <em>Figure 6: The yearly growth in compute requirements shows the unsustainable trajectory of centralized AI training, highlighting the need for distributed approaches.</em>
                 </p>
@@ -308,6 +345,7 @@
         width: 200% !important; /* 进一步增加宽度，1/0.75 = 133% */
         height: 800px !important; /* 减小高度以减少空白空间 */
         margin-bottom: -180px; /* 负margin使caption上移 */
+        will-change: transform; /* 优化渲染性能 */
       }
 
       /* 联邦学习图表专用样式 */
@@ -324,6 +362,12 @@
         position: relative; /* 相对定位以便与iframe重叠 */
         font-size: 0.9rem;
         z-index: 2; /* 确保caption在iframe之上 */
+      }
+      
+      /* Lazy loading iframe placeholder */
+      .lazy-iframe {
+        background: #f5f5f5 url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath fill="%23ccc" d="M50 25a3 3 0 100 50 3 3 0 000-50z"%3E%3CanimateTransform attributeName="opacity" from="1" to=".3" dur="0.8s" repeatCount="indefinite" /%3E%3C/path%3E%3C/svg%3E') no-repeat center center;
+        background-size: 50px;
       }
       
       /* Responsive adjustments */
