@@ -1,53 +1,145 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# Distributed LLM Edge Computing System
 
+<div align="center">
+  <a href="https://github.com/your-username/Distributed-LLM-Edges">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+  <h3 align="center">Distributed LLM Edge Computing System</h3>
 
+  <p align="center">
+    A distributed solution for efficient deployment and operation of Large Language Models on edge devices
+    <br />
+    <a href="docs/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#demo">View Demo</a>
+    ·
+    <a href="https://github.com/your-username/Distributed-LLM-Edges/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/your-username/Distributed-LLM-Edges/issues">Request Feature</a>
+  </p>
+</div>
 
+## Table of Contents
 
-## Start using the template
-To start using the template click on `Use this Template`.
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [System Architecture](#system-architecture)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+## About The Project
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+<img src="images/screenshot.png" alt="Product Screenshot" width="800">
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
+This project aims to explore and implement solutions for efficient deployment and operation of Large Language Models in edge computing environments. Through optimization of model architecture and distributed computing strategies, we strive to reduce computational resource requirements while maintaining model performance.
 
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://horwitz.ai](https://horwitz.ai)
+Key Features:
+* Distributed LLM inference capabilities
+* Edge device optimization
+* Low-latency response mechanism
+* Efficient resource utilization
+* Flexible deployment options
+
+### Built With
+
+* [PyTorch](https://pytorch.org)
+* [Ray](https://ray.io)
+* [ONNX Runtime](https://onnxruntime.ai)
+* [gRPC](https://grpc.io)
+
+## Getting Started
+
+Here's how to set up and run the project locally.
+
+### Prerequisites
+
+* Python 3.8+
+* CUDA 11.7+ (optional, for GPU acceleration)
+* Minimum 8GB RAM
+
+### Installation
+
+1. Clone the repository
+   ```sh
+   git clone https://github.com/your-username/Distributed-LLM-Edges.git
+   ```
+2. Install required packages
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Configure environment variables
+   ```sh
+   cp .env.example .env
+   # Edit .env file with necessary environment variables
+   ```
+
+## Usage
+
+1. Start the edge node server
+   ```sh
+   python edge_server.py
+   ```
+2. Run the inference client
+   ```sh
+   python inference_client.py
+   ```
+
+For more examples and documentation, please refer to the [Documentation](docs/).
+
+## System Architecture
+
+```
+.
+├── edge_server/        # Edge server implementation
+├── inference_client/   # Inference client
+├── models/            # Model definitions and optimizations
+├── utils/            # Utility functions
+└── docs/             # Documentation
+```
+
+## Roadmap
+
+- [x] Basic inference framework
+- [x] Distributed deployment support
+- [ ] Model quantization optimization
+- [ ] Dynamic load balancing
+- [ ] Multi-device collaborative inference
+- [ ] Edge node auto-discovery
+
+See the [open issues](https://github.com/your-username/Distributed-LLM-Edges/issues) for a full list of proposed features and known issues.
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Project Maintainer - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+
+Project Link: [https://github.com/your-username/Distributed-LLM-Edges](https://github.com/your-username/Distributed-LLM-Edges)
 
 ## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+* [Ray](https://ray.io)
+* [PyTorch](https://pytorch.org)
+* [Hugging Face](https://huggingface.co)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)

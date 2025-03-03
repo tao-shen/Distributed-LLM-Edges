@@ -84,7 +84,41 @@
 <body>
 
 
+  <style>
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.3;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-background iframe {
+      width: 100%;
+      height: 100%;
+      transform: scale(1.42) translateY(-15%);
+      transform-origin: center center;
+    }
+
+    .hero-body {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+
   <section class="hero">
+    <div class="hero-background">
+      <iframe src="htmls/fedllm.html" frameborder="0" scrolling="no"></iframe>
+    </div>
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -140,281 +174,362 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <!-- Paper abstract -->
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                The remarkable success of foundation models has been driven by scaling laws, demonstrating that model performance improves predictably with increased <em>training data</em> and <em>model size</em>. 
-                However, this scaling trajectory faces two critical challenges: the depletion of high-quality public data and the prohibitive computational power required for larger models, 
-                which have been monopolized by tech giants. These two bottlenecks pose significant obstacles to the further development of AI.
-              </p>
-              <p>
-                In this position paper, we argue that leveraging massive distributed edge devices can break through these barriers. 
-                We reveal the vast untapped potential of data and computational resources on massive edge devices, and review recent technical advancements in distributed/federated learning that make this new paradigm viable.
-                Our analysis suggests that by collaborating on edge devices, everyone can participate in training large language models with small edge devices.
-                This paradigm shift towards distributed training on edge has the potential to democratize AI development and foster a more inclusive AI community.
-              </p>
-            </div>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The success of foundation models relies on scaling laws, which show that model performance improves predictably with increased <em>training data</em> and <em>model size</em>. 
+              However, this scaling trajectory faces two critical challenges: depletion of high-quality public data and monopolization of computational power required for larger models by tech giants. These bottlenecks severely hinder AI advancement.
+            <!-- </p>
+            <p> -->
+              In this position paper, we advocate leveraging massive distributed edge devices to break through these barriers.
+              We reveal the vast untapped potential of data and computational resources on edge devices, and review recent technical advancements in distributed/federated learning that make this paradigm viable.
+              Our analysis indicates that through edge device collaboration, anyone can participate in training large language models using small edge devices.
+              This shift toward distributed edge training can democratize AI development and foster a more inclusive AI community.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End paper abstract -->
+    </div>
+  </section>
+  <!-- End paper abstract -->
 
 
-    <!-- Research Insights Section -->
-    <section class="section">
-      <div class="container is-max-desktop">
-        <!-- The Challenge -->
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">The Challenge: Hitting the Wall</h2>
-            <div class="content has-text-justified">
-              <p>
-                <strong>Data Depletion:</strong> The rapid advancement of large language models has created an insatiable appetite for training data. Neural scaling laws establish that model performance improves predictably with data quantity—a relationship that demands exponentially growing datasets. Current projections suggest dataset sizes grow at approximately 0.38 orders of magnitude (2.4×) annually, implying models will require <em>three orders of magnitude more data</em> within a decade.
-              </p>
-              
-              
-              <p>
-                Despite the internet's vast textual resources, the total stock of high-quality human-generated text remains bounded. Recent estimates place this limit at approximately 4×10<sup>14</sup> tokens. Researchers argue that current consumption patterns suggest exhaustion of public text data by 2028, potentially accelerated to 2026 through excessive data reuse during training. While synthetic data generation presents a potential solution, it faces fundamental challenges including model collapse, quality verification challenges, and difficulty replicating linguistic diversity.
-              </p>
-              
-              <p>
-                <strong>Computational Monopoly:</strong> The AI computing landscape is dominated by a few major tech giants like OpenAI, Google, Microsoft, and Meta, which control powerful hardware such as GPUs and TPUs. This monopolization creates a significant barrier for smaller AI startups and research institutions. Since the deep learning revolution in 2010, AI training demands have grown at a super-exponential rate of 3.9× per year—an acceleration that intensified with the adoption of the transformer architecture. With the advent of large language models in 2022, this demand has surged further to 13.4× per year.
-              </p>
-              
-              <!-- Computing Trend Visualization -->
-              <div class="visualization-container">
-                <iframe src="htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 2: The computational demands of AI models have grown exponentially, with an unprecedented growth rate of 13.4× per year since 2022, pushing against physical and economic limits.</em>
-                </p>
-              </div>
-              
-              <p>
-                The computing challenge is compounded by Moore's Law slowing down as we approach the physical limits of silicon-based chip technology. The difficulty in shrinking transistors has led to diminishing returns in computational performance. Additionally, infrastructure capacity faces dual constraints: bottlenecks in advanced semiconductor manufacturing severely limit the expansion rate of AI data centers, while the exponential increase in chip deployment pushes against limited semiconductor production capacity.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- The Opportunity -->
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">The Opportunity: Edge Resources</h2>
-            <div class="content has-text-justified">
-              <p>
-                <strong>Untapped Edge Data:</strong> Edge data represents a crucial alternative to address data exhaustion challenges. By 2025, the global data volume is projected to reach 182 ZB, with IoT devices contributing substantially to this growth—increasing from 13.6 ZB in 2019 to 79.4 ZB in 2025. Smartphone data volume specifically is projected to grow from 5 EB in 2018 to 8 EB by 2028, with the smartphone data volume of the past 5 years (before 2025) estimated to reach approximately 33.1 EB.
-              </p>
-              
-              <!-- Data Growth Visualization -->
-              <div class="visualization-container">
-                <iframe src="htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 1: Global data volume is growing exponentially, with IoT devices contributing significantly to this growth (from 33.2% to 43.6% over 2015-2025).</em>
-                </p>
-              </div>
-
-              <!-- Edge Computing and Smartphone Visualization -->
-              <div class="visualization-container">
-                <iframe src="htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 3: Smartphone data volume is projected to grow from 5 EB in 2018 to 8 EB by 2028, while the edge computing market is forecasted to surge from $5.5 billion to $87.9 billion in the same period.</em>
-                </p>
-              </div>
-              
-              <p>
-                Edge data possesses several qualitative advantages that make it particularly valuable for model training. It exhibits superior diversity across multiple dimensions, encompassing various data types from different domains, languages, and user behaviors. It demonstrates strong real-time capability, offering continuously fresh data with low latency compared to infrequently updated public datasets. Edge data also offers enhanced personalization characteristics, enabling context-aware adaptations, and improved contextual awareness due to the proximal positioning of devices to data sources.
-              </p>
-              
-              <p>
-                <strong>Collective Computing Power:</strong> Edge computing has experienced explosive growth in computing power, with flagship smartphones now achieving computing power exceeding 2 TFLOPS. From 2020 to 2024, smartphone chip performance has seen significant improvements, with peak computing power increasing from 1.53 TFLOPS to 4.95 TFLOPS, and average computing power rising from 0.48 TFLOPS to 1.38 TFLOPS. The overall computing power of mobile devices has grown from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024, totaling 9,278 EFLOPS for the past 5 years.
-              </p>
-
-              <!-- Yearly Mean Compute Trend -->
-              <div class="visualization-container">
-                <iframe src="htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 6: The yearly growth in compute requirements shows the unsustainable trajectory of centralized AI training, highlighting the need for more efficient and distributed approaches to advance AI capabilities.</em>
-                </p>
-              </div>
-              
-              <!-- Smartphone Compute Trend -->
-              <div class="visualization-container">
-                <iframe src="htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 4: The collective computing capabilities of smartphones have grown dramatically from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024, providing a formidable distributed training resource.</em>
-                </p>
-              </div>
-              
-              <p>
-                This immense computational resource means the combined parallel computing power of approximately 30 iPhone devices (with A18 chips) can match the computational capacity of a professional AI training GPU (H100 with 59.30 TFLOPS). For context, training state-of-the-art models like DeepSeek-v3 would require only about 60,723 users with edge devices working in parallel for a week to match its current training setup.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Technical Approaches -->
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Technical Approaches</h2>
-            <div class="content has-text-justified">
-              <p>
-                <strong>Small Language Models at Edges:</strong> Deploying efficient, compact language models directly on edge devices reduces the computational and memory requirements while maintaining acceptable performance for many tasks. Recent advancements in model compression, knowledge distillation, and quantization techniques have enabled the deployment of increasingly powerful yet efficient models on resource-constrained devices.
-              </p>
-              
-              <p>
-                <strong>Collaborative Inference:</strong> Distributing the inference process across multiple devices allows for more complex models to be run without requiring any single device to handle the entire computational load. This approach enables running larger models than would be possible on individual devices alone, while maintaining low latency and reducing bandwidth requirements.
-              </p>
-              
-              <p>
-                <strong>Collaborative Training:</strong> Federated learning enables model training across distributed devices without requiring data to leave the device, preserving privacy while leveraging the collective computational power of edge networks. Recent initiatives like Prime Intellect have launched decentralized training projects for models with billions of parameters, while frameworks like FlowerLLM have successfully trained 1.3 billion parameter models using novel federated learning methods.
-              </p>
-              
-              <!-- Federated LLM Visualization -->
-              <div class="visualization-container">
-                <iframe src="htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz" loading="lazy"></iframe>
-                <p class="has-text-centered">
-                  <em>Figure 5: Federated learning enables distributed training across edge devices while preserving privacy, allowing for collaborative model development without compromising sensitive data.</em>
-                </p>
-              </div>
-              
-              <p>
-                A fundamental limitation of traditional federated learning is its requirement for each participant to maintain and train a complete model locally, which becomes problematic for large language models. Novel approaches are being developed to address this limitation, enabling distributed training across devices with varying computational capabilities. These approaches show promise for enabling large-scale collaborative model training in privacy-sensitive domains where computational resources are unevenly distributed.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Societal Impact -->
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Societal Impact</h2>
-            <div class="content has-text-justified">
-              <p>
-                <strong>AI Democratization:</strong> By breaking the monopoly on AI development, distributed edge computing can democratize access to AI technologies and empower a more diverse range of participants in the AI ecosystem. This approach allows smaller organizations, research institutions, and even individuals to contribute meaningfully to AI advancement, fostering innovation from a broader base of participants.
-              </p>
-              
-              <p>
-                <strong>Privacy Preservation:</strong> Federated learning approaches keep sensitive data on user devices, addressing growing privacy concerns and complying with increasingly stringent data regulations like GDPR. This privacy-preserving approach is particularly valuable in domains like healthcare, finance, and personal communications, where data sensitivity is paramount but collaborative model improvement is beneficial.
-              </p>
-              
-              <p>
-                <strong>Environmental Benefits:</strong> Distributed training can significantly reduce the carbon footprint of AI development by utilizing existing devices rather than requiring dedicated energy-intensive data centers. This approach leverages computational resources that would otherwise remain idle, improving overall efficiency and reducing the environmental impact associated with large-scale AI training.
-              </p>
+  <!-- Research Insights Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- The Challenge -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">The Challenge: Hitting the Wall</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>Data Depletion:</strong> Neural scaling laws establish that model performance improves predictably with data quantity, requiring exponentially growing datasets that expand by approximately 0.38 orders of magnitude (2.4×) annually. Despite the internet's vast resources, high-quality human-generated text remains bounded at approximately 4×10<sup>14</sup> tokens, with researchers predicting <span class="highlight-text">exhaustion of public text data by 2028</span> (potentially accelerated to 2026 through excessive reuse). 
+            </p>
             
+            <p>
+              <strong>Computational Monopoly:</strong> The AI computing landscape is dominated by a few tech giants (OpenAI, Google, Microsoft, Meta) controlling advanced hardware resources. This monopolization creates significant barriers for smaller organizations. Since 2010, AI training demands have grown at a super-exponential rate of 3.9× per year, further accelerating to <span class="highlight-text">13.4× per year since 2022</span> with large language models (See Figure 1). This challenge is compounded by Moore's Law slowing as we approach silicon-based chip technology limits, while infrastructure capacity faces dual constraints from semiconductor manufacturing bottlenecks and limited production capacity against exponentially growing deployment needs.
+            </p>
+            
+            <!-- Computing Trend Visualization -->
+            <div class="visualization-container">
+              <iframe src="htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <p class="has-text-centered">
+                <em>Figure 1: AI computational demands have grown exponentially, reaching an unprecedented 13.4× annual growth rate since 2022, pushing against physical and economic limits.</em>
+              </p>
+            </div>
+            
+            <!-- <p>
+              The computing challenge is compounded by Moore's Law slowing down as we approach the physical limits of silicon-based chip technology. The difficulty in shrinking transistors has led to diminishing returns in computational performance. Additionally, infrastructure capacity faces dual constraints: bottlenecks in advanced semiconductor manufacturing severely limit the expansion rate of AI data centers, while the exponential increase in chip deployment pushes against limited semiconductor production capacity.
+            </p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- The Opportunity -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">The Opportunity: Edge Resources</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>Untapped Edge Data:</strong> Edge devices offer a crucial solution to data exhaustion challenges. By 2025, global data volume is projected to reach 182 ZB, with IoT devices contributing significantly—increasing <span class="highlight-text">from 13.6 ZB in 2019 to 79.4 ZB in 2025</span> (See Figure 2). Smartphone data volume specifically is forecast to grow from 5 EB in 2018 to 8 EB by 2028, with the accumulated smartphone data of the past 5 years (before 2025) estimated at approximately 33.1 EB (See Figure 3).
+            </p>
+            
+            <!-- Data Growth Visualization -->
+            <div class="visualization-container">
+              <iframe src="htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <p class="has-text-centered">
+                <em>Figure 2: Global data volume is growing exponentially, with IoT devices contributing significantly to this growth (from 33.2% to 43.6% over 2015-2025).</em>
+              </p>
+            </div>
+
+            <!-- Edge Computing and Smartphone Visualization -->
+            <div class="visualization-container">
+              <iframe src="htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <p class="has-text-centered">
+                <em>Figure 3: Smartphone data volume is projected to grow from 5 EB in 2018 to 8 EB by 2028, while the edge computing market is forecasted to surge from $5.5 billion to $87.9 billion in the same period.</em>
+              </p>
+            </div>
+            
+            <div class="content has-text-justified highlight-box">
+              <p>
+                <strong>Key Insight:</strong> The smartphone data volume of the past 5 years (before 2025) is estimated to reach approximately <span class="highlight-text">33.1 EB</span>, offering unique advantages in privacy and real-time environments, demonstrating the enormous potential of edge devices for AI training.
+              </p>
+            </div>
+            
+            <!-- <p>
+              Edge data provides several qualitative advantages for model training: superior <strong>diversity</strong> across domains, languages, and user behaviors; strong <strong>real-time capability</strong> with continuously fresh data; enhanced <strong>personalization</strong> for context-aware adaptations; and improved <strong>contextual awareness</strong> due to proximity of devices to data sources.
+            </p> -->
+            
+            <p>
+              <strong>Collective Computing Power:</strong> Computing capabilities across edge devices have shown sustained growth, with desktop, laptop, and mobile devices demonstrating annual growth rates of 1.29×, 1.20×, and 1.20× respectively (See Figure 4). This growth trajectory presents a stark contrast to the unsustainable computational demands of centralized AI training. In the smartphone sector specifically, the collective computing power has increased dramatically from <span class="highlight-text">817 EFLOPS in 2020 to 2,758 EFLOPS in 2024</span>, with Samsung (27.5%), Xiaomi (25.5%), and Apple (17.2%) contributing significantly to this growth through their advanced mobile processors (See Figure 5).
+            </p>
+
+            <!-- Yearly Mean Compute Trend -->
+            <div class="visualization-container">
+              <iframe src="htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <p class="has-text-centered">
+                <em>Figure 4: The yearly growth in compute requirements shows the unsustainable trajectory of centralized AI training, highlighting the need for more efficient and distributed approaches to advance AI capabilities.</em>
+              </p>
+            </div>
+            
+            <!-- Smartphone Compute Trend -->
+            <div class="visualization-container">
+              <iframe src="htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <p class="has-text-centered">
+                <em>Figure 5: The collective computing capabilities of smartphones have grown dramatically from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024, providing a formidable distributed training resource.</em>
+              </p>
+            </div>
+            
+            <div class="content has-text-justified highlight-box">
+              <p>
+                <strong>Key Insight:</strong> The cumulative smartphone computing power over the past 5 years totals <span class="highlight-text">9,278 EFLOPS</span>. Modern flagship devices achieve over 2 TFLOPS per unit, with remarkable efficiency—just 30 current-generation smartphones working in parallel can match the computational capacity of an H100 GPU (59.30 TFLOPS), demonstrating the potential for distributed AI training.
+              </p>
+            </div>
+            
+            <p>
+              This vast distributed computing resource presents a practical path to democratizing AI development: training a state-of-the-art model comparable to DeepSeek-v3 would require approximately <span class="highlight-text">60,723 edge devices working in parallel for one week</span>. Given the <em>billions of smartphones in use globally</em>, this represents a highly feasible approach to distributed AI training, potentially breaking the computational monopoly of large tech companies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Approaches -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Technical Approaches</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>Small Language Models at Edges:</strong> Deploying compact language models on edge devices significantly reduces computational and memory requirements while maintaining acceptable performance. Recent advancements in model compression, knowledge distillation, and quantization have enabled increasingly powerful yet efficient models on resource-constrained devices.
+            </p>
+            
+            <p>
+              <strong>Collaborative Inference:</strong> Distributing inference across multiple devices allows more complex models to run without requiring any single device to handle the entire computational load. This approach enables larger models than possible on individual devices while maintaining low latency and reducing bandwidth requirements.
+            </p>
+            
+            <p>
+              <strong>Collaborative Training:</strong> Federated learning enables model training across distributed devices without requiring data to leave the device, preserving privacy while leveraging collective computational power. Recent initiatives like Prime Intellect's INTELLECT-1 project (10B parameter model) utilize the OpenDiLoCo framework to significantly reduce inter-node communication costs, achieving 83% compute utilization across 112 H100 GPUs in five countries. Similarly, Flower Lab's FlowerLLM has successfully trained a 1.3B parameter model using novel federated learning methods.
+            </p>
+            
+            <!-- Federated LLM Visualization -->
+            <div class="visualization-container">
+              <iframe src="htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz" loading="lazy"></iframe>
+              <p class="has-text-centered">
+                <em>Figure 5: Federated learning enables distributed training across edge devices while preserving privacy, allowing for collaborative model development without compromising sensitive data.</em>
+              </p>
+            </div>
+            
+            <p>
+              A key limitation of traditional federated learning is its requirement for each participant to maintain a complete model locally—problematic for large language models. Novel approaches are being developed to address this constraint, enabling distributed training across devices with varying computational capabilities, showing promise for large-scale collaborative training in privacy-sensitive domains with unevenly distributed computational resources.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Societal Impact -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Societal Impact</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>AI Democratization:</strong> By leveraging edge resources, we can create a more inclusive environment where diverse participants collectively develop and train powerful language models. This reduces dependence on major tech companies and promotes a more diverse AI research and applications ecosystem.
+            </p>
+            
+            <div class="highlight-box">
+              <p>
+                <strong>Key Insight:</strong> Distributed edge training significantly lowers barriers to AI development participation, enabling smaller organizations, academic institutions, and individual developers to contribute to large language model training and innovation.
+              </p>
+            </div>
+            
+            <p>
+              <strong>Privacy and Data Ownership:</strong> Federated learning allows data to remain on user devices, reducing privacy risks and giving users greater control over their data—increasingly important with stringent global privacy regulations.
+            </p>
+            
+            <p>
+              <strong>Environmental Sustainability:</strong> Edge computing utilizes idle computing capacity of existing devices, reducing energy consumption and the need for dedicated data centers. Leveraging billions of devices already in operation lowers the carbon footprint associated with AI training infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Conclusion and Outlook</h2>
+          <div class="content has-text-justified">
+            <p>
+              Distributed edge devices represent a vast untapped resource that can drive the next generation of large language model development. By leveraging these resources, we can overcome data depletion and computational monopoly challenges while enabling more efficient, private, and inclusive AI advancement.
+            </p>
+            
+            <p>
+              Looking ahead, we anticipate:
+            </p>
+            
+            <ul>
+              <li>Continuous enhancement of edge device hardware capabilities</li>
+              <li>More efficient distributed learning algorithms that minimize communication overhead</li>
+              <li>Specialized small language model architectures optimized for edge deployment</li>
+              <li>Advanced frameworks supporting secure, privacy-preserving collaborative learning</li>
+            </ul>
+            
+            <div class="highlight-box">
+              <p>
+                <strong>Key Outlook:</strong> The distributed capacity of edge devices will foster a democratized AI ecosystem where developers worldwide can participate in training and applying large language models, addressing broader societal needs and unlocking new possibilities for AI innovation.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Research Insights Section -->
+    </div>
+  </section>
+  <!-- End Research Insights Section -->
 
 
-    <!--BibTex citation -->
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@inproceedings{shen2025will,
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{shen2025will,
   title={Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices},
   author={Tao Shen and Didi Zhu and Ziyu Zhao and Chao Wu and Fei Wu},
   booktitle={Arxiv},
   year={2025}
 }</code></pre>
-      </div>
-    </section>
-    <!--End BibTex citation -->
+    </div>
+  </section>
+  <!--End BibTex citation -->
 
 
-    <footer class="footer">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8">
-            <div class="content">
-              <p>
-                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-                You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
-              </p>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Add some custom CSS for visualization containers -->
-    <style>
-      .visualization-container {
-        margin: 2rem 0;
-        padding: 1rem;
-        background-color: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        overflow: hidden; /* Prevents any potential overflow */
-        position: relative;
-      }
-      
-      .visualization-container iframe {
-        display: block;
-        margin: 0 auto;
-        max-width: none; /* 移除最大宽度限制 */
-        border: none;
-        transform: scale(0.75);
-        transform-origin: 0 0;
-        width: 200% !important; /* 进一步增加宽度，1/0.75 = 133% */
-        height: 800px !important; /* 减小高度以减少空白空间 */
-        margin-bottom: -180px; /* 负margin使caption上移 */
-        will-change: transform; /* 优化渲染性能 */
-      }
+  <!-- Add some custom CSS for visualization containers -->
+  <style>
+    .visualization-container {
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden; /* Prevents any potential overflow */
+      position: relative;
+    }
+    
+    .visualization-container iframe {
+      display: block;
+      margin: 0 auto;
+      max-width: none; /* 移除最大宽度限制 */
+      border: none;
+      transform: scale(0.75);
+      transform-origin: 0 0;
+      width: 200% !important; /* 进一步增加宽度，1/0.75 = 133% */
+      height: 800px !important; /* 减小高度以减少空白空间 */
+      margin-bottom: -180px; /* 负margin使caption上移 */
+      will-change: transform; /* 优化渲染性能 */
+    }
 
-      /* 联邦学习图表专用样式 */
-      .fedllm-viz {
-        transform: scale(0.61) !important;
-        width: 300% !important; /* 1/0.7 = 143% */
-        height: 700px !important;
-        margin-bottom: -300px !important;
-        margin-top: -50px !important;
+    /* 联邦学习图表专用样式 */
+    .fedllm-viz {
+      transform: scale(0.61) !important;
+      width: 300% !important; /* 1/0.7 = 143% */
+      height: 700px !important;
+      margin-bottom: -300px !important;
+      margin-top: -50px !important;
+    }
+    
+    .visualization-container p {
+      margin-top: 0; /* 移除caption顶部margin */
+      position: relative; /* 相对定位以便与iframe重叠 */
+      font-size: 0.9rem;
+      z-index: 2; /* 确保caption在iframe之上 */
+    }
+    
+    /* 关键发现突出框样式 */
+    .highlight-box {
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background-color: #ECF6FF;
+      border-left: 4px solid #0164E0;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    .highlight-box p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    .highlight-box strong {
+      color: #0164E0;
+    }
+    
+    /* Lazy loading iframe placeholder */
+    .lazy-iframe {
+      background: #f5f5f5 url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath fill="%23ccc" d="M50 25a3 3 0 100 50 3 3 0 000-50z"%3E%3CanimateTransform attributeName="opacity" from="1" to=".3" dur="0.8s" repeatCount="indefinite" /%3E%3C/path%3E%3C/svg%3E') no-repeat center center;
+      background-size: 50px;
+    }
+    
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .visualization-iframe {
+        transform: scale(0.65);
+        width: 154% !important; /* 1/0.65 = 154% */
+        height: 750px !important;
+        margin-bottom: -80px; /* 为平板设备调整 */
       }
-      
-      .visualization-container p {
-        margin-top: 0; /* 移除caption顶部margin */
-        position: relative; /* 相对定位以便与iframe重叠 */
-        font-size: 0.9rem;
-        z-index: 2; /* 确保caption在iframe之上 */
+    }
+    
+    @media screen and (max-width: 480px) {
+      .visualization-iframe {
+        transform: scale(0.55);
+        width: 182% !important; /* 1/0.55 = 182% */
+        height: 850px !important;
+        margin-bottom: -60px; /* 为手机设备调整 */
       }
-      
-      /* Lazy loading iframe placeholder */
-      .lazy-iframe {
-        background: #f5f5f5 url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath fill="%23ccc" d="M50 25a3 3 0 100 50 3 3 0 000-50z"%3E%3CanimateTransform attributeName="opacity" from="1" to=".3" dur="0.8s" repeatCount="indefinite" /%3E%3C/path%3E%3C/svg%3E') no-repeat center center;
-        background-size: 50px;
-      }
-      
-      /* Responsive adjustments */
-      @media screen and (max-width: 768px) {
-        .visualization-iframe {
-          transform: scale(0.65);
-          width: 154% !important; /* 1/0.65 = 154% */
-          height: 750px !important;
-          margin-bottom: -80px; /* 为平板设备调整 */
-        }
-      }
-      
-      @media screen and (max-width: 480px) {
-        .visualization-iframe {
-          transform: scale(0.55);
-          width: 182% !important; /* 1/0.55 = 182% */
-          height: 850px !important;
-          margin-bottom: -60px; /* 为手机设备调整 */
-        }
-      }
-    </style>
+    }
 
-  </body>
-  </html>
+    .highlight-text {
+      color: #0164E0;
+      font-weight: 500;
+      border-bottom: 1px dotted #0164E0;
+    }
+    .emphasis-text {
+      color: #0164E0;
+    }
+    .growth-rate {
+      font-family: "Courier New", monospace;
+      background-color: #f8f9fa;
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+    mark {
+      background-color: transparent;
+      border-bottom: 2px solid #0164E0;
+      padding: 0 1px;
+    }
+  </style>
+
+</body>
+</html>
