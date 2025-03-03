@@ -1,145 +1,66 @@
-# Distributed LLM Edge Computing System
+# Will LLMs Scaling Hit the Wall?
+## Breaking Barriers with Distributed Resources on Massive Edge Devices
 
 <div align="center">
-  <a href="https://github.com/your-username/Distributed-LLM-Edges">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Distributed LLM Edge Computing System</h3>
-
-  <p align="center">
-    A distributed solution for efficient deployment and operation of Large Language Models on edge devices
-    <br />
-    <a href="docs/"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="#demo">View Demo</a>
-    ·
-    <a href="https://github.com/your-username/Distributed-LLM-Edges/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/your-username/Distributed-LLM-Edges/issues">Request Feature</a>
+  <p>
+    <a href="#abstract">Abstract</a> |
+    <a href="#paper">Paper</a> |
+    <a href="https://github.com/tao-shen/Distributed-LLM-Edges">Code</a>
   </p>
 </div>
 
-## Table of Contents
+## Authors
+- [Tao Shen](https://tao.shen)*
+- [Didi Zhu]()*
+- [Ziyu Zhao]()*
+- [Chao Wu]()
+- [Fei Wu]()
 
-- [About The Project](#about-the-project)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [System Architecture](#system-architecture)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
+Zhejiang University
 
-## About The Project
+*Equal contribution
 
-<img src="images/screenshot.png" alt="Product Screenshot" width="800">
+## Abstract
 
-This project aims to explore and implement solutions for efficient deployment and operation of Large Language Models in edge computing environments. Through optimization of model architecture and distributed computing strategies, we strive to reduce computational resource requirements while maintaining model performance.
+The success of foundation models relies on scaling laws, which show that model performance improves predictably with increased training data and model size. However, this scaling trajectory faces two critical challenges: depletion of high-quality public data and monopolization of computational power required for larger models by tech giants. These bottlenecks severely hinder AI advancement.
 
-Key Features:
-* Distributed LLM inference capabilities
-* Edge device optimization
-* Low-latency response mechanism
-* Efficient resource utilization
-* Flexible deployment options
+In this paper, we advocate leveraging massive distributed edge devices to break through these barriers. We reveal the vast untapped potential of data and computational resources on edge devices, and review recent technical advancements in distributed/federated learning that make this paradigm viable. Our analysis indicates that through edge device collaboration, anyone can participate in training large language models using small edge devices. This shift toward distributed edge training can democratize AI development and foster a more inclusive AI community.
 
-### Built With
+## Key Findings
 
-* [PyTorch](https://pytorch.org)
-* [Ray](https://ray.io)
-* [ONNX Runtime](https://onnxruntime.ai)
-* [gRPC](https://grpc.io)
+### Data Resources
+- Global data volume is projected to reach 182 ZB by 2025, with IoT devices contributing significantly—increasing from 13.6 ZB in 2019 to 79.4 ZB in 2025
+- Smartphone data volume is forecast to grow from 5 EB in 2018 to 8 EB by 2028
+- The accumulated smartphone data of the past 5 years (before 2025) is estimated at approximately 33.1 EB
 
-## Getting Started
+### Computing Power
+- The collective computing power of smartphones has grown from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024
+- The cumulative smartphone computing power over the past 5 years totals 9,278 EFLOPS
+- Modern flagship devices achieve over 2 TFLOPS per unit, with just 30 current-generation smartphones working in parallel matching the computational capacity of an H100 GPU (59.30 TFLOPS)
 
-Here's how to set up and run the project locally.
+## Technical Approaches
 
-### Prerequisites
+1. **Small Language Models at Edges**: Deploy compact language models on resource-constrained devices through model compression, knowledge distillation, and quantization techniques
+2. **Collaborative Inference**: Distribute inference across multiple devices to enable running more complex models
+3. **Collaborative Training**: Implement model training across distributed devices using federated learning, preserving privacy while leveraging collective computational power
 
-* Python 3.8+
-* CUDA 11.7+ (optional, for GPU acceleration)
-* Minimum 8GB RAM
+## Societal Impact
 
-### Installation
+- **AI Democratization**: Lower barriers to AI development participation
+- **Privacy and Data Ownership**: Protect user data privacy through federated learning
+- **Environmental Sustainability**: Utilize idle computing capacity of existing devices, reducing dedicated data center demands
 
-1. Clone the repository
-   ```sh
-   git clone https://github.com/your-username/Distributed-LLM-Edges.git
-   ```
-2. Install required packages
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Configure environment variables
-   ```sh
-   cp .env.example .env
-   # Edit .env file with necessary environment variables
-   ```
+## Citation
 
-## Usage
-
-1. Start the edge node server
-   ```sh
-   python edge_server.py
-   ```
-2. Run the inference client
-   ```sh
-   python inference_client.py
-   ```
-
-For more examples and documentation, please refer to the [Documentation](docs/).
-
-## System Architecture
-
+```bibtex
+@inproceedings{shen2025will,
+  title={Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices},
+  author={Tao Shen and Didi Zhu and Ziyu Zhao and Chao Wu and Fei Wu},
+  booktitle={Arxiv},
+  year={2025}
+}
 ```
-.
-├── edge_server/        # Edge server implementation
-├── inference_client/   # Inference client
-├── models/            # Model definitions and optimizations
-├── utils/            # Utility functions
-└── docs/             # Documentation
-```
-
-## Roadmap
-
-- [x] Basic inference framework
-- [x] Distributed deployment support
-- [ ] Model quantization optimization
-- [ ] Dynamic load balancing
-- [ ] Multi-device collaborative inference
-- [ ] Edge node auto-discovery
-
-See the [open issues](https://github.com/your-username/Distributed-LLM-Edges/issues) for a full list of proposed features and known issues.
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Project Maintainer - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
-
-Project Link: [https://github.com/your-username/Distributed-LLM-Edges](https://github.com/your-username/Distributed-LLM-Edges)
-
-## Acknowledgments
-
-* [Ray](https://ray.io)
-* [PyTorch](https://pytorch.org)
-* [Hugging Face](https://huggingface.co)
-* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
