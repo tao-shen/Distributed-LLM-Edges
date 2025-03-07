@@ -1,5 +1,5 @@
 
-<img src="icml25_position/figs/fedllm.png" width="100%">
+<img src="./figs/fedllm.png" width="100%">
 
 # Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
 
@@ -45,11 +45,11 @@ Neural scaling laws show that model performance improves with increased data and
 <table>
 <tr>
 <td width="50%">
-<img src="icml25_position/figs/iot_data_contribution.png" width="100%">
+<img src="./figs/iot_data_contribution.png" width="100%">
 <p><em>IoT Data Contribution Analysis: Growing from 33.2% to 43.6% of Global Data Volume</em></p>
 </td>
 <td width="50%">
-<img src="icml25_position/figs/edge_and_smartphone.png" width="100%">
+<img src="./figs/edge_and_smartphone.png" width="100%">
 <p><em>Data Growth Trends in Edge Devices and Smartphones</em></p>
 </td>
 </tr>
@@ -66,11 +66,11 @@ Neural scaling laws show that model performance improves with increased data and
 <table>
 <tr>
 <td width="50%">
-<img src="icml25_position/figs/ai_compute_trend.png" width="100%">
+<img src="./figs/ai_compute_trend.png" width="100%">
 <p><em>AI Computing Demand Growth Trend: 13.4× Annual Growth Since 2022</em></p>
 </td>
 <td width="50%">
-<img src="icml25_position/figs/smartphone_compute_trend.png" width="100%">
+<img src="./figs/smartphone_compute_trend.png" width="100%">
 <p><em>Smartphone Computing Power Evolution: Reaching 2,758 EFLOPS by 2024</em></p>
 </td>
 </tr>
