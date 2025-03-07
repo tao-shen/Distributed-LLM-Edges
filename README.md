@@ -2,9 +2,9 @@
 
 # Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
 
-<!-- <div align="center">
+<div align="center">
 
-<p>
+<!-- <p>
 <a href="https://scholar.google.com/citations?user=MeaDj20AAAAJ">Tao Shen</a><sup>*</sup> &nbsp;&nbsp;
 <a href="https://didizhu-zju.github.io">Didi Zhu</a><sup>*</sup> &nbsp;&nbsp;
 <a href="https://scholar.google.com/citations?user=GzZxXIcAAAAJ">Ziyu Zhao</a><sup>*</sup> &nbsp;&nbsp;
