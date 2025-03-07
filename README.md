@@ -2,7 +2,7 @@
 
 # Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
 
-<div align="center">
+<!-- <div align="center">
 
 <p>
 <a href="https://scholar.google.com/citations?user=MeaDj20AAAAJ">Tao Shen</a><sup>*</sup> &nbsp;&nbsp;
@@ -11,9 +11,8 @@
 <a href="https://scholar.google.com/citations?user=gpTPt58AAAAJ">Chao Wu</a> &nbsp;&nbsp;
 <a href="https://scholar.google.com/citations?user=XJLn4MYAAAAJ">Fei Wu</a>
 </p>
-
 <p>Zhejiang University</p>
-<p><sup>*</sup>Equal Contribution</p>
+<p><sup>*</sup>Equal Contribution</p> -->
 
 <!-- <div align="center">
 <p><em>Overview of our proposed distributed edge computing framework for LLM training and inference.</em></p>
