@@ -1,14 +1,14 @@
-<img src="./static/images/fedllm.png" width="100%">
+<img src="./static/images/fedllm.svg" width="100%">
 
-# Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
+# åWill LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
 
 <div align="center">
 
 <!-- <p>
-<a href="https://scholar.google.com/citations?user=MeaDj20AAAAJ">Tao Shen</a><sup>*</sup> &nbsp;&nbsp;
-<a href="https://didizhu-zju.github.io">Didi Zhu</a><sup>*</sup> &nbsp;&nbsp;
-<a href="https://scholar.google.com/citations?user=GzZxXIcAAAAJ">Ziyu Zhao</a><sup>*</sup> &nbsp;&nbsp;
-<a href="https://scholar.google.com/citations?user=gpTPt58AAAAJ">Chao Wu</a> &nbsp;&nbsp;
+<a href="https://scholar.google.com/citations?user=MeaDj20AAAAJ">Tao Shen</a><sup>*</sup>   
+<a href="https://didizhu-zju.github.io">Didi Zhu</a><sup>*</sup>   
+<a href="https://scholar.google.com/citations?user=GzZxXIcAAAAJ">Ziyu Zhao</a><sup>*</sup>   
+<a href="https://scholar.google.com/citations?user=gpTPt58AAAAJ">Chao Wu</a>   
 <a href="https://scholar.google.com/citations?user=XJLn4MYAAAAJ">Fei Wu</a>
 </p>
 <p>Zhejiang University</p>
@@ -50,11 +50,11 @@ Neural scaling laws show that model performance improves with increased data and
 <table>
 <tr>
 <td width="33%">
-<img src="./static/images/iot_data_contribution.png" width="100%">
+<img src="./static/images/iot_data_contribution.svg" width="100%">
 <p><em>IoT Data Contribution Analysis: Growing from 33.2% to 43.6% of Global Data Volume</em></p>
 </td>
 <td width="33%">
-<img src="./static/images/edge_and_smartphone.png" width="100%">
+<img src="./static/images/edge_and_smartphone.svg" width="100%">
 <p><em>Data Growth Trends in Edge Devices and Smartphones</em></p>
 </td>
 </tr>
@@ -72,11 +72,11 @@ Neural scaling laws show that model performance improves with increased data and
 <table>
 <tr>
 <td width="33%">
-<img src="./static/images/edge_compute_trend.png" width="100%">
+<img src="./static/images/edge_compute_trend.svg" width="100%">
 <p><em>Edge Computing Power Growth Trend</em></p>
 </td>
 <td width="33%">
-<img src="./static/images/smartphone_compute_trend.png" width="100%">
+<img src="./static/images/smartphone_compute_trend.svg" width="100%">
 <p><em>Smartphone Computing Power Evolution: Reaching 2,758 EFLOPS by 2024</em></p>
 </td>
 </tr>
@@ -96,18 +96,19 @@ Neural scaling laws show that model performance improves with increased data and
 ### Technical Approaches
 
 1. **Small Language Models at Edges**
+
    - Deploying compact language models on edge devices
    - Model compression, knowledge distillation, and quantization
    - Reduces computational and memory requirements
    - Maintains acceptable performance
-
 2. **Collaborative Inference**
+
    - Distributing inference across multiple devices
    - Enables more complex models than possible on individual devices
    - Maintains low latency and reduces bandwidth requirements
    - No single device handles entire computational load
-
 3. **Collaborative Training**
+
    - Federated learning across distributed devices without requiring data to leave device
    - Preserves privacy while leveraging collective computational power
    - Reduces inter-node communication costs
@@ -116,17 +117,20 @@ Neural scaling laws show that model performance improves with increased data and
 ## 🌟 Societal Impact
 
 ### AI Democratization
+
 - Creates more inclusive environment for diverse participants
 - Reduces dependence on major tech companies
 - Significantly lowers barriers to AI development participation
 - Enables smaller organizations, academic institutions, and individual developers
 
 ### Privacy and Data Ownership
+
 - Data remains on user devices, reducing privacy risks
 - Gives users greater control over their data
 - Addresses concerns with stringent global privacy regulations
 
 ### Environmental Sustainability
+
 - Utilizes idle computing capacity of existing devices
 - Reduces energy consumption and need for dedicated data centers
 - Leverages billions of devices already in operation
