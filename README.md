@@ -1,6 +1,6 @@
 <img src="./static/images/fedllm.svg" width="100%">
 
-# åWill LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
+# Will LLMs Scaling Hit the Wall? Breaking Barriers with Distributed Resources on Massive Edge Devices
 
 <div align="center">
 
