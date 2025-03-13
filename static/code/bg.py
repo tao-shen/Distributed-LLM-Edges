@@ -240,5 +240,5 @@ config = {
 
 fig.write_html("static/htmls/bg.html", config=config)  # 保存交互式HTML，应用配置
 # fig.write_image("icml25_position/figs/fedllm.pdf")  # 保存静态PDF
-# fig.write_image("icml25_position/figs/fedllm.svg")  # 保存静态SVG
+fig.write_image("static/images/bg.svg")  # 保存静态SVG
 fig.show(config=config)  # 显示图表，应用配置
