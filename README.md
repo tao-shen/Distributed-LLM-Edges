@@ -2,17 +2,6 @@
 
 # Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices
 
-This is the repo for the paper "Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices".
-
-In this position paper, we challenge the current trajectory of LLM scaling and propose a paradigm shift towards distributed edge computing. We believe that the future of AI lies not in centralized data centers, but in the collective power of billions of edge devices. Our vision is to democratize AI development by:
-
-- 🌐 **Unlocking Untapped Resources**: Leveraging the vast computational power (2,758+ EFLOPS) and data (182+ ZB by 2025) available on edge devices worldwide
-- 🤝 **Democratizing AI**: Enabling anyone to participate in LLM training using everyday devices
-- 🔒 **Preserving Privacy**: Keeping data on user devices while contributing to model training
-- 🌱 **Environmental Sustainability**: Utilizing existing computing resources instead of building more data centers
-
-We open-source our analysis and findings to foster collaboration and accelerate the development of distributed AI systems. Join us in breaking down the barriers to AI scaling!
-
 <div align="center">
 
 <!-- <p>
@@ -31,12 +20,25 @@ We open-source our analysis and findings to foster collaboration and accelerate 
 
 [![arXiv](http://img.shields.io/badge/arXiv-2503.08223-B31B1B.svg)](https://arxiv.org/abs/2503.08223)
 [![Website](https://img.shields.io/badge/Project-Website-blue)](https://tao-shen.github.io/Distributed-LLM-Edges)
-[![GitHub](https://img.shields.io/github/stars/tao-shen/Distributed-LLM-Edges?style=social)](https://github.com/tao-shen/Distributed-LLM-Edges)
+<!-- [![GitHub](https://img.shields.io/github/stars/tao-shen/Distributed-LLM-Edges?style=social)](https://github.com/tao-shen/Distributed-LLM-Edges) -->
 
-<img src="https://img.shields.io/github/last-commit/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="git-last-commit" />
-<img src="https://img.shields.io/github/languages/top/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="GitHub top language" />
+<!-- <img src="https://img.shields.io/github/last-commit/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="git-last-commit" /> -->
+<!-- <img src="https://img.shields.io/github/languages/top/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="GitHub top language" /> -->
 
 </div>
+
+This is the repo for the paper "Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices".
+
+In this position paper, we challenge the current trajectory of LLM scaling and propose a paradigm shift towards distributed edge computing. We believe that the future of AI lies not in centralized data centers, but in the collective power of billions of edge devices. Our vision is to democratize AI development by:
+
+- 🌐 **Unlocking Untapped Resources**: Leveraging the vast computational power (2,758+ EFLOPS) and data (182+ ZB by 2025) available on edge devices worldwide
+- 🤝 **Democratizing AI**: Enabling anyone to participate in LLM training using everyday devices
+- 🔒 **Preserving Privacy**: Keeping data on user devices while contributing to model training
+- 🌱 **Environmental Sustainability**: Utilizing existing computing resources instead of building more data centers
+
+We open-source our analysis and findings to foster collaboration and accelerate the development of distributed AI systems. Join us in breaking down the barriers to AI scaling!
+
+
 
 ## Updates & News
 
