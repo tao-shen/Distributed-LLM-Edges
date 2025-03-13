@@ -89,48 +89,90 @@
       position: relative;
       overflow: hidden;
       background-color: white;
+      width: 100%;
+      min-height: 500px;
+      padding: 0;
+      margin: 0;
     }
 
     .hero-background {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      right: 0;
+      bottom: 0;
       opacity: 0.3;
       z-index: 0;
       pointer-events: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-image: url('static/images/bg.svg');
+      /* background-size: 1100px 600px; */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
-
-    .hero-background iframe {
-      width: 100%;
-      height: 100%;
-      transform: scale(1.42);
-      transform-origin: center center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
+    
+    /* 主标题样式 */
+    .publication-title {
+      font-family: 'Google Sans', 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: #333;
     }
 
     .hero-body {
       position: relative;
       z-index: 1;
+      padding: 3rem 1.5rem;
+    }
+    
+    /* 添加媒体查询实现自适应 */
+    @media screen and (max-width: 768px) {
+      .hero-body {
+        padding: 2.3rem 1rem;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .hero-body {
+        padding: 2rem 0.75rem;
+      }
+    }
+    
+    /* 简化的Abstract样式 */
+    .abstract-container {
+      background-color: #f9f9f9;
+      padding: 30px 0;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    
+    .abstract-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    .abstract-content {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: justify;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 30px;
+      margin-bottom: 25px;
     }
   </style>
 
   <section class="hero">
-    <div class="hero-background">
-      <iframe src="/Distributed-LLM-Edges/static/htmls/bg.html" frameborder="0" scrolling="no"></iframe>
-    </div>
+    <div class="hero-background"></div>
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices</h1>
+            <h1 class="title is-1 publication-title">Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on<br>Massive Edge Devices</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -196,33 +238,21 @@
   </section>
 
 
-  <!-- Paper abstract -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              The success of foundation models relies on scaling laws, which show that model performance improves predictably with increased <em>training data</em> and <em>model size</em>. 
-              However, this scaling trajectory faces two critical challenges: depletion of high-quality public data and monopolization of computational power required for larger models by tech giants. These bottlenecks severely hinder AI advancement.
-            <!-- </p>
-            <p> -->
-              In this position paper, we advocate leveraging massive distributed edge devices to break through these barriers.
-              We reveal the vast untapped potential of data and computational resources on edge devices, and review recent technical advancements in distributed/federated learning that make this paradigm viable.
-              Our analysis indicates that through edge device collaboration, anyone can participate in training large language models using small edge devices.
-              This shift toward distributed edge training can democratize AI development and foster a more inclusive AI community.
-            </p>
-          </div>
-        </div>
-      </div>
+  <!-- 重写的Abstract部分 -->
+  <div class="abstract-container">
+    <div class="abstract-title">Abstract</div>
+    <div class="abstract-content">
+      The success of foundation models relies on scaling laws, which show that model performance improves predictably with increased <em>training data</em> and <em>model size</em>. 
+      However, this scaling trajectory faces two critical challenges: depletion of high-quality public data and monopolization of computational power required for larger models by tech giants. These bottlenecks severely hinder AI advancement.
+      In this position paper, we advocate leveraging massive distributed edge devices to break through these barriers.
+      We reveal the vast untapped potential of data and computational resources on edge devices, and review recent technical advancements in distributed/federated learning that make this paradigm viable.
+      Our analysis indicates that through edge device collaboration, anyone can participate in training large language models using small edge devices.
+      This shift toward distributed edge training can democratize AI development and foster a more inclusive AI community.
     </div>
-  </section>
-  <!-- End paper abstract -->
-
+  </div>
 
   <!-- Research Insights Section -->
-  <section class="section">
+  <section class="section" style="padding-top: 60px;">
     <div class="container is-max-desktop">
       <!-- The Challenge -->
       <div class="columns is-centered">
@@ -239,10 +269,9 @@
             
             <!-- Computing Trend Visualization -->
             <div class="visualization-container">
-              <iframe src="/Distributed-LLM-Edges/static/htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <iframe src="static/htmls/compute_trend_interactive.html" width="100%" height="550px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
               <p class="has-text-centered">
                 <em>Figure 1: AI computational demands have grown exponentially, reaching an unprecedented 13.4× annual growth rate since 2022, pushing against physical and economic limits.</em>
-                <br><small>Data source: OpenAI's AI and Compute Report (2022), Stanford AI Index Report (2023)</small>
               </p>
             </div>
             
@@ -264,19 +293,17 @@
             
             <!-- Data Growth Visualization -->
             <div class="visualization-container">
-              <iframe src="/Distributed-LLM-Edges/static/htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <iframe src="static/htmls/iot_data_contribution_interactive.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
               <p class="has-text-centered">
                 <em>Figure 2: Global data volume is growing exponentially, with IoT devices contributing significantly to this growth (from 33.2% to 43.6% over 2015-2025).</em>
-                <br><small>Data source: IDC Global DataSphere Forecast (2023), Statista IoT Data Volume Report (2023)</small>
               </p>
             </div>
 
             <!-- Edge Computing and Smartphone Visualization -->
             <div class="visualization-container">
-              <iframe src="/Distributed-LLM-Edges/static/htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <iframe src="static/htmls/edge_and_smartphone.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
               <p class="has-text-centered">
                 <em>Figure 3: Smartphone data volume is projected to grow from 5 EB in 2018 to 8 EB by 2028, while the edge computing market is forecasted to surge from $5.5 billion to $87.9 billion in the same period.</em>
-                <br><small>Data source: Ericsson Mobility Report (2023), Grand View Research Edge Computing Market Report (2023)</small>
               </p>
             </div>
             
@@ -296,19 +323,17 @@
 
             <!-- Yearly Mean Compute Trend -->
             <div class="visualization-container">
-              <iframe src="/Distributed-LLM-Edges/static/htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <iframe src="static/htmls/compute_trend_yearly_mean.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
               <p class="has-text-centered">
                 <em>Figure 4: The yearly growth in compute requirements shows the unsustainable trajectory of centralized AI training, highlighting the need for more efficient and distributed approaches to advance AI capabilities.</em>
-                <br><small>Data source: OpenAI's AI and Compute Report (2022), Stanford AI Index Report (2023), MLPerf Training Results (2023)</small>
               </p>
             </div>
             
             <!-- Smartphone Compute Trend -->
             <div class="visualization-container">
-              <iframe src="/Distributed-LLM-Edges/static/htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
+              <iframe src="static/htmls/smartphone_compute_trend.html" width="100%" height="520px" frameborder="0" scrolling="no" class="visualization-iframe" loading="lazy"></iframe>
               <p class="has-text-centered">
                 <em>Figure 5: The collective computing capabilities of smartphones have grown dramatically from 817 EFLOPS in 2020 to 2,758 EFLOPS in 2024, providing a formidable distributed training resource.</em>
-                <br><small>Data source: Antutu Benchmark Database (2020-2024), Geekbench Mobile Database (2020-2024), Counterpoint Research (2024)</small>
               </p>
             </div>
             
@@ -344,10 +369,9 @@
             
             <!-- Federated LLM Visualization -->
             <div class="visualization-container">
-              <iframe src="/Distributed-LLM-Edges/static/htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz" loading="lazy"></iframe>
+              <iframe src="static/htmls/fedllm.html" width="100%" height="580px" frameborder="0" scrolling="no" class="visualization-iframe fedllm-viz" loading="lazy"></iframe>
               <p class="has-text-centered">
-                <em>Figure 6: Federated learning enables distributed training across edge devices while preserving privacy, allowing for collaborative model development without compromising sensitive data.</em>
-                <br><small>Data source: Prime Intellect's INTELLECT-1 Project Report (2024), Flower Lab's FlowerLLM Technical Report (2024)</small>
+                <em>Figure 5: Federated learning enables distributed training across edge devices while preserving privacy, allowing for collaborative model development without compromising sensitive data.</em>
               </p>
             </div>
             
@@ -454,7 +478,7 @@
   <!-- Add some custom CSS for visualization containers -->
   <style>
     .visualization-container {
-      margin: 2rem 0;
+      margin: 1.5rem 0;  /* 减小容器自身的上下外边距 */
       padding: 1rem;
       background-color: #f9f9f9;
       border-radius: 8px;
@@ -472,7 +496,7 @@
       transform-origin: 0 0;
       width: 200% !important; /* 进一步增加宽度，1/0.75 = 133% */
       height: 800px !important; /* 减小高度以减少空白空间 */
-      margin-bottom: -180px; /* 负margin使caption上移 */
+      margin-bottom: -180px; /* 增加负margin使间距变小 */
       will-change: transform; /* 优化渲染性能 */
     }
 
@@ -539,7 +563,7 @@
 
     .highlight-text {
       color: #0164E0;
-      font-weight: 500;
+      font-weight: 450;
       border-bottom: 1px dotted #0164E0;
     }
     .emphasis-text {
