@@ -41,10 +41,12 @@ In this position paper, we challenge the current trajectory of LLM scaling and p
 
 We open-source our analysis and findings to foster collaboration and accelerate the development of distributed AI systems. Join us in breaking down the barriers to AI scaling!
 
+<!--
 ## Updates & News
 
 - [03/11/2025] 📝 Our paper is now available on [arXiv](https://arxiv.org/abs/2503.08223).
 - [03/01/2025] 📝 Our paper is submitted to arXiv.
+-->
 
 ## 🎯 TL;DR
 
