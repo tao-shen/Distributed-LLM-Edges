@@ -4,29 +4,6 @@
 
 <div align="center">
 
-<!-- <p>
-<a href="https://scholar.google.com/citations?user=MeaDj20AAAAJ">Tao Shen</a><sup>*</sup>   
-<a href="https://didizhu-zju.github.io">Didi Zhu</a><sup>*</sup>   
-<a href="https://scholar.google.com/citations?user=GzZxXIcAAAAJ">Ziyu Zhao</a><sup>*</sup>   
-<a href="https://scholar.google.com/citations?user=gpTPt58AAAAJ">Chao Wu</a>   
-<a href="https://scholar.google.com/citations?user=XJLn4MYAAAAJ">Fei Wu</a>
-</p>
-<p>Zhejiang University</p>
-<p><sup>*</sup>Equal Contribution</p> -->
-
-<!-- <div align="center">
-<p><em>Overview of our proposed distributed edge computing framework for LLM training and inference.</em></p>
-</div> -->
-
-
-<!-- [![arXiv](http://img.shields.io/badge/arXiv-2503.08223-B31B1B.svg)](https://arxiv.org/abs/2503.08223) -->
-<!-- [![Website](https://img.shields.io/badge/Project-Website-blue)](https://tao-shen.github.io/Distributed-LLM-Edges) -->
-
-<!-- [![GitHub](https://img.shields.io/github/stars/tao-shen/Distributed-LLM-Edges?style=social)](https://github.com/tao-shen/Distributed-LLM-Edges) -->
-
-<!-- <img src="https://img.shields.io/github/last-commit/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="git-last-commit" /> -->
-
-<!-- <img src="https://img.shields.io/github/languages/top/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="GitHub top language" /> -->
 
 </div>
 
@@ -165,20 +142,6 @@ Looking ahead, we anticipate:
 The distributed capacity of edge devices will foster a democratized AI ecosystem where developers worldwide can participate in training and applying large language models, addressing broader societal needs and unlocking new possibilities for AI innovation.
 
 ## 📖 Citation
-
-<!--
-```bibtex
-@misc{shen2025llmsscalinghitwall,
-      title={Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices}, 
-      author={Shen, Tao and Zhu, Didi and Zhao, Ziyu and Wu, Chao and Wu, Fei},
-      year={2025},
-      eprint={2503.08223},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC},
-      url={https://arxiv.org/abs/2503.08223}, 
-}
-```
--->
 
 ## 📄 License
 
