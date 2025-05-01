@@ -18,11 +18,14 @@
 <p><em>Overview of our proposed distributed edge computing framework for LLM training and inference.</em></p>
 </div> -->
 
-[![arXiv](http://img.shields.io/badge/arXiv-2503.08223-B31B1B.svg)](https://arxiv.org/abs/2503.08223)
-[![Website](https://img.shields.io/badge/Project-Website-blue)](https://tao-shen.github.io/Distributed-LLM-Edges)
+
+<!-- [![arXiv](http://img.shields.io/badge/arXiv-2503.08223-B31B1B.svg)](https://arxiv.org/abs/2503.08223) -->
+<!-- [![Website](https://img.shields.io/badge/Project-Website-blue)](https://tao-shen.github.io/Distributed-LLM-Edges) -->
+
 <!-- [![GitHub](https://img.shields.io/github/stars/tao-shen/Distributed-LLM-Edges?style=social)](https://github.com/tao-shen/Distributed-LLM-Edges) -->
 
 <!-- <img src="https://img.shields.io/github/last-commit/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="git-last-commit" /> -->
+
 <!-- <img src="https://img.shields.io/github/languages/top/tao-shen/Distributed-LLM-Edges?style=flat-square&color=5D6D7E" alt="GitHub top language" /> -->
 
 </div>
@@ -37,8 +40,6 @@ In this position paper, we challenge the current trajectory of LLM scaling and p
 - 🌱 **Environmental Sustainability**: Utilizing existing computing resources instead of building more data centers
 
 We open-source our analysis and findings to foster collaboration and accelerate the development of distributed AI systems. Join us in breaking down the barriers to AI scaling!
-
-
 
 ## Updates & News
 
@@ -163,6 +164,7 @@ The distributed capacity of edge devices will foster a democratized AI ecosystem
 
 ## 📖 Citation
 
+<!--
 ```bibtex
 @misc{shen2025llmsscalinghitwall,
       title={Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices}, 
@@ -174,6 +176,7 @@ The distributed capacity of edge devices will foster a democratized AI ecosystem
       url={https://arxiv.org/abs/2503.08223}, 
 }
 ```
+-->
 
 ## 📄 License
 
