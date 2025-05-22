@@ -1,0 +1,112 @@
+\documentclass{article}
+
+
+% if you need to pass options to natbib, use, e.g.:
+    \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2025
+
+
+% ready for submission
+\usepackage{neurips_2025}
+
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+    % \usepackage[preprint]{neurips_2025}
+
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2025}
+
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2025}
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+
+
+\input{sections/_preamble.tex}
+
+\title{Will LLMs Scaling Hit the Wall? Breaking Barriers via Distributed Resources on Massive Edge Devices}
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{%
+  Tao Shen\thanks{Equal contribution.} \\
+  College of Computer Science and Technology\\
+  Zhejiang University\\
+  Hangzhou, China \\
+  \texttt{tao.shen@example.com} \\ % Placeholder email
+  \And
+  Didi Zhu\footnotemark[1] \\
+  College of Computer Science and Technology\\
+  Zhejiang University\\
+  Hangzhou, China \\
+  \texttt{didi.zhu@example.com} \\ % Placeholder email
+  \And
+  Ziyu Zhao\footnotemark[1] \\
+  College of Computer Science and Technology\\
+  Zhejiang University\\
+  Hangzhou, China \\
+  \texttt{ziyu.zhao@example.com} \\ % Placeholder email
+  \AND % Force line break
+  Chao Wu\thanks{Corresponding author.} \\
+  School of Public Affairs and Academy of Social Governance\\
+  Zhejiang University\\
+  Hangzhou, China \\
+  \texttt{chao.wu@zju.edu.cn} \\
+  \And
+  Fei Wu\footnotemark[2] \\
+  College of Computer Science and Technology\\
+  Zhejiang University\\
+  Hangzhou, China \\
+  \texttt{wufei@zju.edu.cn} \\
+}
+
+
+\begin{document}
+
+
+\maketitle
+
+\input{sections/0_abstract.tex}
+\input{sections/1_introduction.tex}
+\input{sections/2_challenges.tex}
+\input{sections/3_opportunities.tex}
+\input{sections/4_techniques.tex}
+\input{sections/on_device_training.tex}
+\input{sections/5_collaboration.tex}
+\input{sections/A_alternative.tex}
+\input{sections/6_conclusion.tex}
+
+\bibliography{st,zdd,zzy}
+\bibliographystyle{unsrt}
+
+\newpage
+\appendix
+\input{sections/7_impacts.tex}
+\input{sections/8_history.tex}
+% \input{sections/9_alternative.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

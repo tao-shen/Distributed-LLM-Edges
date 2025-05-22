@@ -1,0 +1,32 @@
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+\newtcolorbox{insights}[1][]{%
+    colback=blue!5!white, % Light blue background color of the box
+    colframe=blue!75!black, % Darker blue border color of the box
+    sharp corners, % Makes the corners of the box sharp
+    toprule=0pt, % Remove top border
+    bottomrule=0pt, % Remove bottom border
+    leftrule=1.2pt, % Keep left border
+    rightrule=1.2pt, % Keep right border
+    #1 % Additional options
+}
+
+\setlength{\parskip}{1pt plus1pt minus3pt}
+% 1.2pt：基础段落间距为 1.2 点（约 0.42 毫米）。
+% plus3pt：允许 LaTeX 在排版需要时增加最多 3pt 的弹性间距（例如避免页面底部留白过多）。
+% minus2.5pt：允许 LaTeX 在排版需要时减少最多 2.5pt 的弹性间距（例如避免内容被截断）。
+% \setlength{\textfloatsep}{3pt plus2pt minus2pt} % 顶部/底部浮动体
+% \setlength{\intextsep}{3pt plus2pt minus2pt}      % 中间浮动体
+% 减少图表与上下文的间距（例如设为 10pt + 弹性值）
+
+% 调整图片标题与内容的间距
+% \setlength{\abovecaptionskip}{-10pt}  % 标题上方间距
+% \setlength{\belowcaptionskip}{-10pt}   % 标题下方间距
+
+% % 调整表格标题与内容的间距（表格标题通常在表格上方）
+% \setlength{\abovecaptionskip}{-10pt}   % 表格标题上方间距
+% \setlength{\belowcaptionskip}{-10pt}   % 表格标题下方间距
