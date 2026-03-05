@@ -8,13 +8,13 @@ As LLMs continue to achieve unprecedented success in artificial intelligence, un
 In the early stages of AI, despite relatively small data scales, the importance of data was already evident. The MNIST dataset, for instance, serves as a notable example. With 60,000 training images and 10,000 test images, it provided a crucial foundation for neural network research, demonstrating the fundamental role of data in model training~\cite{lecun1998mnist}. As data scales expanded, the capabilities of deep learning models saw significant improvements. The emergence of ImageNet, which contains 14 million images across 21,000 synsets, revolutionized computer vision. This enabled deep learning models like AlexNet to learn complex visual features and achieve breakthrough progress in image recognition tasks, reducing error rates from 26.2\% to 15.3\% in the ILSVRC-2012 competition~\cite{deng2009imagenet,krizhevsky2012imagenet}. ImageNet's success stemmed not only from its scale but also from its high quality and diversity, laying the groundwork for subsequent large-scale data applications.
 
 \paragraph{Era of massive data}
-With the proliferation of the internet and advances in computing power, data scales have expanded dramatically, ushering AI into an era of massive data. GPT-3, for instance, was trained on 450 billion tokens, with a carefully curated mix of data sources: Common Crawl (60\%), books (16\%), Wikipedia (3\%), and other internet-based text (21\%)~\cite{brown2020language}. This massive dataset enabled GPT-3 to excel across various tasks, demonstrating the decisive role of data scale in model capabilities. Compared to early datasets like MNIST and ImageNet, GPT-3's data scale and quality reached unprecedented heights, not only advancing natural language processing but also opening new possibilities for AI generalization.
+With the proliferation of the internet and advances in computing power, data scales have expanded dramatically, ushering AI into an era of massive data. GPT-3, for instance, was trained on 300 billion tokens, with a carefully curated mix of data sources: Common Crawl (60\%), books (16\%), Wikipedia (3\%), and other internet-based text (21\%)~\cite{brown2020language}. This massive dataset enabled GPT-3 to excel across various tasks, demonstrating the decisive role of data scale in model capabilities. Compared to early datasets like MNIST and ImageNet, GPT-3's data scale and quality reached unprecedented heights, not only advancing natural language processing but also opening new possibilities for AI generalization.
 
 \paragraph{Quality and diversity matter}
 Beyond scale, data quality and diversity are crucial factors in model performance. ImageNet ensures data quality through rigorous validation, with each image verified by an average of 3.3 annotators and achieving 95\% accuracy in its labels~\cite{deng2009imagenet}. This precise annotation enables models to learn accurate visual features and excel in image classification tasks. In the realm of large language models, GPT-3's training data underwent stringent cleaning and filtering, including deduplication, quality scoring based on document length and linguistic complexity, and content filtering for inappropriate content~\cite{brown2020language}. This high-quality data enables GPT-3 to generate coherent and accurate text. Furthermore, diversity is essential: ImageNet covers 1,000 object categories across various domains, while GPT-3's training data spans multiple languages, genres, and knowledge domains, providing rich linguistic knowledge and contextual understanding.
 
 \paragraph{Data as the ceiling for model capabilities}
-A model's capability depends on the knowledge it extracts from data, following empirically observed scaling laws. While increasing model parameters can enhance expressive power, without sufficient data, models cannot effectively utilize these parameters. DeepMind's research on the Chinchilla model demonstrated that under the same compute budget, a 70B parameter model trained on 1.4T tokens outperforms a 280B parameter model trained on 0.35T tokens, achieving a 30\% reduction in loss while using the same compute resources~\cite{hoffmann2022training}. This finding directly supports the notion that data acts as a ceiling for model capabilities. Additionally, Meta's research shows that while Llama 2 (70B) has 70 billion parameters, its performance largely benefits from training on 2T tokens of high-quality data, with particular emphasis on academic papers, code repositories, and books that enhance its reasoning capabilities~\cite{touvron2023llama3}. These studies emphasize data's central role in model training and suggest that optimal model scaling requires a balanced increase in both parameters and training data.
+A model's capability depends on the knowledge it extracts from data, following empirically observed scaling laws. While increasing model parameters can enhance expressive power, without sufficient data, models cannot effectively utilize these parameters. DeepMind's research on the Chinchilla model demonstrated that under the same compute budget, a 70B parameter model trained on 1.4T tokens outperforms a 280B parameter model trained on 0.35T tokens, achieving a 30\% reduction in loss while using the same compute resources~\cite{hoffmann2022training}. This finding directly supports the notion that data acts as a ceiling for model capabilities. Additionally, Meta's research shows that while Llama 2 (70B) has 70 billion parameters, its performance largely benefits from training on 2T tokens of high-quality data, with particular emphasis on academic papers, code repositories, and books that enhance its reasoning capabilities~\cite{touvron2023llama}. These studies emphasize data's central role in model training and suggest that optimal model scaling requires a balanced increase in both parameters and training data.
 
 \paragraph{Looking ahead}
 From MNIST to ImageNet to GPT-3, advances in data scale, quality, and diversity have directly driven AI breakthroughs. Data remains the foundation of AI development, determining the upper limits of model capabilities. As we push the boundaries of LLM performance, the challenge of acquiring sufficient high-quality, diverse data becomes increasingly acute. Traditional data sources like the internet are showing signs of exhaustion, and concerns about data privacy and ownership are growing. This motivates the exploration of novel data acquisition approaches, such as leveraging edge devices and distributed data collection, which we will explore in subsequent sections. The future of LLMs may depend not just on scaling existing data sources, but on fundamentally rethinking how we collect, curate, and utilize data in AI training.
@@ -159,7 +159,7 @@ Table~\ref{tab:slm_architectures_training} presents a comprehensive overview of 
     \addlinespace[0.5ex]
     PhoneLM \cite{yi2024phonelm} & 0.5B; 1.5B & Transformer & \checkmark & & Pre-training & DCLM-baseline \cite{li2024datacomp}, StarCoderData \cite{li2023starcodersourceyou} \\
     Llama 3.2 \cite{llama3.2} & 1B; 3B & Transformer & \checkmark & & Pre-training, SFT, RLHF, DPO & Not released (9T tokens) \\
-    Qwen 1/1.5/2/2.5 \cite{yang2024qwen2, bai2023qwentechnicalreport} & 0.5B-7B & Transformer & \checkmark & & Pre-training & Not released \\
+    Qwen 1/1.5/2/2.5 \cite{yang2024qwen2,bai2023qwentechnicalreport} & 0.5B-7B & Transformer & \checkmark & & Pre-training & Not released \\
     Gemma \cite{team2024gemma} & 2B; 7B & Transformer & \checkmark & & Pre-training & Unknown \\
     SmolLM2 \cite{allal2025smollm2smolgoesbig} & 135M-1.7B & Transformer & \checkmark & & Pre-training & SmolLM corpus \cite{benallal2024smollmcorpus} \\
     H2O-Danube3 \cite{pfeiffer2024h2o} & 500M; 4B & Transformer & \checkmark & & Pre-training (multi-stage) & Unknown \\
@@ -167,7 +167,7 @@ Table~\ref{tab:slm_architectures_training} presents a comprehensive overview of 
     CT-LLM \cite{du2024chinese} & 2B & Transformer & \checkmark & & Pre-training & MAP-CC \\
     OLMo \cite{groeneveld2024olmo} & 1B; 7B & Transformer & \checkmark & & Pre-training & Dolma \cite{dolma} (multiple sources) \\
     TinyLlama \cite{zhang2024tinyllamaopensourcesmalllanguage} & 1B & Transformer & \checkmark & & Pre-training & SlimPajama \cite{cerebras2023slimpajama} \\
-    Phi-series \cite{abdin2024phi, javaheripi2023phi} & 1.3B-6.6B & Transformer & \checkmark & & Pre-training & CodeTextBook \cite{gunasekar2023textbooksneed} \\
+    Phi-series \cite{abdin2024phi,javaheripi2023phi} & 1.3B-6.6B & Transformer & \checkmark & & Pre-training & CodeTextBook \cite{gunasekar2023textbooksneed} \\
     OpenELM \cite{mehta2024openelm} & 270M-3B & Transformer & \checkmark & & Pre-training & RefinedWeb \cite{penedo2023refinedweb}, PILE \cite{gao2020pile} \\
     MobiLlama \cite{thawakar2024mobillama} & 0.5B; 0.8B & Transformer & \checkmark & & Pre-training & LLM360 Amber \\
     MobileLLM \cite{liu2024mobilellm} & 125M; 350M & Transformer & \checkmark & & Pre-training & Unknown (1T tokens) \\
@@ -177,7 +177,7 @@ Table~\ref{tab:slm_architectures_training} presents a comprehensive overview of 
     \multicolumn{7}{l}{\textit{I.B. Derived from Larger Models}} \\
     \addlinespace[0.5ex]
     MINITRON \cite{muralidharan2024compact} & 4B & Transformer & & \checkmark & Distillation, Pruning & 8T tokens from Nemotron-4 \\
-    Orca/Orca 2 \cite{mitra2023orca, mukherjee2023orca} & 7B; 13B & Transformer & & \checkmark & Distillation & Orca 2 dataset, FLAN-v2 \cite{longpre2023flan} \\
+    Orca/Orca 2 \cite{mitra2023orca,mukherjee2023orca} & 7B; 13B & Transformer & & \checkmark & Distillation & Orca 2 dataset, FLAN-v2 \cite{longpre2023flan} \\
     MINIMA \cite{zhang2023towards} & 3B & Transformer & & \checkmark & Distillation (from Llama-2-7B) & Pile \cite{gao2020pile}, Wudao \\
     Dolly-v2 \cite{DatabricksBlog2023DollyV2} & 3B; 7B & Transformer & & \checkmark & Instruction tuning (from Pythia) & Databricks-dolly-15k \\
     LaMini-LM \cite{wu2023lamini} & 61M-7B & Transformer & & \checkmark & Distillation & LaMini instruction dataset \\
@@ -187,12 +187,12 @@ Table~\ref{tab:slm_architectures_training} presents a comprehensive overview of 
     \multicolumn{7}{l}{\textit{I.C. Model Compression Approaches}} \\
     \addlinespace[0.5ex]
     SparseGPT \cite{frantar2023sparsegpt} & Various & Transformer & & \checkmark & Unstructured Pruning & Not applicable \\
-    Wanda \cite{sun2024a} & Various & Transformer & & \checkmark & Unstructured Pruning & Not applicable \\
+    Wanda \cite{sun2023wanda} & Various & Transformer & & \checkmark & Unstructured Pruning & Not applicable \\
     LoRAPrune \cite{zhang2023loraprune} & Various & Transformer & & \checkmark & Unstructured Pruning & Not applicable \\
     ShortGPT \cite{men2024shortgpt} & Various & Transformer & & \checkmark & Structured Pruning & Not applicable \\
-    BitNet/BitNet b1.58 \cite{wang2023bitnet, ma2024era} & Various & Transformer & & \checkmark & Quantization (QAT) & Not applicable \\
-    QLoRA \cite{dettmers2024qlora} & Various & Transformer & & \checkmark & Quantization, Low-Rank & Various fine-tuning datasets \\
-    SqueezeLLM \cite{kim2023squeezellm} & Various & Transformer & & \checkmark & Quantization (PTQ) & Not applicable \\
+    BitNet/BitNet b1.58 \cite{wang2023bitnet,ma2024era} & Various & Transformer & & \checkmark & Quantization (QAT) & Not applicable \\
+    QLoRA \cite{dettmers2023qlora} & Various & Transformer & & \checkmark & Quantization, Low-Rank & Various fine-tuning datasets \\
+    SqueezeLLM \cite{kim2024squeezellm} & Various & Transformer & & \checkmark & Quantization (PTQ) & Not applicable \\
     \midrule
     
     \multicolumn{7}{l}{\textbf{\textit{II. Alternative Architecture Models}}} \\
@@ -211,7 +211,7 @@ Table~\ref{tab:slm_architectures_training} presents a comprehensive overview of 
     % \multicolumn{7}{l}{\textit{II.B. Encoder-Decoder Models}} \\
     \addlinespace[0.5ex]
     Specialized FlanT5 \cite{fu2023specializing} & 250M-3B & Encoder-Decoder & & \checkmark & Instruction Tuning & GSM8K \cite{cobbe2021gsm8k} \\
-    FlanT5 \cite{chung2024scaling} & 80M-3B & Encoder-Decoder & & \checkmark & Instruction Tuning & Muffin, T0-SF, SNI and CoT \\
+    FlanT5 \cite{chung2022scaling} & 80M-3B & Encoder-Decoder & & \checkmark & Instruction Tuning & Muffin, T0-SF, SNI and CoT \\
     T5 \cite{raffel2020exploring} & 60M-3B & Encoder-Decoder & \checkmark & & Pre-training & C4 \cite{raffel2020exploring} \\
     \addlinespace[0.5ex]
     
@@ -231,7 +231,7 @@ Table~\ref{tab:slm_architectures_training} presents a comprehensive overview of 
 \newpage
 \section{Distributed Collaborative Frameworks}
 \label{app:distributed_collaborative_frameworks}
-Distributed collaborative frameworks enable the deployment, training, and fine-tuning of language models across multiple devices or servers. Table \ref{tab:framework_comparison} presents a comparison of prominent frameworks in this domain. These frameworks can be broadly categorized into three types: cloud-based platforms that offer centralized resources for distributed computing, federated learning systems that enable training across decentralized data sources while preserving privacy, and fully decentralized frameworks that distribute computation across peer nodes. Some frameworks like Neurosurgeon \cite{kang2017neurosurgeon}, MoE$^2$ \cite{jin2025moe2}, Edgent \cite{li2018edgent}, and Galaxy \cite{ye2024galaxy} focus on collaborative inference by partitioning models between edge devices and servers. Others, such as FlexLoRA \cite{bai2024federated}, FedFM \cite{yang2025federated}, FedPETuning \cite{zhang2023fedpetuning}, and Photon \cite{sani2024photon}, specialize in federated fine-tuning of large language models while maintaining data privacy. These frameworks are essential for enabling efficient deployment of language models in resource-constrained environments and for scenarios requiring privacy preservation or operation in disconnected settings.
+Distributed collaborative frameworks enable the deployment, training, and fine-tuning of language models across multiple devices or servers. Table \ref{tab:framework_comparison} presents a comparison of prominent frameworks in this domain. These frameworks can be broadly categorized into three types: cloud-based platforms that offer centralized resources for distributed computing, federated learning systems that enable training across decentralized data sources while preserving privacy, and fully decentralized frameworks that distribute computation across peer nodes. Some frameworks like Neurosurgeon \cite{kang2017neurosurgeon}, MoE$^2$ \cite{jin2025moe2}, Edgent \cite{li2018edgent}, and Galaxy \cite{ye2024galaxy} focus on collaborative inference by partitioning models between edge devices and servers. Others, such as FedDAT \cite{chen2024feddat}, FedFM \cite{yang2025federated}, FedPETuning \cite{zhang2023fedpetuning}, and Photon \cite{sani2024photon}, specialize in federated fine-tuning of large language models while maintaining data privacy. These frameworks are essential for enabling efficient deployment of language models in resource-constrained environments and for scenarios requiring privacy preservation or operation in disconnected settings.
 
 \begin{table}[h!]
     \centering
@@ -250,7 +250,7 @@ Distributed collaborative frameworks enable the deployment, training, and fine-t
     FedML \cite{fedml} &  & \checkmark &  & \checkmark & Federated & \checkmark & Apache 2.0 \\
     Flower \cite{Flower} &  & \checkmark &  & \checkmark & Federated & \checkmark & Apache 2.0 \\
     FATE-LLM \cite{fan2023fate} &  & \checkmark &  & \checkmark & Federated & \checkmark & Apache 2.0 \\
-    FedLLM \cite{ye2025fedllm} &  & \checkmark & \checkmark & \checkmark & Federated & \checkmark & CC BY-NC 4.0 \\
+    FedLLM \cite{ye2024fedllm} &  & \checkmark & \checkmark & \checkmark & Federated & \checkmark & CC BY-NC 4.0 \\
     \bottomrule
     \end{tabular}%
     }

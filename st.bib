@@ -22,7 +22,7 @@
 }
 
 @article{alam2022fedrolex,
-  title   = {Fedrolex: Model-heterogeneous federated learning with rolling sub-model extraction},
+  title   = {FedRolex: Model-heterogeneous federated learning with rolling sub-model extraction},
   author  = {Alam, Samiul and Liu, Luyang and Yan, Ming and Zhang, Mi},
   journal = {Advances in neural information processing systems},
   volume  = {35},
@@ -55,12 +55,13 @@
 }
 
 @article{regulation2018general,
-  title   = {General data protection regulation},
-  author  = {Regulation, Protection},
-  journal = {Intouch},
-  volume  = {25},
-  pages   = {1--5},
-  year    = {2018}
+  title   = {Regulation ({EU}) 2016/679 of the {European Parliament} and of the {Council} of 27 {April} 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing {Directive} 95/46/{EC} ({General Data Protection Regulation})},
+  author  = {{European Parliament and Council of the European Union}},
+  journal = {Official Journal of the European Union},
+  volume  = {L119},
+  pages   = {1--88},
+  year    = {2016},
+  url     = {https://eur-lex.europa.eu/eli/reg/2016/679/oj}
 }
 
 @article{chen2024diversity,
@@ -70,11 +71,15 @@
   year    = {2024}
 }
 
-@misc{wenger2024ai,
-  title     = {AI produces gibberish when trained on too much AI-generated data},
-  author    = {Wenger, Emily},
-  year      = {2024},
-  publisher = {Nature Publishing Group UK London}
+@article{wenger2024ai,
+  title   = {AI produces gibberish when trained on too much AI-generated data},
+  author  = {Wenger, Emily},
+  journal = {Nature},
+  volume  = {631},
+  number  = {8022},
+  pages   = {742--743},
+  year    = {2024},
+  note    = {News \& Views}
 }
 
 @article{fang2024bias,
@@ -94,7 +99,8 @@
   booktitle    = {International Conference on Machine Learning},
   pages        = {49523--49544},
   year         = {2024},
-  organization = {PMLR}
+  organization = {PMLR},
+  url          = {https://proceedings.mlr.press/v235/villalobos24a.html}
 }
 
 @misc{meta2024llama3.1,
@@ -113,8 +119,8 @@
 }
 
 @article{llama,
-  title={LLaMA: Open and Efficient Foundation Language Models},
-  author={{Meta AI}},
+  title={{LLaMA}: Open and Efficient Foundation Language Models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
   journal={arXiv preprint arXiv:2302.13971},
   year={2023}
 }
@@ -147,13 +153,6 @@
   pages={1--67},
   year={2020}
 }
-
-@article{sun2017revisiting,
-  title={Revisiting the scaling laws of neural language models},
-  author={Sun, Yong and Chen, Yujia and Li, Zhiyuan and Liu, Zhenzhong and Han, Jiawei and Ma, Hao and Wu, Yong and Liu, Qipeng},
-  journal={arXiv preprint arXiv:1712.09444},
-  year={2017}
-} 
 
 @article{kaplan2020scaling,
   title={Scaling laws for neural language models},
@@ -213,17 +212,11 @@
   year={2021}
 }
 
-@article{kandpal2022deduplicating,
-  title={Deduplicating training data mitigates privacy risks in language models},
-  author={Kandpal, Nikhil and Jordon, James and Bengio, Yoshua and Alemi, Alexander and Cheung, Yanshuai and Hashimoto, Tatsunori},
-  journal={arXiv preprint arXiv:2202.06539},
-  year={2022}
-}
-
-@article{biderman2022data,
-  title={Data governance in the age of large language models},
-  author={Biderman, Stella and Schoelkopf, Kieran and Weiss, Anthony and Noever, David},
-  journal={arXiv preprint arXiv:2211.09911},
+@inproceedings{kandpal2022deduplicating,
+  title={Deduplicating Training Data Mitigates Privacy Risks in Language Models},
+  author={Kandpal, Nikhil and Wallace, Eric and Raffel, Colin},
+  booktitle={International Conference on Machine Learning},
+  pages={10697--10707},
   year={2022}
 }
 
@@ -251,13 +244,14 @@
 }
 
 @article{thompson2021deep,
-  title={Deep learning's diminishing returns},
+  title={Deep learning's diminishing returns: The cost of improvement is becoming unsustainable},
   author={Thompson, Neil C and Greenewald, Kristjan and Lee, Keeheon and Manso, Gabriel F},
   journal={IEEE Spectrum},
   volume={58},
   number={10},
   pages={50--55},
-  year={2021}
+  year={2021},
+  doi={10.1109/MSPEC.2021.9563954}
 }
 
 @article{schwartz2020green,
@@ -270,12 +264,15 @@
   year={2020}
 }
 
-@article{mcmahan2017communication,
+@inproceedings{mcmahan2017communication,
   title={Communication-efficient learning of deep networks from decentralized data},
   author={McMahan, Brendan and Moore, Eider and Ramage, Daniel and Hampson, Seth and y Arcas, Blaise Aguera},
-  journal={Artificial intelligence and statistics},
+  booktitle={Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  series={Proceedings of Machine Learning Research},
+  volume={54},
   pages={1273--1282},
-  year={2017}
+  year={2017},
+  publisher={PMLR}
 }
 
 @article{li2020federated,
@@ -315,8 +312,6 @@
     year={2019}
 }
 
-% NOTE: wenger2024efficiency was removed - the original entry was hallucinated (paper does not exist).
-
 @article{hooker2020hardware,
     title={The hardware lottery},
     author={Hooker, Sara},
@@ -331,19 +326,12 @@
     year={2021}
 }
 
-@article{wang2020optimizing,
-    title={Optimizing federated learning on non-{IID} data with reinforcement learning},
-    author={Wang, Hongyi and Yurochkin, Mikhail and Sun, Yuekai and Papailiopoulos, Dimitris and Khazaeni, Yasaman},
-    journal={IEEE International Conference on Computer Communications},
+@inproceedings{wang2020optimizing,
+    title={Optimizing Federated Learning on Non-{IID} Data with Reinforcement Learning},
+    author={Wang, Hao and Kaplan, Zakhary and Niu, Di and Li, Baochun},
+    booktitle={IEEE International Conference on Computer Communications (INFOCOM)},
     pages={1698--1707},
     year={2020}
-}
-
-@article{yang2019scheduling,
-    title={Scheduling in federated learning: A comparative study},
-    author={Yang, Tao and Andrew, Galen and Eichner, Hubert and Sun, Huizhong and Li, Wei and Kong, Nicholas and Ramage, Daniel and Beaufays, Francoise},
-    journal={arXiv preprint arXiv:1908.06760},
-    year={2019}
 }
 
 @article{bonawitz2019towards,
@@ -360,17 +348,17 @@
     year={2016}
 }
 
-@article{wang2020federated,
+@inproceedings{wang2020federated,
     title={Federated learning with matched averaging},
     author={Wang, Hongyi and Yurochkin, Mikhail and Sun, Yuekai and Papailiopoulos, Dimitris and Khazaeni, Yasaman},
-    journal={International Conference on Learning Representations},
+    booktitle={International Conference on Learning Representations (ICLR)},
     year={2020}
 }
 
-@article{chen2018lifelong,
-    title={Lifelong learning with dynamically expandable networks},
-    author={Chen, Zhiyuan and Liu, Bing},
-    journal={International Conference on Learning Representations},
+@inproceedings{yoon2018lifelong,
+    title={Lifelong Learning with Dynamically Expandable Networks},
+    author={Yoon, Jaehong and Yang, Eunho and Lee, Jeongtae and Hwang, Sung Ju},
+    booktitle={International Conference on Learning Representations},
     year={2018}
 }
 
@@ -383,12 +371,15 @@
     year={2019}
 }
 
-@article{finn2017model,
+@inproceedings{finn2017model,
     title={Model-agnostic meta-learning for fast adaptation of deep networks},
     author={Finn, Chelsea and Abbeel, Pieter and Levine, Sergey},
-    journal={International Conference on Machine Learning},
+    booktitle={Proceedings of the 34th International Conference on Machine Learning (ICML)},
+    series={Proceedings of Machine Learning Research},
+    volume={70},
     pages={1126--1135},
-    year={2017}
+    year={2017},
+    publisher={PMLR}
 }
 
 @article{zoph2018learning,
@@ -452,7 +443,7 @@
 }
 
 @article{tang2024rethinking,
-  title   = {Rethinking optimization and architecture for tiny language models},
+  title   = {PanGu-$\pi$ Pro: Rethinking optimization and architecture for tiny language models},
   author  = {Tang, Yehui and Liu, Fangcheng and Ni, Yunsheng and Tian, Yuchuan and Bai, Zheyuan and Hu, Yi-Qi and Liu, Sichao and Jui, Shangling and Han, Kai and Wang, Yunhe},
   journal = {arXiv preprint arXiv:2402.02791},
   year    = {2024}
@@ -466,10 +457,10 @@
 }
 
 @article{gu2024minillm,
-  title   = {MiniLLM: Knowledge Distillation of Large Language Models},
+  title   = {MiniLLM: On-Policy Distillation of Large Language Models},
   author  = {Gu, Yuxian and Dong, Li and Wei, Furu and Huang, Minlie},
   journal = {arXiv preprint arXiv:2306.08543},
-  year    = {2024}
+  year    = {2023}
 }
 
 @article{wang2023bitnet,
@@ -483,7 +474,7 @@
   title   = {OpenChat: Advancing Open-source Language Models with Mixed-Quality Data},
   author  = {Wang, Guan and Cheng, Sijie and Zhan, Xianyuan and Li, Xiangang and Song, Sen and Liu, Yang},
   journal = {arXiv preprint arXiv:2309.11235},
-  year    = {2024}
+  year    = {2023}
 }
 
 @article{acikgoz2024hippocrates,
@@ -501,7 +492,7 @@
   year    = {2024}
 }
 
-@article{shen2024cost,
+@article{shen2022cost,
   title   = {COST-EFF: Collaborative Optimization of Spatial and Temporal Efficiency with Slenderized Multi-exit Language Models},
   author  = {Shen, Bowen and Lin, Zheng and Liu, Yuanxin and Liu, Zhengxiao and Wang, Lei and Wang, Weiping},
   journal = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
@@ -517,17 +508,18 @@
 }
 
 @article{mukherjee2023orca,
-  title   = {Orca 2: Teaching Small Language Models How to Reason},
-  author  = {Mukherjee, Subhabrata and Mitra, Arindam and Jawahar, Ganesh and Ordonez, Vicente and Chang, Kai-Wei},
-  journal = {arXiv preprint arXiv:2312.02558},
+  title   = {Orca: Progressive Learning from Complex Explanation Traces of {GPT}-4},
+  author  = {Mukherjee, Subhabrata and Mitra, Arindam and Jawahar, Ganesh and Agarwal, Sahaj and Palangi, Hamid and Awadallah, Ahmed},
+  journal = {arXiv preprint arXiv:2306.02707},
   year    = {2023}
 }
 
-@article{fu2023specializing,
-  title   = {Specializing Smaller Language Models towards Multi-Step Reasoning},
-  author  = {Fu, Yao and Peng, Hao and Khotilovich, Ashish and Chen, Liang and Yang, Yan},
-  journal = {arXiv preprint arXiv:2301.12726},
-  year    = {2023}
+@inproceedings{fu2023specializing,
+  title     = {Specializing Smaller Language Models towards Multi-Step Reasoning},
+  author    = {Fu, Yao and Peng, Hao and Ou, Litu and Sabharwal, Ashish and Khot, Tushar},
+  booktitle = {International Conference on Machine Learning},
+  pages     = {10421--10430},
+  year      = {2023}
 }
 
 @article{hsieh2023distilling,
@@ -541,7 +533,8 @@
   title   = {BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding},
   author  = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
   journal = {arXiv preprint arXiv:1810.04805},
-  year    = {2019}
+  year    = {2018},
+  note    = {Published at NAACL 2019}
 }
 
 @article{sun2019patient,
@@ -583,8 +576,8 @@
 @article{yang2020model,
   title   = {Model Compression with Multi-Task Knowledge Distillation for Web-scale Question Answering System},
   author  = {Yang, Ze and Shou, Linjun and Gong, Ming and Lin, Wuxian and Jiang, Daxin},
-  journal = {arXiv preprint arXiv:2004.09568},
-  year    = {2020}
+  journal = {arXiv preprint arXiv:1904.09636},
+  year    = {2019}
 }
 
 @article{dettmers2022llm,
@@ -616,18 +609,26 @@
   year    = {2020}
 }
 
-@article{wang2019structured,
-  title   = {Structured Neural Network Compression Via Matrix Factorization},
-  author  = {Wang, Cheng and Grosse, Roger and Fidler, Sanja and Zhang, Guodong},
-  journal = {ICLR},
-  year    = {2019}
+@inproceedings{wang2019structured,
+  title     = {EigenDamage: Structured Pruning in the Kronecker-Factored Eigenbasis},
+  author    = {Wang, Chaoqi and Grosse, Roger and Fidler, Sanja and Zhang, Guodong},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  pages     = {6566--6575},
+  year      = {2019},
+  volume    = {97},
+  series    = {Proceedings of Machine Learning Research},
+  publisher = {PMLR}
 }
 
-@article{lin2020svd,
-  title   = {Low-Rank Bottleneck in Multi-head Attention Models},
-  author  = {Lin, Zhuohan and Li, Mingyi and Wang, Zhongfang and Ren, Guangxiang},
-  journal = {ICML},
-  year    = {2020}
+@inproceedings{bhojanapalli2020lowrank,
+  title     = {Low-Rank Bottleneck in Multi-head Attention Models},
+  author    = {Bhojanapalli, Srinadh and Yun, Chulhee and Rawat, Ankit Singh and Reddi, Sashank J. and Kumar, Sanjiv},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  pages     = {864--873},
+  year      = {2020},
+  volume    = {119},
+  series    = {Proceedings of Machine Learning Research},
+  publisher = {PMLR}
 }
 
 @article{fedus2022switch,
@@ -649,11 +650,11 @@
 
 
 
-@article{lan2020albert,
-  title   = {ALBERT: A Lite BERT for Self-supervised Learning of Language Representations},
-  author  = {Lan, Zhenzhong and Chen, Mingda and Goodman, Sebastian and Gimpel, Kevin and Sharma, Piyush and Soricut, Radu},
-  journal = {arXiv preprint arXiv:1909.11942},
-  year    = {2020}
+@inproceedings{lan2020albert,
+  title     = {ALBERT: A Lite BERT for Self-supervised Learning of Language Representations},
+  author    = {Lan, Zhenzhong and Chen, Mingda and Goodman, Sebastian and Gimpel, Kevin and Sharma, Piyush and Soricut, Radu},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2020}
 } 
 
 
@@ -682,30 +683,31 @@
 
 @article{peng-etal-2023-rwkv,
   title   = {RWKV: Reinventing RNNs for the Transformer Era},
-  author  = {Peng, Bo and Alcaide, Eric and Anthony, Quentin and Albalak, Alon and Arcadinho, Pedro and Cao, Eric and Cui, Xin and Dai, Zihang and Eissman, Jeff and Firat, Orhan and Fu, Sophia and Gao, Cong and Hu, Yanping and Hughes, Maarten and Kenealy, James and Krikun, Maxim and Li, Sneha and Li, Yanping and Liu, Xiang and Luo, Lianmin and McAllester, David and Olson, Matthew and Patel, Reiner Pope, Alec and Rao, Noam and Roberts, Alex and Shazeer, Noam and Siddhant, Aditya and Tay, Yi and Tran, Duy and Wang, Jason and Wei, Wang},
+  author  = {Peng, Bo and Alcaide, Eric and Anthony, Quentin and Albalak, Alon and Arcadinho, Samuel and Biderman, Stella and Cao, Huanqi and Cheng, Xin and Chung, Michael and Grella, Matteo and others},
   journal = {arXiv preprint arXiv:2305.13048},
   year    = {2023}
 }
 
 @article{touvron2023llama3,
-  title   = {Llama: Open and efficient foundation language models},
-  author  = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
-  journal = {arXiv preprint arXiv:2302.13971},
-  year    = {2023}
+  title   = {The Llama 3 Herd of Models},
+  author  = {Grattafiori, Aaron and Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Vaughan, Alex and others},
+  journal = {arXiv preprint arXiv:2407.21783},
+  year    = {2024},
+  note    = {First author Grattafiori; key kept for backward compatibility}
 }
 
 @misc{cerebras2023slimpajama,
   author       = {Soboleva, Daria and Al-Khateeb, Faisal and Myers, Robert and Steeves, Jacob R and Hestness, Joel and Dey, Nolan},
-  title        = {{SlimPajama: A 627B token cleaned and deduplicated version of RedPajama}},
+  title        = {{SlimPajama}: A 627B Token, Cleaned and Deduplicated Version of {RedPajama}},
   year         = 2023,
-  howpublished = {\url{https://www.cerebras.net/blog/slimpajama-a-627b-token-cleaned-and-deduplicated-version-of-redpajama}},
+  howpublished = {\url{https://www.cerebras.ai/blog/slimpajama-a-627b-token-cleaned-and-deduplicated-version-of-redpajama}},
   url          = {https://huggingface.co/datasets/cerebras/SlimPajama-627B}
 }
 
 
 @misc{exo,
-  author       = {Exo Labs},
-  title        = {Exo: Run your own AI cluster at home with everyday devices},
+  author       = {{Exo Labs}},
+  title        = {exo: Run Frontier {AI} Locally},
   year         = {2025},
   howpublished = {\url{https://github.com/exo-explore/exo}},
   note         = {Accessed: 2025-01-29}
@@ -713,7 +715,7 @@
 
 @inproceedings{kang2017neurosurgeon,
   title        = {Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge},
-  author       = {Kang, Yiping and Hauswald, Johann and Gao, Cao and Rovinski, Andrew M. and Mudge, Trevor and Mars, Jason and Tang, Lingjia},
+  author       = {Kang, Yiping and Hauswald, Johann and Gao, Cao and Rovinski, Austin and Mudge, Trevor and Mars, Jason and Tang, Lingjia},
   booktitle    = {Proceedings of the Twenty-Second International Conference on Architectural Support for Programming Languages and Operating Systems},
   pages        = {615--629},
   year         = {2017},
@@ -733,11 +735,11 @@
 @inproceedings{li2018edgent,
   title        = {Edge Intelligence: On-Demand Deep Learning Model Co-Inference with Device-Edge Synergy},
   author       = {Li, En and Zhou, Zhi and Chen, Xu},
-  booktitle    = {Proceedings of the 2018 ACM/IEEE Symposium on Edge Computing},
-  pages        = {31--46},
+  booktitle    = {Proceedings of the Workshop on Mobile Edge Communications (MECOMM@SIGCOMM)},
+  pages        = {31--36},
   year         = {2018},
-  organization = {IEEE},
-  doi          = {10.1109/SEC.2018.00008}
+  organization = {ACM},
+  doi          = {10.1145/3229556.3229562}
 }
 
 @article{ye2024galaxy,
@@ -749,22 +751,22 @@
 }
 
 @misc{OpenDiLoCo,
-  title = {OpenDiLoCo: An Open-Source Framework for Globally Distributed Low-Communication Training},
-  author = {PrimeIntellect-ai},
-  year = {2025},
-  url = {https://github.com/PrimeIntellect-ai/OpenDiloco}
+  title  = {{OpenDiLoCo}: An Open-Source Framework for Globally Distributed Low-Communication Training},
+  author = {Jaghouar, Sami and Ong, Jack Min and Hagemann, Johannes},
+  year   = {2024},
+  url    = {https://arxiv.org/abs/2407.07852}
 }
 
 
 @misc{Flower,
-  title = {Flower: A Friendly Federated AI Framework},
-  author = {Flowerlab},
-  year = {2025},
-  url = {https://flower.ai/}
+  title  = {Flower: A Friendly Federated Learning Research Framework},
+  author = {Beutel, Daniel J. and Topal, Taner and Mathur, Akhil and Qiu, Xinchi and Fernandez-Marques, Javier and Gao, Yan and Sani, Lorenzo and Li, Kwing Hei and Parcollet, Titouan and de Gusmao, Pedro Porto Buarque and Lane, Nicholas D.},
+  year   = {2020},
+  url    = {https://arxiv.org/abs/2007.14390}
 }
 
 @article{fan2023fate,
-  title   = {FATE-LLM: An Industrial Grade Federated Learning Framework for Large Language Models},
+  title   = {{FATE-LLM}: A Industrial Grade Federated Learning Framework for Large Language Models},
   author  = {Fan, Tao and Kang, Yan and Ma, Guoqiang and Chen, Weijing and Wei, Wenbin and Fan, Lixin and Yang, Qiang},
   journal = {arXiv preprint arXiv:2310.10049},
   year    = {2023}
@@ -793,12 +795,11 @@
 }
 
 @inproceedings{zhang2023fedpetuning,
-  title        = {FedPETuning: When federated learning meets the parameter-efficient tuning methods of pre-trained language models},
-  author       = {Zhang, Zhuo and Yang, Yuanhang and Dai, Yong and Wang, Qifan and Yu, Yue and Qu, Lizhen and Xu, Zenglin},
-  booktitle    = {Annual Meeting of the Association of Computational Linguistics 2023},
-  pages        = {9963--9977},
-  year         = {2023},
-  organization = {Association for Computational Linguistics (ACL)}
+  title     = {{FedPETuning}: When Federated Learning Meets the Parameter-Efficient Tuning Methods of Pre-trained Language Models},
+  author    = {Zhang, Zhuo and Yang, Yuanhang and Dai, Yong and Wang, Qifan and Yu, Yue and Qu, Lizhen and Xu, Zenglin},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2023},
+  pages     = {9963--9977},
+  year      = {2023}
 }
 
 @inproceedings{chen2024feddat,
@@ -814,7 +815,8 @@
   author    = {Chen, Jiangui and Zhang, Ruqing and Guo, Jiafeng and Fan, Yixing and Cheng, Xueqi},
   booktitle = {Proceedings of the 30th ACM international conference on information \& knowledge management},
   pages     = {181--190},
-  year      = {2021}
+  year      = {2021},
+  doi       = {10.1145/3459637.3482345}
 }
 
 @article{welsh2024democratising,
@@ -913,7 +915,7 @@
 
 @inproceedings{kang2019incentive,
     title        = {Incentive Design for Efficient Federated Learning in Mobile Networks: A Contract Theory Approach},
-    author       = {Kang, Jiawen and Xiong, Zehui and Niyato, Dusit and Ye, Han and Kim, Dong In},
+    author       = {Kang, Jiawen and Xiong, Zehui and Niyato, Dusit and Yu, Han and Liang, Ying-Chang and Kim, Dong In},
     booktitle    = {IEEE VTS Asia Pacific Wireless Communications Symposium},
     pages        = {1--5},
     year         = {2019}
@@ -930,14 +932,14 @@
   publisher = {IEEE}
 }
 
-@article{khan2019federated,
+@article{khan2020federated,
     title        = {Federated Learning for Edge Networks: Resource Optimization and Incentive Mechanism},
     author       = {Khan, Latif U. and Pandey, Shashi Raj and Tran, Nguyen H. and Saad, Walid and Han, Zhu and Nguyen, Minh N. H. and Hong, Choong Seon},
     journal      = {IEEE Communications Magazine},
-    volume       = {57},
+    volume       = {58},
     number       = {10},
-    pages        = {94--100},
-    year         = {2019}
+    pages        = {88--93},
+    year         = {2020}
 }
 
 
@@ -959,7 +961,7 @@
   volume  = {83},
   pages   = {484--493},
   year    = {2015},
-  doi     = {10.1016/j.egypro.2015.11.484}
+  doi     = {10.1016/j.egypro.2015.12.168}
 }
 
 @article{fl_vs_centralized,
@@ -1001,15 +1003,15 @@
 }
 
 @misc{deeplearningai2024federated,
-  title        = {Introduction to Federated Learning},
-  author       = {{DeepLearning.AI}},
+  title        = {Federated Learning},
+  author       = {Beutel, Daniel J. and Lane, Nicholas D.},
   year         = {2024},
   howpublished = {\url{https://www.deeplearning.ai/short-courses/intro-to-federated-learning/}},
-  note         = {Accessed: 2025-02-23}
+  note         = {DeepLearning.AI Short Course. Accessed: 2025-02-23}
 }
 
 @misc{xai2025grok3,
-  title        = {Introducing Grok-3},
+  title        = {Introducing Grok 3},
   author       = {{xAI}},
   year         = {2025},
   howpublished = {\url{https://x.ai/blog/grok-3}},
@@ -1033,39 +1035,40 @@
 }
 
 @misc{canalys2025,
-  title        = {{Canalys Newsroom - Market Analysis and Research}},
+  title        = {Global Smartphone Market Soared 7\% in 2024 as Vendors Prepare for {AI}-driven Upgrade Cycle},
   author       = {{Canalys}},
   year         = {2025},
-  howpublished = {\url{https://canalys.com/newsroom}},
-  note         = {Accessed: 2025-02-23}
+  howpublished = {\url{https://www.canalys.com/newsroom/worldwide-smartphone-market-2024}},
+  note         = {Canalys Newsroom. Accessed: 2025-02-23. Site now redirects to Omdia (omdia.tech.informa.com)}
 }
 
 % Model References
 
 @article{yi2024phonelm,
-  title   = {Phonelm: an efficient and capable small language model family through principled pre-training},
+  title   = {PhoneLM: an efficient and capable small language model family through principled pre-training},
   author  = {Yi, Rongjie and Li, Xiang and Xie, Weikai and Lu, Zhenyan and Wang, Chenghua and Zhou, Ao and Wang, Shangguang and Zhang, Xiwen and Xu, Mengwei},
   journal = {arXiv preprint arXiv:2411.05046},
   year    = {2024}
 }
 
 @misc{llama3.2,
-  title        = {Meta Releases Llama 3.2},
-  author       = {Meta AI},
-  howpublished = {\url{https://about.fb.com/news/2024/09/introducing-llama-3-2-1b-3b/}},
-  year         = {2024}
+  title        = {Llama 3.2: Revolutionizing Edge {AI} and Vision with Open, Customizable Models},
+  author       = {{Meta AI}},
+  howpublished = {\url{https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/}},
+  year         = {2024},
+  note         = {Accessed: 2026-03-01}
 }
 
 @article{yang2024qwen2,
-  title   = {Qwen2: Technical Report},
-  author  = {Yang, Jinze and Wang, Shuai and Ma, Shuohang and Zheng, Jianbo and others},
-  journal = {arXiv preprint arXiv:2404.05169},
+  title   = {Qwen2 Technical Report},
+  author  = {Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal = {arXiv preprint arXiv:2407.10671},
   year    = {2024}
 }
 
 @article{bai2023qwentechnicalreport,
   title   = {Qwen Technical Report},
-  author  = {Bai, Jinze and Wang, Shuai and Xiong, Fei and Hou, Zhenyu and others},
+  author  = {Bai, Jinze and Bai, Shuai and Chu, Yunfei and Cui, Zeyu and Dang, Kai and Deng, Xiaodong and Fan, Yang and Ge, Wenbin and Han, Yu and Huang, Fei and others},
   journal = {arXiv preprint arXiv:2309.16609},
   year    = {2023}
 }
@@ -1104,9 +1107,9 @@
 }
 
 @article{hu2024minicpm,
-  title   = {MiniCPM: Unveiling the Potential of Small Language Models},
-  author  = {Hu, Edward and Huang, Wangchunshu and others},
-  journal = {arXiv preprint arXiv:2402.03216},
+  title   = {MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies},
+  author  = {Hu, Shengding and Tu, Yuge and Han, Xu and He, Chaoqun and Cui, Ganqu and Long, Xiang and Zheng, Zhi and Fang, Yewei and Huang, Yuxiang and Zhao, Weilin and others},
+  journal = {arXiv preprint arXiv:2404.06395},
   year    = {2024}
 }
 
@@ -1118,15 +1121,15 @@
 }
 
 @article{groeneveld2024olmo,
-  title   = {OLMo: Accelerating the Science of Language Models},
-  author  = {Groeneveld, Dirk and Beltagy, Iz and Davis, Pete and others},
+  title   = {{OLMo}: Accelerating the Science of Language Models},
+  author  = {Groeneveld, Dirk and Beltagy, Iz and Walsh, Pete and others},
   journal = {arXiv preprint arXiv:2402.00838},
   year    = {2024}
 }
 
 @article{zhang2024tinyllamaopensourcesmalllanguage,
   title   = {TinyLlama: An Open-Source Small Language Model},
-  author  = {Zhang, Peiyuan and Chen, Guangtao and others},
+  author  = {Zhang, Peiyuan and Zeng, Guangtao and Wang, Tianduo and Lu, Wei},
   journal = {arXiv preprint arXiv:2401.02385},
   year    = {2024}
 }
@@ -1138,11 +1141,12 @@
   year    = {2024}
 }
 
-@article{javaheripi2023phi,
-  title   = {Phi-2: The Surprising Power of Small Language Models},
-  author  = {Javaheripi, Mojan and Lobo, Jacob and others},
-  journal = {arXiv preprint arXiv:2312.12397},
-  year    = {2023}
+@misc{javaheripi2023phi,
+  title        = {Phi-2: The Surprising Power of Small Language Models},
+  author       = {Javaheripi, Mojan and Bubeck, S{\'e}bastien and others},
+  year         = {2023},
+  howpublished = {\url{https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/}},
+  note         = {Accessed: 2026-03-01}
 }
 
 @article{li2023textbooksneediiphi15,
@@ -1177,8 +1181,8 @@
 
 @article{bellagente2024stable,
   title   = {Stable LM 2 1.6B Technical Report},
-  author  = {Bellagente, Daniil and others},
-  journal = {arXiv preprint arXiv:2405.10999},
+  author  = {Bellagente, Marco and Tow, Jonathan and Mahan, Dakota and Phung, Duy and Zhuravinskyi, Maksym and Adithyan, Reshinth and Baicoianu, James and Brooks, Ben and Cooper, Nathan and Datta, Ashish and others},
+  journal = {arXiv preprint arXiv:2402.17834},
   year    = {2024}
 }
 
@@ -1190,8 +1194,8 @@
 }
 
 @article{dey2023cerebras,
-  title   = {Cerebras-GPT: A Family of Open, Compute-efficient, Large Language Models},
-  author  = {Dey, Shreya and Chen, Tian and Wang, Ye and others},
+  title   = {Cerebras-GPT: Open Compute-Optimal Language Models Trained on the Cerebras Wafer-Scale Cluster},
+  author  = {Dey, Nolan and Gosal, Gurpreet and Chen, Zhiming and Khachane, Hemant and Marshall, William and Pathria, Ribhu and Tom, Marvin and Hestness, Joel},
   journal = {arXiv preprint arXiv:2304.03208},
   year    = {2023}
 }
@@ -1203,11 +1207,11 @@
   year    = {2023}
 }
 
-@article{le2023bloom,
+@article{le2022bloom,
   title   = {BLOOM: A 176B-Parameter Open-Access Multilingual Language Model},
   author  = {Le Scao, Teven and Fan, Angela and others},
   journal = {arXiv preprint arXiv:2211.05100},
-  year    = {2023}
+  year    = {2022}
 }
 
 @article{taylor2022galactica,
@@ -1233,9 +1237,9 @@
 }
 
 @article{zuo2024falcon,
-  title   = {Falcon Mamba: Scaling Mamba with Facilitated Long Context},
-  author  = {Zuo, Shuang and Jiang, Daxin},
-  journal = {arXiv preprint arXiv:2405.11241},
+  title   = {Falcon Mamba: The First Competitive Attention-free 7B Language Model},
+  author  = {Zuo, Jingwei and Velikanov, Maksim and Rhaiem, Dhia Eddine and Chahed, Ilyas and Belkada, Younes and Kunsch, Guillaume and Hacid, Hakim},
+  journal = {arXiv preprint arXiv:2410.05355},
   year    = {2024}
 }
 
@@ -1259,21 +1263,21 @@
 
 @article{mitra2023orca,
   title   = {Orca 2: Teaching Small Language Models How to Reason},
-  author  = {Mitra, Arindam and Mukherjee, Subhabrata and others},
+  author  = {Mitra, Arindam and Del Corro, Luciano and Mahajan, Shweti and Codas, Andres and Simoes, Clarisse and Agarwal, Sahaj and Chen, Xuxi and Razdaibiedina, Anastasia and Jones, Erik and Aggarwal, Kriti and Palangi, Hamid and Zheng, Guoqing and Rosset, Corby and Khanpour, Hamed and Awadallah, Ahmed},
   journal = {arXiv preprint arXiv:2311.11045},
   year    = {2023}
 }
 
 @article{zhang2023towards,
-  title   = {Towards Making the Most of ChatGPT for Machine Translation},
-  author  = {Zhang, Kehai and Chen, Zhuocheng and others},
-  journal = {arXiv preprint arXiv:2309.02654},
+  title   = {Towards the Law of Capacity Gap in Distilling Language Models},
+  author  = {Zhang, Chen and Li, Qiuchi and Song, Dawei and Ye, Zheyu and Gao, Yan and Hu, Yan},
+  journal = {arXiv preprint arXiv:2311.07052},
   year    = {2023}
 }
 
 @misc{DatabricksBlog2023DollyV2,
-  author       = {{Databricks}},
-  title        = {Free Dolly: Introducing the World's First Truly Open Instruction-Tuned LLM},
+  author       = {Conover, Mike and Hayes, Matt and Mathur, Ankit and Xie, Jianwei and Wan, Jun and Shah, Sam and Ghodsi, Ali and Wendell, Patrick and Zaharia, Matei and Xin, Reynold},
+  title        = {Free Dolly: Introducing the World's First Truly Open Instruction-Tuned {LLM}},
   year         = {2023},
   howpublished = {\url{https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm}}
 }
@@ -1285,7 +1289,7 @@
   year    = {2023}
 }
 
-@article{chung2024scaling,
+@article{chung2022scaling,
   title   = {Scaling Instruction-Finetuned Language Models},
   author  = {Chung, Hyung Won and Hou, Le and others},
   journal = {arXiv preprint arXiv:2210.11416},
@@ -1293,15 +1297,15 @@
 }
 
 @article{frantar2023sparsegpt,
-  title   = {SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot},
-  author  = {Frantar, Elias and Ashkboos, Saleh and Hoefler, Torsten and others},
+  title   = {{SparseGPT}: Massive Language Models Can Be Accurately Pruned in One-Shot},
+  author  = {Frantar, Elias and Alistarh, Dan},
   journal = {arXiv preprint arXiv:2301.00774},
   year    = {2023}
 }
 
-@article{sun2024a,
+@article{sun2023wanda,
   title   = {A Simple and Effective Pruning Approach for Large Language Models},
-  author  = {Sun, Zongyu and Chen, Chen and Zhang, Zhitao and others},
+  author  = {Sun, Mingjie and Liu, Zhuang and Bair, Anna and Kolter, J. Zico},
   journal = {arXiv preprint arXiv:2306.11695},
   year    = {2023}
 }
@@ -1315,8 +1319,8 @@
 
 @article{men2024shortgpt,
   title   = {ShortGPT: Layers in Large Language Models are More Redundant Than You Expect},
-  author  = {Men, Yu and Zhang, Xingyu and Sun, Ruiqi and others},
-  journal = {arXiv preprint arXiv:2402.18952},
+  author  = {Men, Xin and Xu, Mingyu and Zhang, Qingyu and Wang, Bingning and Lin, Hongyu and Lu, Yaojie and Han, Xianpei and Chen, Weipeng},
+  journal = {arXiv preprint arXiv:2403.03853},
   year    = {2024}
 }
 
@@ -1343,38 +1347,40 @@
 
 
 @article{ma2024era,
-  title   = {The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits},
-  author  = {Ma, Shuming and Zhao, Hongyu and Xue, Lingxiao and others},
+  title   = {The Era of 1-bit {LLMs}: All Large Language Models are in 1.58 Bits},
+  author  = {Ma, Shuming and Wang, Hongyu and Ma, Lingxiao and Wang, Lei and Wang, Wenhui and Huang, Shaohan and Dong, Li and Wang, Ruiping and Xue, Jilong and Wei, Furu},
   journal = {arXiv preprint arXiv:2402.17764},
   year    = {2024}
 }
 
-@article{kim2024memory,
-  title   = {Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization},
-  author  = {Kim, Bingbing and Shen, Jie and Feng, Haici and Liu, Yunshui and others},
-  journal = {arXiv preprint arXiv:2402.12317},
-  year    = {2024}
+@article{kim2023memory,
+  title     = {Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization},
+  author    = {Kim, Jeonghoon and Lee, Jung Hyun and Kim, Sungdong and Park, Joonsuk and Yoo, Kang Min and Kwon, Se Jung and Lee, Dongsoo},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023}
 }
 
-@article{dettmers2024qlora,
+@article{dettmers2023qlora,
   title   = {QLoRA: Efficient Finetuning of Quantized LLMs},
   author  = {Dettmers, Tim and Pagnoni, Artidoro and Holtzman, Ari and Zettlemoyer, Luke},
   journal = {arXiv preprint arXiv:2305.14314},
   year    = {2023}
 }
 
-@article{kim2023squeezellm,
-  title   = {SqueezeLLM: Dense-and-Sparse Quantization},
-  author  = {Kim, Sehoon and Hooper, Coleman and Gholami, Amir and others},
-  journal = {arXiv preprint arXiv:2306.07629},
-  year    = {2023}
+@inproceedings{kim2024squeezellm,
+  title     = {SqueezeLLM: Dense-and-Sparse Quantization},
+  author    = {Kim, Sehoon and Hooper, Coleman and Gholami, Amir and Dong, Zhen and Li, Xiuyu and Shen, Sheng and Mahoney, Michael W. and Keutzer, Kurt},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year      = {2024}
 }
 
-@article{guo2024compressing,
-  title   = {Compressing Large Language Models by Joint Sparsification and Quantization},
-  author  = {Guo, Mingjie and Jiang, Zhenyu and others},
-  journal = {arXiv preprint arXiv:2405.04392},
-  year    = {2024}
+@inproceedings{guo2024compressing,
+  title     = {Compressing Large Language Models by Joint Sparsification and Quantization},
+  author    = {Guo, Jinyang and Wu, Jianyu and Wang, Zining and Liu, Jiaheng and Yang, Ge and Ding, Yifu and Gong, Ruihao and Qin, Haotong and Liu, Xianglong},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  year      = {2024},
+  organization = {PMLR}
 }
 
 @article{adepu2024framequant,
@@ -1426,18 +1432,11 @@
   year    = {2024}
 }
 
-@article{yang2024llm,
-  title   = {LLM-Neo: Harnessing the Power of Repetition with Neuron-emphasized Optimization},
-  author  = {Yang, Dashuang and Yu, Zhiwen and Zhou, Kenji and others},
-  journal = {arXiv preprint arXiv:2405.15756},
-  year    = {2024}
-}
-
 % Dataset References
 
 @article{li2024datacomp,
   title   = {Datacomp-lm: In search of the next generation of training sets for language models},
-  author  = {Li, Jeffrey and Fang, Alex and Smyrnis, Georgios and Ivgi, Maor and Jordan, Matt and Gadre, Samir Yitzhak and Bansal, Hritik and Guha, Etash and Keh, Sedrick Scott and Arora, Kushal and others},
+  author  = {Li, Jeffrey and Fang, Alex and Smyrnis, Georgios and Ivgi, Maor and Jordan, Matt and Gadre, Samir Yitzhak and Bansal, Hritik and Guha, Etash and Keh, Sedrick and Arora, Kushal and others},
   journal = {Advances in Neural Information Processing Systems},
   volume  = {37},
   pages   = {14200--14282},
@@ -1445,8 +1444,8 @@
 }
 
 @article{li2023starcodersourceyou,
-  title   = {StarCoder: May the Source Be With You!},
-  author  = {Li, Raymond and Choi, Daniel and Chung, Jordi and others},
+  title   = {{StarCoder}: May the Source Be With You!},
+  author  = {Li, Raymond and Ben Allal, Loubna and Zi, Yangtian and others},
   journal = {arXiv preprint arXiv:2305.06161},
   year    = {2023}
 }
@@ -1476,7 +1475,7 @@
   title   = {The Pile: An 800GB Dataset of Diverse Text for Language Modeling},
   author  = {Gao, Leo and Biderman, Stella and Black, Sid and others},
   journal = {arXiv preprint arXiv:2101.00027},
-  year    = {2020}
+  year    = {2021}
 }
 
 @article{kocetkov2022stack,
@@ -1488,8 +1487,8 @@
 
 
 @article{penedo2023refinedweb,
-  title   = {The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Data},
-  author  = {Penedo, Guilherme and Crnisanin, Anis and Shen, Ethan and others},
+  title   = {The {RefinedWeb} Dataset for {Falcon} {LLM}: Outperforming Curated Corpora with Web Data, and Web Data Only},
+  author  = {Penedo, Guilherme and Malartic, Quentin and Hesslow, Daniel and Cojocaru, Ruxandra and Cappelli, Alessandro and Alobeidli, Hamza and Pannier, Baptiste and Almazrouei, Ebtesam and Launay, Julien},
   journal = {arXiv preprint arXiv:2306.01116},
   year    = {2023}
 }
@@ -1528,7 +1527,8 @@
   title   = {The BigScience ROOTS Corpus: A 1.6TB Composite Multilingual Dataset},
   author  = {Laurençon, Hugo and Saulnier, Lucile and Wang, Thomas and others},
   journal = {arXiv preprint arXiv:2303.03915},
-  year    = {2023}
+  year    = {2023},
+  note    = {Key kept for backward compatibility; also NeurIPS 2022 Datasets and Benchmarks}
 }
 
 @article{parmar2024nemotron,
@@ -1590,8 +1590,8 @@
   year    = {2024}
 }
 @misc{together,
-  author       = {Together AI},
-  title        = {Together AI: The AI Acceleration Cloud},
+  author       = {{Together AI}},
+  title        = {Together {AI}: The {AI} Native Cloud},
   year         = {2023},
   howpublished = {\url{https://www.together.ai/}}
 }
@@ -1604,11 +1604,14 @@
 }
 
 
-@misc{federatedscope,
-  author       = {alibaba},
-  title        = {FederatedScope: An easy-to-use federated learning platform},
-  year         = {2024},
-  howpublished = {\url{https://github.com/alibaba/FederatedScope}}
+@article{federatedscope,
+  title   = {{FederatedScope}: A Flexible Federated Learning Platform for Heterogeneity},
+  author  = {Xie, Yuexiang and Wang, Zhen and Gao, Dawei and Chen, Daoyuan and Yao, Liuyi and Kuang, Weirui and Li, Yaliang and Ding, Bolin and Zhou, Jingren},
+  journal = {Proceedings of the VLDB Endowment},
+  volume  = {16},
+  number  = {5},
+  pages   = {1059--1072},
+  year    = {2023}
 }
 
 @misc{fedml,
@@ -1618,13 +1621,13 @@
   howpublished = {\url{https://github.com/FedML-AI/FedML}}
 }
 
-@article{ye2025fedllm,
+@article{ye2024fedllm,
   title   = {Fedllm-bench: Realistic benchmarks for federated learning of large language models},
-  author  = {Ye, Rui and Ge, Rui and Zhu, Xinyu and Chai, Jingyi and Yaxin, Du and Liu, Yang and Wang, Yanfeng and Chen, Siheng},
+  author  = {Ye, Rui and Ge, Rui and Zhu, Xinyu and Chai, Jingyi and Du, Yaxin and Liu, Yang and Wang, Yanfeng and Chen, Siheng},
   journal = {Advances in Neural Information Processing Systems},
   volume  = {37},
   pages   = {111106--111130},
-  year    = {2025}
+  year    = {2024}
 }
 
 @article{bolton2024biomedlm,
@@ -1650,7 +1653,7 @@
   year    = {2024}
 }
 
-@misc{yao2024pursuit,
+@misc{kheya2024pursuit,
   title         = {The Pursuit of Fairness in Artificial Intelligence Models: A Survey},
   author        = {Kheya, Tahsin Alamgir and Bouadjenek, Mohamed Reda and Aryal, Sunil},
   year          = {2024},
@@ -1659,7 +1662,7 @@
   primaryclass  = {cs.AI}
 }
 
-@misc{li2024carbon,
+@misc{sarkar2024carbon,
   title         = {Carbon Footprint Reduction for Sustainable Data Centers in Real-Time},
   author        = {Sarkar, Soumyendu and Naug, Avisek and Luna, Ricardo and Guillen, Antonio and Gundecha, Vineet and Ghorbanpour, Sahand and Mousavi, Sajad and Markovikj, Dejan and Babu, Ashwin Ramesh},
   year          = {2024},
@@ -1668,7 +1671,7 @@
   primaryclass  = {eess.SY}
 }
 
-@misc{yang2024environmental,
+@misc{guidi2024environmental,
   title         = {Environmental Burden of United States Data Centers in the Artificial Intelligence Era},
   author        = {Guidi, Gianluca and Dominici, Francesca and Gilmour, Jonathan and Butler, Kevin and Bell, Eric and Delaney, Scott and Bargagli-Stoffi, Falco J.},
   year          = {2024},
@@ -1694,8 +1697,8 @@
 }
 
 @inproceedings{cai2020tinytl,
-  title     = {TinyTL: Reduce Memory, Not Parameters for Efficient On-Device Learning},
-  author    = {Cai, Han and Gan, Chuang and Wang, Tianzhe and Zhang, Zhekai and Han, Song},
+  title     = {{TinyTL}: Reduce Memory, Not Parameters for Efficient On-Device Learning},
+  author    = {Cai, Han and Gan, Chuang and Zhu, Ligeng and Han, Song},
   booktitle = {Advances in Neural Information Processing Systems},
   volume    = {33},
   pages     = {11285--11297},

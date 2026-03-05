@@ -7,8 +7,8 @@
 \textbf{Public data} has been the primary \textit{fuel} driving AI development forward. 
 This field has witnessed an exponential growth in data requirements, from the early success of MNIST \citep{lecun1998mnist} with its 70,000 handwritten digits to ImageNet's revolutionary impact with 14 million labeled images \citep{deng2009imagenet}. 
 This trajectory has continued with modern large language models (LLMs) like GPT \citep{openai2023gpt4}, LLaMA \citep{touvron2023llama3}, and DeepSeek \citep{liu2024deepseek} series, which are trained on trillions of tokens.
-Recent evidence that LLaMA 3.1's smallest model (8B) \citep{meta2024llama3.1} trained on 15 trillion tokens, outperforms LLaMA 2's largest model (70B) \citep{touvron2023llama} trained on 2 trillion tokens (despite being $10 \times$ smaller in model size, the $7 \times$ increase in training data leads to superior performance), demonstrates the paramount importance of data scaling \citep{raffel2020exploring, deeplearningai2024federated}. 
-However, we are witnessing a concerning trend of data exhaustion, where high-quality public data sources are becoming exhausted \citep{lee2021dedup, biderman2022data}. \cite{villalobos2024position} argues that human-generated public text data cannot sustain scaling beyond this decade. 
+Recent evidence that LLaMA 3.1's smallest model (8B) \citep{meta2024llama3.1} trained on 15 trillion tokens, outperforms LLaMA 2's largest model (70B) \citep{touvron2023llama} trained on 2 trillion tokens (despite being $10 \times$ smaller in model size, the $7 \times$ increase in training data leads to superior performance), demonstrates the paramount importance of data scaling \citep{raffel2020exploring,deeplearningai2024federated}. 
+However, we are witnessing a concerning trend of data exhaustion, where high-quality public data sources are becoming exhausted \citep{lee2021dedup}. \cite{villalobos2024position} argues that human-generated public text data cannot sustain scaling beyond this decade. 
 While recent efforts advocate for training larger models with synthetic data \citep{chen2024diversity}, AI-generated content may fail to yield performance improvements \citep{wenger2024ai}, also risks polluting public data sources \citep{fang2024bias}. 
 Moreover, stricter data privacy regulations like GDPR \citep{regulation2018general} have made data collection increasingly difficult and expensive.
 This looming data scarcity suggests that scaling laws may hit a wall \citep{hardy2024wall}, potentially impeding further AI advancement.
@@ -31,5 +31,4 @@ We then explore the hidden potential of massive edge devices, investigating thei
 Building on these insights, we investigate technical approaches for overcoming large model challenges through distributed computing architectures (\S\ref{sec:technical_advancements}): small language models at edges (\S\ref{subsec:small_language_models}), collaborative inference (\S\ref{subsec:collaborative_inference}), and collaborative training (\S\ref{subsec:collaborative_training}).
 We then identify two critical open challenges: heterogeneous device model fusion and heterogeneous device compute sharing (\S\ref{sec:open_problem}). 
 Finally, we discuss the societal impact like AI democratization, incentive mechanisms, and environmental benefits of this paradigm shift (\S\ref{sec:impacts}).
-
 
